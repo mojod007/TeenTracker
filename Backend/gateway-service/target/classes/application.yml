@@ -1,0 +1,54 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**, /profiles/**, /permissions/**
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/products/**, /produits/**, /produit/**, /gammes/**
+        - id: etablissement-service
+          uri: lb://etablissement-service
+          predicates:
+            - Path=/etablissements/**, /etablissement/**, /emplacements/**, /regions/**, /depots/**, /zones/**,/api/etablissements/**
+        - id: dashboard-service
+          uri: lb://dashboard-service
+          predicates:
+            - Path=/, /dashboard/**, /api/services/status/**
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    initial-instance-info-replication-interval-seconds: 5
+    instance-info-replication-interval-seconds: 5
+    registry-fetch-interval-seconds: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+logging:
+  level:
+    com.trace: INFO
+  file:
+    name: ../logs/gateway-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

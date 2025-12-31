@@ -1,0 +1,14 @@
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\config\SwaggerConfig.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\controller\GammeRestController.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\controller\GammeWebController.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\controller\GlobalExceptionHandler.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\controller\ProductController.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\entity\Gamme.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\entity\Product.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\entity\TypePalette.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\enums\TypeGestion.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\ProductApplication.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\repository\GammeRepository.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\repository\ProductRepository.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\service\GammeService.java
+C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\src\main\java\com\trace\product\service\ProductService.java

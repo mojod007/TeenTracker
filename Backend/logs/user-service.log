@@ -1,0 +1,1280 @@
+2025-12-31 19:19:31 - Starting UserApplication using Java 17.0.12 with PID 19896 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:19:31 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:19:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:19:35 - Finished Spring Data repository scanning in 923 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:19:36 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:19:38 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:19:38 - Starting service [Tomcat]
+2025-12-31 19:19:38 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:19:38 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:19:38 - Root WebApplicationContext: initialization completed in 7104 ms
+2025-12-31 19:19:39 - HikariPool-1 - Starting...
+2025-12-31 19:19:43 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:19:43 - HikariPool-1 - Start completed.
+2025-12-31 19:19:43 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:19:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:19:44 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:19:44 - HHH000026: Second-level cache disabled
+2025-12-31 19:19:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:19:45 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:19:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:19:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:19:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:19:49 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:19:50 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:19:50 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:19:50 - Setting initial instance status as: STARTING
+2025-12-31 19:19:50 - Initializing Eureka in region us-east-1
+2025-12-31 19:19:50 - Resolving eureka endpoints via configuration
+2025-12-31 19:19:50 - Disable delta property : false
+2025-12-31 19:19:50 - Single vip registry refresh property : null
+2025-12-31 19:19:50 - Force full registry fetch : false
+2025-12-31 19:19:50 - Application is null : false
+2025-12-31 19:19:50 - Registered Applications size is zero : true
+2025-12-31 19:19:50 - Application version is -1: true
+2025-12-31 19:19:50 - Getting all instance registry info from the eureka server
+2025-12-31 19:19:51 - The response status is 200
+2025-12-31 19:19:51 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:19:51 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:19:51 - Discovery Client initialized at timestamp 1767205191006 with initial instances count: 1
+2025-12-31 19:19:51 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:19:51 - Saw local status change event StatusChangeEvent [timestamp=1767205191025, current=UP, previous=STARTING]
+2025-12-31 19:19:51 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:19:51 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:19:51 - Updating port to 8084
+2025-12-31 19:19:51 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:19:51 - Started UserApplication in 22.198 seconds (process running for 24.188)
+2025-12-31 19:19:51 - Vérification et initialisation des données...
+2025-12-31 19:19:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:19:51 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:19:51 - Completed initialization in 9 ms
+2025-12-31 19:19:52 - select count(*) from permissions p1_0
+2025-12-31 19:19:52 - Les données existent déjà, skipping initialization
+2025-12-31 19:19:52 - Service utilisateur démarré avec succès
+2025-12-31 19:20:19 - Récupération de tous les utilisateurs
+2025-12-31 19:20:19 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:20:19 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:20:19 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:20:19 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:20:21 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:20:21 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:20:27 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:20:27 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:20:27 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:20:27 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:20:27 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:26:14 - Starting UserApplication using Java 17.0.12 with PID 568 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:26:14 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:26:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:26:18 - Finished Spring Data repository scanning in 633 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:26:19 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:26:21 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:26:21 - Starting service [Tomcat]
+2025-12-31 19:26:21 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:26:21 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:26:21 - Root WebApplicationContext: initialization completed in 7640 ms
+2025-12-31 19:26:22 - HikariPool-1 - Starting...
+2025-12-31 19:26:26 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:26:26 - HikariPool-1 - Start completed.
+2025-12-31 19:26:26 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:26:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:26:27 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:26:27 - HHH000026: Second-level cache disabled
+2025-12-31 19:26:28 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:26:28 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:26:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:26:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:26:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:26:33 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:26:33 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:26:33 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:26:33 - Setting initial instance status as: STARTING
+2025-12-31 19:26:33 - Initializing Eureka in region us-east-1
+2025-12-31 19:26:33 - Resolving eureka endpoints via configuration
+2025-12-31 19:26:33 - Disable delta property : false
+2025-12-31 19:26:33 - Single vip registry refresh property : null
+2025-12-31 19:26:33 - Force full registry fetch : false
+2025-12-31 19:26:33 - Application is null : false
+2025-12-31 19:26:33 - Registered Applications size is zero : true
+2025-12-31 19:26:33 - Application version is -1: true
+2025-12-31 19:26:33 - Getting all instance registry info from the eureka server
+2025-12-31 19:26:34 - The response status is 200
+2025-12-31 19:26:34 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:26:34 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:26:34 - Discovery Client initialized at timestamp 1767205594041 with initial instances count: 2
+2025-12-31 19:26:34 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:26:34 - Saw local status change event StatusChangeEvent [timestamp=1767205594055, current=UP, previous=STARTING]
+2025-12-31 19:26:34 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:26:34 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:26:34 - Updating port to 8084
+2025-12-31 19:26:34 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:26:34 - Started UserApplication in 22.149 seconds (process running for 23.905)
+2025-12-31 19:26:34 - Vérification et initialisation des données...
+2025-12-31 19:26:34 - select count(*) from permissions p1_0
+2025-12-31 19:26:34 - Les données existent déjà, skipping initialization
+2025-12-31 19:26:34 - Service utilisateur démarré avec succès
+2025-12-31 19:26:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:26:37 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:26:37 - Completed initialization in 4 ms
+2025-12-31 19:28:36 - Starting UserApplication using Java 17.0.12 with PID 20092 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:28:36 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:28:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:28:38 - Finished Spring Data repository scanning in 315 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:28:39 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:28:39 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:28:39 - Starting service [Tomcat]
+2025-12-31 19:28:39 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:28:40 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:28:40 - Root WebApplicationContext: initialization completed in 3494 ms
+2025-12-31 19:28:40 - HikariPool-1 - Starting...
+2025-12-31 19:28:40 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:28:40 - HikariPool-1 - Start completed.
+2025-12-31 19:28:40 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:28:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:28:40 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:28:40 - HHH000026: Second-level cache disabled
+2025-12-31 19:28:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:28:41 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:28:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:28:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:28:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:28:44 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:28:44 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:28:44 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:28:44 - Setting initial instance status as: STARTING
+2025-12-31 19:28:44 - Initializing Eureka in region us-east-1
+2025-12-31 19:28:44 - Resolving eureka endpoints via configuration
+2025-12-31 19:28:44 - Disable delta property : false
+2025-12-31 19:28:44 - Single vip registry refresh property : null
+2025-12-31 19:28:44 - Force full registry fetch : false
+2025-12-31 19:28:44 - Application is null : false
+2025-12-31 19:28:44 - Registered Applications size is zero : true
+2025-12-31 19:28:44 - Application version is -1: true
+2025-12-31 19:28:44 - Getting all instance registry info from the eureka server
+2025-12-31 19:28:44 - The response status is 200
+2025-12-31 19:28:44 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:28:44 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:28:44 - Discovery Client initialized at timestamp 1767205724736 with initial instances count: 4
+2025-12-31 19:28:44 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:28:44 - Saw local status change event StatusChangeEvent [timestamp=1767205724745, current=UP, previous=STARTING]
+2025-12-31 19:28:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:28:44 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 19:28:44 - Saw local status change event StatusChangeEvent [timestamp=1767205724753, current=DOWN, previous=UP]
+2025-12-31 19:28:44 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-31 19:28:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:28:44 - HikariPool-1 - Shutdown initiated...
+2025-12-31 19:28:44 - HikariPool-1 - Shutdown completed.
+2025-12-31 19:28:44 - Shutting down DiscoveryClient ...
+2025-12-31 19:28:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:28:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:28:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:28:44 - Unregistering ...
+2025-12-31 19:28:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 19:28:44 - Completed shut down of DiscoveryClient
+2025-12-31 19:28:44 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31 19:28:44 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+
+2025-12-31 19:29:04 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - Re-registering apps/USER-SERVICE
+2025-12-31 19:29:04 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:29:04 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:30:09 - Récupération de tous les utilisateurs
+2025-12-31 19:30:09 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:30:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:30:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:30:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:30:11 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:30:11 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:30:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:30:11 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:30:11 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:31:33 - Resolving eureka endpoints via configuration
+2025-12-31 19:32:07 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:32:07 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:32:07 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:32:07 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:32:07 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:32:07 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:32:07 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:32:11 - Récupération de tous les utilisateurs
+2025-12-31 19:32:11 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:32:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:32:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:32:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:32:13 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 19:32:13 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:32:13 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:32:13 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:32:13 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:32:16 - Récupération de tous les utilisateurs
+2025-12-31 19:32:16 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:32:16 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:32:16 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:32:16 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:33:44 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 19:33:44 - Saw local status change event StatusChangeEvent [timestamp=1767206024477, current=DOWN, previous=UP]
+2025-12-31 19:33:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:33:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 19:33:44 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:33:44 - Graceful shutdown complete
+2025-12-31 19:33:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:33:44 - HikariPool-1 - Shutdown initiated...
+2025-12-31 19:33:44 - HikariPool-1 - Shutdown completed.
+2025-12-31 19:33:44 - Shutting down DiscoveryClient ...
+2025-12-31 19:33:47 - Unregistering ...
+2025-12-31 19:33:47 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 19:33:47 - Completed shut down of DiscoveryClient
+2025-12-31 19:33:54 - Starting UserApplication using Java 17.0.12 with PID 27804 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:33:54 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:33:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:33:55 - Finished Spring Data repository scanning in 141 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:33:55 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:33:56 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:33:56 - Starting service [Tomcat]
+2025-12-31 19:33:56 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:33:56 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:33:56 - Root WebApplicationContext: initialization completed in 2066 ms
+2025-12-31 19:33:56 - HikariPool-1 - Starting...
+2025-12-31 19:33:57 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:33:57 - HikariPool-1 - Start completed.
+2025-12-31 19:33:57 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:33:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:33:57 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:33:57 - HHH000026: Second-level cache disabled
+2025-12-31 19:33:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:33:57 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:33:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:33:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:33:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:34:00 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:34:00 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:34:00 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:34:00 - Setting initial instance status as: STARTING
+2025-12-31 19:34:00 - Initializing Eureka in region us-east-1
+2025-12-31 19:34:00 - Resolving eureka endpoints via configuration
+2025-12-31 19:34:00 - Disable delta property : false
+2025-12-31 19:34:00 - Single vip registry refresh property : null
+2025-12-31 19:34:00 - Force full registry fetch : false
+2025-12-31 19:34:00 - Application is null : false
+2025-12-31 19:34:00 - Registered Applications size is zero : true
+2025-12-31 19:34:00 - Application version is -1: true
+2025-12-31 19:34:00 - Getting all instance registry info from the eureka server
+2025-12-31 19:34:01 - The response status is 200
+2025-12-31 19:34:01 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:34:01 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:34:01 - Discovery Client initialized at timestamp 1767206041075 with initial instances count: 4
+2025-12-31 19:34:01 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:34:01 - Saw local status change event StatusChangeEvent [timestamp=1767206041084, current=UP, previous=STARTING]
+2025-12-31 19:34:01 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:34:01 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:34:01 - Updating port to 8084
+2025-12-31 19:34:01 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:34:01 - Started UserApplication in 7.437 seconds (process running for 8.006)
+2025-12-31 19:34:01 - Vérification et initialisation des données...
+2025-12-31 19:34:01 - select count(*) from permissions p1_0
+2025-12-31 19:34:01 - Les données existent déjà, skipping initialization
+2025-12-31 19:34:01 - Service utilisateur démarré avec succès
+2025-12-31 19:34:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:34:07 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:34:07 - Completed initialization in 0 ms
+2025-12-31 19:35:37 - Starting UserApplication using Java 17.0.12 with PID 7804 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:35:37 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:35:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:35:41 - Finished Spring Data repository scanning in 496 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:35:42 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:35:43 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:35:43 - Starting service [Tomcat]
+2025-12-31 19:35:43 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:35:43 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:35:43 - Root WebApplicationContext: initialization completed in 6343 ms
+2025-12-31 19:35:44 - HikariPool-1 - Starting...
+2025-12-31 19:35:48 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:35:48 - HikariPool-1 - Start completed.
+2025-12-31 19:35:48 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:35:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:35:49 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:35:49 - HHH000026: Second-level cache disabled
+2025-12-31 19:35:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:35:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:35:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:35:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:35:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:35:53 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:35:53 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:35:53 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:35:53 - Setting initial instance status as: STARTING
+2025-12-31 19:35:53 - Initializing Eureka in region us-east-1
+2025-12-31 19:35:53 - Resolving eureka endpoints via configuration
+2025-12-31 19:35:53 - Disable delta property : false
+2025-12-31 19:35:53 - Single vip registry refresh property : null
+2025-12-31 19:35:53 - Force full registry fetch : false
+2025-12-31 19:35:53 - Application is null : false
+2025-12-31 19:35:53 - Registered Applications size is zero : true
+2025-12-31 19:35:53 - Application version is -1: true
+2025-12-31 19:35:53 - Getting all instance registry info from the eureka server
+2025-12-31 19:35:53 - The response status is 200
+2025-12-31 19:35:53 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:35:53 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:35:53 - Discovery Client initialized at timestamp 1767206153975 with initial instances count: 1
+2025-12-31 19:35:53 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:35:53 - Saw local status change event StatusChangeEvent [timestamp=1767206153982, current=UP, previous=STARTING]
+2025-12-31 19:35:53 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:35:54 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:35:54 - Updating port to 8084
+2025-12-31 19:35:54 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:35:54 - Started UserApplication in 20.208 seconds (process running for 22.11)
+2025-12-31 19:35:54 - Vérification et initialisation des données...
+2025-12-31 19:35:54 - select count(*) from permissions p1_0
+2025-12-31 19:35:54 - Les données existent déjà, skipping initialization
+2025-12-31 19:35:54 - Service utilisateur démarré avec succès
+2025-12-31 19:36:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:36:09 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:36:09 - Completed initialization in 2 ms
+2025-12-31 19:36:12 - Récupération de tous les utilisateurs
+2025-12-31 19:36:12 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:36:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:13 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:13 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:15 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:36:15 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:36:15 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:36:15 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:36:15 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:36:52 - Récupération de tous les utilisateurs
+2025-12-31 19:36:52 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:36:52 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:52 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:52 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:36:55 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:36:55 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:36:55 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:36:55 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:36:55 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:29 - Récupération de tous les utilisateurs
+2025-12-31 19:37:29 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:37:29 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:37:29 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:37:29 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:37:30 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:37:30 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:37:35 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:37:35 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:37:35 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:37:35 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:35 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:37 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:37:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:37:37 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:37:37 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:37:37 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 19:37:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2025-12-31 19:38:44 - Starting UserApplication using Java 17.0.12 with PID 21864 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:38:44 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:38:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:38:50 - Finished Spring Data repository scanning in 467 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:38:50 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:39:35 - Starting UserApplication using Java 17.0.12 with PID 28404 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:39:35 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:39:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:39:39 - Finished Spring Data repository scanning in 583 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:39:40 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:39:42 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:39:42 - Starting service [Tomcat]
+2025-12-31 19:39:42 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:39:42 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:39:42 - Root WebApplicationContext: initialization completed in 7109 ms
+2025-12-31 19:39:43 - HikariPool-1 - Starting...
+2025-12-31 19:39:47 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:39:47 - HikariPool-1 - Start completed.
+2025-12-31 19:39:47 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:39:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:39:48 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:39:48 - HHH000026: Second-level cache disabled
+2025-12-31 19:39:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:39:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:39:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:39:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:39:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:39:54 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:39:54 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:39:54 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:39:54 - Setting initial instance status as: STARTING
+2025-12-31 19:39:54 - Initializing Eureka in region us-east-1
+2025-12-31 19:39:54 - Resolving eureka endpoints via configuration
+2025-12-31 19:39:54 - Disable delta property : false
+2025-12-31 19:39:54 - Single vip registry refresh property : null
+2025-12-31 19:39:54 - Force full registry fetch : false
+2025-12-31 19:39:54 - Application is null : false
+2025-12-31 19:39:54 - Registered Applications size is zero : true
+2025-12-31 19:39:54 - Application version is -1: true
+2025-12-31 19:39:54 - Getting all instance registry info from the eureka server
+2025-12-31 19:39:55 - The response status is 200
+2025-12-31 19:39:55 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:39:55 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:39:55 - Discovery Client initialized at timestamp 1767206395647 with initial instances count: 1
+2025-12-31 19:39:55 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:39:55 - Saw local status change event StatusChangeEvent [timestamp=1767206395661, current=UP, previous=STARTING]
+2025-12-31 19:39:55 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:39:55 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:39:55 - Updating port to 8084
+2025-12-31 19:39:55 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:39:55 - Started UserApplication in 22.089 seconds (process running for 23.964)
+2025-12-31 19:39:56 - Vérification et initialisation des données...
+2025-12-31 19:39:56 - select count(*) from permissions p1_0
+2025-12-31 19:39:56 - Les données existent déjà, skipping initialization
+2025-12-31 19:39:56 - Service utilisateur démarré avec succès
+2025-12-31 19:40:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:40:21 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:40:21 - Completed initialization in 3 ms
+2025-12-31 19:46:03 - Starting UserApplication using Java 17.0.12 with PID 7496 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:46:03 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:46:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:46:08 - Finished Spring Data repository scanning in 483 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:46:09 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:46:11 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:46:11 - Starting service [Tomcat]
+2025-12-31 19:46:11 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:46:11 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:46:11 - Root WebApplicationContext: initialization completed in 8290 ms
+2025-12-31 19:46:12 - HikariPool-1 - Starting...
+2025-12-31 19:46:17 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:46:17 - HikariPool-1 - Start completed.
+2025-12-31 19:46:17 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:46:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:46:17 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:46:17 - HHH000026: Second-level cache disabled
+2025-12-31 19:46:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:46:18 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:46:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:46:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:46:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:46:24 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:46:24 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:46:24 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:46:24 - Setting initial instance status as: STARTING
+2025-12-31 19:46:24 - Initializing Eureka in region us-east-1
+2025-12-31 19:46:24 - Resolving eureka endpoints via configuration
+2025-12-31 19:46:24 - Disable delta property : false
+2025-12-31 19:46:24 - Single vip registry refresh property : null
+2025-12-31 19:46:24 - Force full registry fetch : false
+2025-12-31 19:46:24 - Application is null : false
+2025-12-31 19:46:24 - Registered Applications size is zero : true
+2025-12-31 19:46:24 - Application version is -1: true
+2025-12-31 19:46:24 - Getting all instance registry info from the eureka server
+2025-12-31 19:46:25 - The response status is 200
+2025-12-31 19:46:25 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:46:25 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:46:25 - Discovery Client initialized at timestamp 1767206785504 with initial instances count: 1
+2025-12-31 19:46:25 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:46:25 - Saw local status change event StatusChangeEvent [timestamp=1767206785532, current=UP, previous=STARTING]
+2025-12-31 19:46:25 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:46:25 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:46:25 - Updating port to 8084
+2025-12-31 19:46:25 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:46:25 - Started UserApplication in 25.422 seconds (process running for 27.275)
+2025-12-31 19:46:25 - Vérification et initialisation des données...
+2025-12-31 19:46:26 - select count(*) from permissions p1_0
+2025-12-31 19:46:26 - Les données existent déjà, skipping initialization
+2025-12-31 19:46:26 - Service utilisateur démarré avec succès
+2025-12-31 19:47:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:47:03 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:47:03 - Completed initialization in 1 ms
+2025-12-31 19:47:10 - Récupération de tous les utilisateurs
+2025-12-31 19:47:10 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:47:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:47:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:47:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:47:12 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:47:12 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:47:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:47:12 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:47:12 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:51:24 - Resolving eureka endpoints via configuration
+2025-12-31 19:54:09 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 19:54:09 - Saw local status change event StatusChangeEvent [timestamp=1767207249722, current=DOWN, previous=UP]
+2025-12-31 19:54:09 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:54:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 19:54:09 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:54:09 - Graceful shutdown complete
+2025-12-31 19:54:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:54:09 - HikariPool-1 - Shutdown initiated...
+2025-12-31 19:54:09 - HikariPool-1 - Shutdown completed.
+2025-12-31 19:54:09 - Shutting down DiscoveryClient ...
+2025-12-31 19:54:12 - Unregistering ...
+2025-12-31 19:54:12 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 19:54:12 - Completed shut down of DiscoveryClient
+2025-12-31 19:54:23 - Starting UserApplication using Java 17.0.12 with PID 27072 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:54:23 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:54:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:54:25 - Finished Spring Data repository scanning in 220 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:54:25 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:54:27 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:54:27 - Starting service [Tomcat]
+2025-12-31 19:54:27 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:54:27 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:54:27 - Root WebApplicationContext: initialization completed in 3504 ms
+2025-12-31 19:54:27 - HikariPool-1 - Starting...
+2025-12-31 19:54:27 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:54:27 - HikariPool-1 - Start completed.
+2025-12-31 19:54:27 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:54:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:54:28 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:54:28 - HHH000026: Second-level cache disabled
+2025-12-31 19:54:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:54:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:54:31 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:54:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:54:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:54:34 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:54:34 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:54:34 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:54:34 - Setting initial instance status as: STARTING
+2025-12-31 19:54:34 - Initializing Eureka in region us-east-1
+2025-12-31 19:54:34 - Resolving eureka endpoints via configuration
+2025-12-31 19:54:34 - Disable delta property : false
+2025-12-31 19:54:34 - Single vip registry refresh property : null
+2025-12-31 19:54:34 - Force full registry fetch : false
+2025-12-31 19:54:34 - Application is null : false
+2025-12-31 19:54:34 - Registered Applications size is zero : true
+2025-12-31 19:54:34 - Application version is -1: true
+2025-12-31 19:54:34 - Getting all instance registry info from the eureka server
+2025-12-31 19:54:35 - The response status is 200
+2025-12-31 19:54:35 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:54:35 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:54:35 - Discovery Client initialized at timestamp 1767207275461 with initial instances count: 4
+2025-12-31 19:54:35 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:54:35 - Saw local status change event StatusChangeEvent [timestamp=1767207275478, current=UP, previous=STARTING]
+2025-12-31 19:54:35 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:54:35 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:54:35 - Updating port to 8084
+2025-12-31 19:54:35 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:54:35 - Started UserApplication in 13.146 seconds (process running for 14.094)
+2025-12-31 19:54:35 - Vérification et initialisation des données...
+2025-12-31 19:54:36 - select count(*) from permissions p1_0
+2025-12-31 19:54:36 - Les données existent déjà, skipping initialization
+2025-12-31 19:54:36 - Service utilisateur démarré avec succès
+2025-12-31 19:54:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:54:40 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:54:40 - Completed initialization in 0 ms
+2025-12-31 19:57:39 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 19:57:39 - Saw local status change event StatusChangeEvent [timestamp=1767207459696, current=DOWN, previous=UP]
+2025-12-31 19:57:39 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:57:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 19:57:39 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:57:39 - Graceful shutdown complete
+2025-12-31 19:57:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:57:39 - HikariPool-1 - Shutdown initiated...
+2025-12-31 19:57:39 - HikariPool-1 - Shutdown completed.
+2025-12-31 19:57:39 - Shutting down DiscoveryClient ...
+2025-12-31 19:57:42 - Unregistering ...
+2025-12-31 19:57:42 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 19:57:42 - Completed shut down of DiscoveryClient
+2025-12-31 19:57:51 - Starting UserApplication using Java 17.0.12 with PID 14920 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 19:57:51 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:57:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:57:53 - Finished Spring Data repository scanning in 231 ms. Found 3 JPA repository interfaces.
+2025-12-31 19:57:53 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 19:57:55 - Tomcat initialized with port 8084 (http)
+2025-12-31 19:57:55 - Starting service [Tomcat]
+2025-12-31 19:57:55 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:57:55 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:57:55 - Root WebApplicationContext: initialization completed in 3730 ms
+2025-12-31 19:57:55 - HikariPool-1 - Starting...
+2025-12-31 19:57:56 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 19:57:56 - HikariPool-1 - Start completed.
+2025-12-31 19:57:56 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 19:57:56 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:57:56 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:57:56 - HHH000026: Second-level cache disabled
+2025-12-31 19:57:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:57:57 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:57:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:57:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:58:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:58:01 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:58:01 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:58:01 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:58:01 - Setting initial instance status as: STARTING
+2025-12-31 19:58:01 - Initializing Eureka in region us-east-1
+2025-12-31 19:58:02 - Resolving eureka endpoints via configuration
+2025-12-31 19:58:02 - Disable delta property : false
+2025-12-31 19:58:02 - Single vip registry refresh property : null
+2025-12-31 19:58:02 - Force full registry fetch : false
+2025-12-31 19:58:02 - Application is null : false
+2025-12-31 19:58:02 - Registered Applications size is zero : true
+2025-12-31 19:58:02 - Application version is -1: true
+2025-12-31 19:58:02 - Getting all instance registry info from the eureka server
+2025-12-31 19:58:02 - The response status is 200
+2025-12-31 19:58:02 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:58:02 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:58:02 - Discovery Client initialized at timestamp 1767207482580 with initial instances count: 4
+2025-12-31 19:58:02 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 19:58:02 - Saw local status change event StatusChangeEvent [timestamp=1767207482591, current=UP, previous=STARTING]
+2025-12-31 19:58:02 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 19:58:02 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 19:58:02 - Updating port to 8084
+2025-12-31 19:58:02 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 19:58:02 - Started UserApplication in 12.435 seconds (process running for 13.423)
+2025-12-31 19:58:02 - Vérification et initialisation des données...
+2025-12-31 19:58:03 - select count(*) from permissions p1_0
+2025-12-31 19:58:03 - Les données existent déjà, skipping initialization
+2025-12-31 19:58:03 - Service utilisateur démarré avec succès
+2025-12-31 19:58:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:58:05 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:58:05 - Completed initialization in 3 ms
+2025-12-31 19:58:35 - Récupération de tous les utilisateurs
+2025-12-31 19:58:35 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:58:35 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:35 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:35 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:58:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:58:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 19:58:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:58:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 19:58:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:58:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:58:38 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 19:58:42 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:42 - Sauvegarde de l'utilisateur: admin
+2025-12-31 19:58:42 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:58:42 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 19:58:42 - Récupération de tous les utilisateurs
+2025-12-31 19:58:42 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 19:58:42 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:42 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:42 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 19:58:44 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:58:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:58:44 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 19:58:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 19:58:44 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:02:36 - Récupération de tous les utilisateurs
+2025-12-31 20:02:36 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:02:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:38 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:02:40 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:40 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:02:40 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:02:40 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:02:40 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:40 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:40 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:02:44 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:44 - Sauvegarde de l'utilisateur: admin
+2025-12-31 20:02:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:44 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:02:44 - Récupération de tous les utilisateurs
+2025-12-31 20:02:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:02:44 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:44 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:44 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:46 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:46 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:46 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:46 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:46 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:02:49 - Récupération de tous les utilisateurs
+2025-12-31 20:02:49 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:02:49 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:49 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:49 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:02:52 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:52 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:52 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:02:52 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:02:52 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:02:52 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:02:52 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:02:52 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:03:00 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:00 - Sauvegarde de l'utilisateur: admin
+2025-12-31 20:03:00 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:03:00 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:03:00 - Récupération de tous les utilisateurs
+2025-12-31 20:03:00 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:03:00 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:00 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:00 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:02 - Resolving eureka endpoints via configuration
+2025-12-31 20:03:09 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:03:09 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:03:09 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:03:09 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:03:09 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:03:20 - Récupération de tous les utilisateurs
+2025-12-31 20:03:20 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:03:20 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:21 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:21 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:26 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:03:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:03:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:03:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:03:47 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:47 - Sauvegarde de l'utilisateur: admin2
+2025-12-31 20:03:47 - insert into users (active,created_at,email,first_name,last_name,password,profile_id,updated_at,username,id) values (?,?,?,?,?,?,?,?,?,default)
+2025-12-31 20:03:47 - Récupération de tous les utilisateurs
+2025-12-31 20:03:47 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:03:47 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:47 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:47 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:03:51 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:03:51 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:03:51 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:03:51 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:03:51 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:04:02 - Récupération de tous les utilisateurs
+2025-12-31 20:04:02 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:04:02 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:02 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:02 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:10 - Changement du statut actif pour l'utilisateur ID: 33
+2025-12-31 20:04:10 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:04:10 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:04:10 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:04:10 - Récupération de tous les utilisateurs
+2025-12-31 20:04:10 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:04:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:11 - Changement du statut actif pour l'utilisateur ID: 33
+2025-12-31 20:04:11 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:04:11 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:04:11 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:04:11 - Récupération de tous les utilisateurs
+2025-12-31 20:04:11 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:04:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:12 - Changement du statut actif pour l'utilisateur ID: 33
+2025-12-31 20:04:12 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:04:12 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:04:12 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:04:12 - Récupération de tous les utilisateurs
+2025-12-31 20:04:12 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:04:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:04:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:05:04 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:05:04 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:05:04 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:05:04 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:05:04 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:08:02 - Resolving eureka endpoints via configuration
+2025-12-31 20:08:46 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:08:46 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:08:46 - Recherche de l'utilisateur avec ID: 33
+2025-12-31 20:08:46 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:08:46 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:12:09 - Récupération de tous les utilisateurs
+2025-12-31 20:12:09 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:12:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:12 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:12 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:12 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:12 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:12 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:12 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:12 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:14 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:14 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2025-12-31 20:12:23 - Récupération de tous les utilisateurs
+2025-12-31 20:12:23 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:12:23 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:23 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:23 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:12:25 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2025-12-31 20:12:26 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:26 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:26 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:26 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:26 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:29 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:29 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:29 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:29 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:29 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:29 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:29 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:31 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:31 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:31 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:31 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:31 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:31 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:31 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:32 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:32 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:32 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:32 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:32 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:32 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:32 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:33 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:33 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:33 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:33 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:33 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:33 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:33 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:34 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:34 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:34 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:34 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:34 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:34 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:34 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:36 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:37 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:37 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:37 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:37 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:38 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:38 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:38 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:38 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:12:40 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:40 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:40 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:12:40 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:40 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:12:40 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:13:02 - Resolving eureka endpoints via configuration
+2025-12-31 20:13:53 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 20:13:53 - Saw local status change event StatusChangeEvent [timestamp=1767208433282, current=DOWN, previous=UP]
+2025-12-31 20:13:53 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 20:13:53 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 20:13:53 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 20:13:53 - Graceful shutdown complete
+2025-12-31 20:13:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:13:53 - HikariPool-1 - Shutdown initiated...
+2025-12-31 20:13:53 - HikariPool-1 - Shutdown completed.
+2025-12-31 20:13:53 - Shutting down DiscoveryClient ...
+2025-12-31 20:13:56 - Unregistering ...
+2025-12-31 20:13:56 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 20:13:56 - Completed shut down of DiscoveryClient
+2025-12-31 20:14:05 - Starting UserApplication using Java 17.0.12 with PID 27552 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 20:14:05 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 20:14:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 20:14:07 - Finished Spring Data repository scanning in 192 ms. Found 3 JPA repository interfaces.
+2025-12-31 20:14:07 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 20:14:08 - Tomcat initialized with port 8084 (http)
+2025-12-31 20:14:08 - Starting service [Tomcat]
+2025-12-31 20:14:08 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 20:14:08 - Initializing Spring embedded WebApplicationContext
+2025-12-31 20:14:08 - Root WebApplicationContext: initialization completed in 2863 ms
+2025-12-31 20:14:08 - HikariPool-1 - Starting...
+2025-12-31 20:14:08 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 20:14:08 - HikariPool-1 - Start completed.
+2025-12-31 20:14:09 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 20:14:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 20:14:09 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 20:14:09 - HHH000026: Second-level cache disabled
+2025-12-31 20:14:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 20:14:10 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 20:14:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 20:14:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:14:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 20:14:13 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 20:14:13 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 20:14:13 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 20:14:14 - Setting initial instance status as: STARTING
+2025-12-31 20:14:14 - Initializing Eureka in region us-east-1
+2025-12-31 20:14:14 - Resolving eureka endpoints via configuration
+2025-12-31 20:14:14 - Disable delta property : false
+2025-12-31 20:14:14 - Single vip registry refresh property : null
+2025-12-31 20:14:14 - Force full registry fetch : false
+2025-12-31 20:14:14 - Application is null : false
+2025-12-31 20:14:14 - Registered Applications size is zero : true
+2025-12-31 20:14:14 - Application version is -1: true
+2025-12-31 20:14:14 - Getting all instance registry info from the eureka server
+2025-12-31 20:14:14 - The response status is 200
+2025-12-31 20:14:14 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 20:14:14 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 20:14:14 - Discovery Client initialized at timestamp 1767208454956 with initial instances count: 3
+2025-12-31 20:14:14 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 20:14:14 - Saw local status change event StatusChangeEvent [timestamp=1767208454964, current=UP, previous=STARTING]
+2025-12-31 20:14:14 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 20:14:15 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 20:14:15 - Updating port to 8084
+2025-12-31 20:14:15 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 20:14:15 - Started UserApplication in 11.042 seconds (process running for 12.142)
+2025-12-31 20:14:15 - Vérification et initialisation des données...
+2025-12-31 20:14:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 20:14:15 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 20:14:15 - Completed initialization in 3 ms
+2025-12-31 20:14:15 - select count(*) from permissions p1_0
+2025-12-31 20:14:16 - Les données existent déjà, skipping initialization
+2025-12-31 20:14:16 - Service utilisateur démarré avec succès
+2025-12-31 20:14:38 - Récupération de tous les utilisateurs
+2025-12-31 20:14:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:14:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:41 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:14:41 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:14:41 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:14:41 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:14:41 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:14:51 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:14:51 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:14:51 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:14:51 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:14:51 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:14:51 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:14:51 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:14:51 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:14:56 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:56 - Sauvegarde de l'utilisateur: admin
+2025-12-31 20:14:56 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:14:56 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:14:56 - Récupération de tous les utilisateurs
+2025-12-31 20:14:56 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:14:56 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:56 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:14:56 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:15:01 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:15:01 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:15:01 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:15:01 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:15:01 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:15:16 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:15:16 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:15:16 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:15:16 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:15:16 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:15:16 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:15:16 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:15:16 - select u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.profile_id=?
+2025-12-31 20:18:13 - Unregistering application USER-SERVICE with eureka with status DOWN
+2025-12-31 20:18:13 - Saw local status change event StatusChangeEvent [timestamp=1767208693102, current=DOWN, previous=UP]
+2025-12-31 20:18:13 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 20:18:13 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 20:18:13 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 20:18:13 - Graceful shutdown complete
+2025-12-31 20:18:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:18:13 - HikariPool-1 - Shutdown initiated...
+2025-12-31 20:18:13 - HikariPool-1 - Shutdown completed.
+2025-12-31 20:18:13 - Shutting down DiscoveryClient ...
+2025-12-31 20:18:16 - Unregistering ...
+2025-12-31 20:18:16 - task supervisor shutting down, can't accept the task
+2025-12-31 20:18:16 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - deregister  status: 200
+2025-12-31 20:18:16 - Completed shut down of DiscoveryClient
+2025-12-31 20:18:24 - Starting UserApplication using Java 17.0.12 with PID 3216 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 20:18:24 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 20:18:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 20:18:26 - Finished Spring Data repository scanning in 244 ms. Found 3 JPA repository interfaces.
+2025-12-31 20:18:26 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 20:18:28 - Tomcat initialized with port 8084 (http)
+2025-12-31 20:18:28 - Starting service [Tomcat]
+2025-12-31 20:18:28 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 20:18:28 - Initializing Spring embedded WebApplicationContext
+2025-12-31 20:18:28 - Root WebApplicationContext: initialization completed in 3958 ms
+2025-12-31 20:18:28 - HikariPool-1 - Starting...
+2025-12-31 20:18:29 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 20:18:29 - HikariPool-1 - Start completed.
+2025-12-31 20:18:29 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 20:18:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 20:18:29 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 20:18:29 - HHH000026: Second-level cache disabled
+2025-12-31 20:18:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 20:18:30 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 20:18:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 20:18:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:18:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 20:18:34 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 20:18:35 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 20:18:35 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 20:18:35 - Setting initial instance status as: STARTING
+2025-12-31 20:18:35 - Initializing Eureka in region us-east-1
+2025-12-31 20:18:35 - Resolving eureka endpoints via configuration
+2025-12-31 20:18:35 - Disable delta property : false
+2025-12-31 20:18:35 - Single vip registry refresh property : null
+2025-12-31 20:18:35 - Force full registry fetch : false
+2025-12-31 20:18:35 - Application is null : false
+2025-12-31 20:18:35 - Registered Applications size is zero : true
+2025-12-31 20:18:35 - Application version is -1: true
+2025-12-31 20:18:35 - Getting all instance registry info from the eureka server
+2025-12-31 20:18:35 - The response status is 200
+2025-12-31 20:18:35 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 20:18:35 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 20:18:35 - Discovery Client initialized at timestamp 1767208715935 with initial instances count: 3
+2025-12-31 20:18:35 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 20:18:35 - Saw local status change event StatusChangeEvent [timestamp=1767208715951, current=UP, previous=STARTING]
+2025-12-31 20:18:35 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 20:18:36 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 20:18:36 - Updating port to 8084
+2025-12-31 20:18:36 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 20:18:36 - Started UserApplication in 13.57 seconds (process running for 14.531)
+2025-12-31 20:18:36 - Vérification et initialisation des données...
+2025-12-31 20:18:36 - select count(*) from permissions p1_0
+2025-12-31 20:18:36 - Les données existent déjà, skipping initialization
+2025-12-31 20:18:36 - Service utilisateur démarré avec succès
+2025-12-31 20:18:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 20:18:55 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 20:18:55 - Completed initialization in 2 ms
+2025-12-31 20:19:10 - Récupération de tous les utilisateurs
+2025-12-31 20:19:10 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:19:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:11 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:13 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:13 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:13 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:13 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:13 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:19:18 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:18 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:18 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:19:18 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:18 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:18 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:18 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:18 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:19:36 - Récupération de tous les utilisateurs
+2025-12-31 20:19:36 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:19:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:36 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:38 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:19:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:38 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:38 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:38 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:38 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:19:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:40 - Sauvegarde de l'utilisateur: admin
+2025-12-31 20:19:40 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:40 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:19:40 - Récupération de tous les utilisateurs
+2025-12-31 20:19:40 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:19:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:40 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:41 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:41 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:42 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:42 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:42 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:19:44 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:44 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:19:44 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:44 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:19:44 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:19:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:44 - select p1_0.permission_id,p1_1.id,p1_1.code,p1_1.description,p1_1.nom from profile_permissions p1_0 join profiles p1_1 on p1_1.id=p1_0.profile_id where p1_0.permission_id=?
+2025-12-31 20:19:49 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:49 - Sauvegarde de l'utilisateur: admin
+2025-12-31 20:19:50 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:19:50 - update users set active=?,email=?,first_name=?,last_name=?,password=?,profile_id=?,updated_at=?,username=? where id=?
+2025-12-31 20:19:50 - Récupération de tous les utilisateurs
+2025-12-31 20:19:50 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:19:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:19:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:22:57 - Starting UserApplication using Java 17.0.12 with PID 8896 (C:\Users\We10\Documents\GitHub\Trace\Backend\user-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\user-service)
+2025-12-31 20:22:57 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 20:23:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 20:23:01 - Finished Spring Data repository scanning in 526 ms. Found 3 JPA repository interfaces.
+2025-12-31 20:23:02 - BeanFactory id=aa5e8caf-5303-355e-b141-63514bbacc0b
+2025-12-31 20:23:04 - Tomcat initialized with port 8084 (http)
+2025-12-31 20:23:04 - Starting service [Tomcat]
+2025-12-31 20:23:04 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 20:23:04 - Initializing Spring embedded WebApplicationContext
+2025-12-31 20:23:04 - Root WebApplicationContext: initialization completed in 6828 ms
+2025-12-31 20:23:04 - HikariPool-1 - Starting...
+2025-12-31 20:23:09 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2025-12-31 20:23:09 - HikariPool-1 - Start completed.
+2025-12-31 20:23:09 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2025-12-31 20:23:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 20:23:10 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 20:23:10 - HHH000026: Second-level cache disabled
+2025-12-31 20:23:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 20:23:11 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 20:23:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 20:23:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:23:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 20:23:17 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 20:23:17 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 20:23:17 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 20:23:17 - Setting initial instance status as: STARTING
+2025-12-31 20:23:17 - Initializing Eureka in region us-east-1
+2025-12-31 20:23:17 - Resolving eureka endpoints via configuration
+2025-12-31 20:23:17 - Disable delta property : false
+2025-12-31 20:23:17 - Single vip registry refresh property : null
+2025-12-31 20:23:17 - Force full registry fetch : false
+2025-12-31 20:23:17 - Application is null : false
+2025-12-31 20:23:17 - Registered Applications size is zero : true
+2025-12-31 20:23:17 - Application version is -1: true
+2025-12-31 20:23:17 - Getting all instance registry info from the eureka server
+2025-12-31 20:23:18 - The response status is 200
+2025-12-31 20:23:18 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 20:23:18 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 20:23:18 - Discovery Client initialized at timestamp 1767208998586 with initial instances count: 1
+2025-12-31 20:23:18 - Registering application USER-SERVICE with eureka with status UP
+2025-12-31 20:23:18 - Saw local status change event StatusChangeEvent [timestamp=1767208998597, current=UP, previous=STARTING]
+2025-12-31 20:23:18 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2025-12-31 20:23:18 - Tomcat started on port 8084 (http) with context path '/'
+2025-12-31 20:23:18 - Updating port to 8084
+2025-12-31 20:23:18 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2025-12-31 20:23:18 - Started UserApplication in 23.258 seconds (process running for 24.872)
+2025-12-31 20:23:18 - Vérification et initialisation des données...
+2025-12-31 20:23:19 - select count(*) from permissions p1_0
+2025-12-31 20:23:19 - Les données existent déjà, skipping initialization
+2025-12-31 20:23:19 - Service utilisateur démarré avec succès
+2025-12-31 20:23:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 20:23:23 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 20:23:23 - Completed initialization in 0 ms
+2025-12-31 20:23:41 - Récupération de tous les utilisateurs
+2025-12-31 20:23:41 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:23:41 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:41 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:41 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:44 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:23:44 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:23:47 - Recherche de l'utilisateur avec ID: 1
+2025-12-31 20:23:47 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2025-12-31 20:23:47 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom from profiles p1_0
+2025-12-31 20:23:47 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:23:47 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2025-12-31 20:23:53 - Récupération de tous les utilisateurs
+2025-12-31 20:23:53 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2025-12-31 20:23:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2025-12-31 20:23:56 - Recherche de l'utilisateur avec ID: 2
+2025-12-31 20:23:56 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?

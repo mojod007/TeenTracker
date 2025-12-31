@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRACE | Formulaire Utilisateur</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css">
+    <style>
+        .lang-selector {
+            display: flex;
+            gap: 5px;
+        }
+
+        .lang-selector a {
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        .lang-selector a.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .lang-selector a:hover:not(.active) {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/" class="nav-link">Accueil</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Language Selector -->
+                <li class="nav-item">
+                    <div class="nav-link lang-selector">
+                        <a href="?lang=fr" th:classappend="${#locale.language == 'fr'} ? 'active' : ''">
+                            <i class="fas fa-flag"></i> FR
+                        </a>
+                        <a href="?lang=en" th:classappend="${#locale.language == 'en'} ? 'active' : ''">
+                            <i class="fas fa-flag"></i> EN
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="/" class="brand-link">
+                <i class="fas fa-cube brand-image img-circle elevation-3"
+                    style="opacity: .8; padding-top: 8px; padding-left: 8px;"></i>
+                <span class="brand-text font-weight-light">TRACE Admin</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Tableau de bord</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">GESTION</li>
+                        <a href="/etablissements" class="nav-link">
+                            <i class="nav-icon fas fa-building"></i>
+                            <p>Établissements</p>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/emplacements" class="nav-link">
+                                <i class="nav-icon fas fa-map-marker-alt"></i>
+                                <p>Emplacements</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/products" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>Produits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/gammes" class="nav-link">
+                                <i class="nav-icon fas fa-tags"></i>
+                                <p>Gammes</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">SYSTÈME</li>
+                        <li class="nav-item">
+                            <a href="/users" class="nav-link active">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>Utilisateurs</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/profiles" class="nav-link">
+                                <i class="nav-icon fas fa-user-tag"></i>
+                                <p>Profils</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/permissions" class="nav-link">
+                                <i class="nav-icon fas fa-key"></i>
+                                <p>Permissions</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:if="${user.id == null}">Nouvel Utilisateur</h1>
+                            <h1 th:if="${user.id != null}">Modifier l'Utilisateur</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/users">Utilisateurs</a></li>
+                                <li class="breadcrumb-item active" th:if="${user.id == null}">Nouveau</li>
+                                <li class="breadcrumb-item active" th:if="${user.id != null}"
+                                    th:text="${user.username}"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Détails de l'utilisateur</h3>
+                        </div>
+                        <form th:action="@{/users/save}" th:object="${user}" method="post">
+                            <input type="hidden" th:field="*{id}" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Entrez le username" th:field="*{username}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Entrez l'email"
+                                        th:field="*{email}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Mot de passe"
+                                        th:field="*{password}" th:required="${user.id == null}">
+                                    <small class="form-text text-muted">Laissez vide pour ne pas changer.</small>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="firstName">Prénom</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="Prénom"
+                                                th:field="*{firstName}">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Nom</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="Nom"
+                                                th:field="*{lastName}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile">Profil</label>
+                                    <select class="form-control" id="profile" th:field="*{profile}" required>
+                                        <option th:each="p : ${profiles}" th:value="${p.id}" th:text="${p.nom}">
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <hr>
+                                <h5>Affectations Etablissements & Dépôts</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Établissements</label>
+                                            <select name="etablissementIds" id="etab-select"
+                                                class="form-control select2" multiple="multiple"
+                                                data-placeholder="Choisir Établissements">
+                                                <option th:each="etab : ${allEtablissements}" th:value="${etab.id}"
+                                                    th:text="${etab.nom}"
+                                                    th:selected="${assignedEtabIds.contains(etab.id.longValue())}">
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Dépôts</label>
+                                            <select name="depotIds" id="depot-select" class="form-control select2"
+                                                multiple="multiple" data-placeholder="Choisir Dépôts">
+                                                <!-- Dynamic content -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                <a href="/users" class="btn btn-secondary">Annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 1.0.0
+            </div>
+            <strong>Copyright &copy; 2025 Trace Microservices.</strong> Tous droits réservés.
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        $(function () {
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            });
+
+            const allEtablissements = /*[[${allEtablissements}]]*/[];
+            const assignedEtabIds = /*[[${assignedEtabIds}]]*/[];
+            const assignedDepotIds = /*[[${assignedDepotIds}]]*/[];
+            const userEtablissements = /*[[${userEtablissements}]]*/[];
+            const userDepots = /*[[${userDepots}]]*/[];
+            const $etabSelect = $('#etab-select');
+            const $depotSelect = $('#depot-select');
+
+            // Pre-select assigned establishments
+            $etabSelect.val(assignedEtabIds.map(String)).trigger('change');
+
+            function updateDepots() {
+                const selectedEtabIds = $etabSelect.val() || [];
+                $depotSelect.empty();
+
+                allEtablissements.forEach(etab => {
+                    if (selectedEtabIds.includes(etab.id.toString())) {
+                        const optGroup = $('<optgroup>').attr('label', etab.nom);
+                        etab.depots.forEach(depot => {
+                            const option = $('<option>')
+                                .attr('value', depot.id)
+                                .text(depot.nom);
+                            optGroup.append(option);
+                        });
+                        $depotSelect.append(optGroup);
+                    }
+                });
+
+                // Pre-select assigned depots
+                $depotSelect.val(assignedDepotIds.map(String)).trigger('change');
+            }
+
+            $etabSelect.on('change', updateDepots);
+            updateDepots(); // Initial call
+        });
+        /*]]>*/
+    </script>
+</body>
+
+</html>

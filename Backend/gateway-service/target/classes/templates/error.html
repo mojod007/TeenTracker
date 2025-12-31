@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Gateway Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .error-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        p {
+            font-size: 18px;
+        }
+        .error-details {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #e74c3c;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Oops! Something went wrong</h1>
+        <p>We encountered an error while processing your request.</p>
+        <div class="error-details">
+            <strong>Error Details:</strong><br>
+            Status: <span th:text="${status} ?: 'Unknown'"></span><br>
+            Error: <span th:text="${error} ?: 'Unknown'"></span><br>
+            Message: <span th:text="${message} ?: 'No message available'"></span><br>
+            Path: <span th:text="${path} ?: 'Unknown'"></span><br>
+            Timestamp: <span th:text="${timestamp} ?: 'Unknown'"></span>
+        </div>
+        <p>Please try again later or contact support if the problem persists.</p>
+    </div>
+</body>
+</html>

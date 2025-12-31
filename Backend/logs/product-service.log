@@ -1,0 +1,347 @@
+2025-12-31 19:19:40 - Starting ProductApplication using Java 17.0.12 with PID 13068 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 19:19:40 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:19:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:19:42 - Finished Spring Data repository scanning in 282 ms. Found 2 JPA repository interfaces.
+2025-12-31 19:19:43 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 19:19:44 - Tomcat initialized with port 8082 (http)
+2025-12-31 19:19:44 - Starting service [Tomcat]
+2025-12-31 19:19:44 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:19:44 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:19:44 - Root WebApplicationContext: initialization completed in 4308 ms
+2025-12-31 19:19:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:19:45 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:19:45 - HHH000026: Second-level cache disabled
+2025-12-31 19:19:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:19:46 - HikariPool-1 - Starting...
+2025-12-31 19:19:51 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 19:19:51 - HikariPool-1 - Start completed.
+2025-12-31 19:19:51 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:19:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:19:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:19:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:19:56 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:19:56 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:19:56 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:19:56 - Setting initial instance status as: STARTING
+2025-12-31 19:19:56 - Initializing Eureka in region us-east-1
+2025-12-31 19:19:56 - Resolving eureka endpoints via configuration
+2025-12-31 19:19:56 - Disable delta property : false
+2025-12-31 19:19:56 - Single vip registry refresh property : null
+2025-12-31 19:19:56 - Force full registry fetch : false
+2025-12-31 19:19:56 - Application is null : false
+2025-12-31 19:19:56 - Registered Applications size is zero : true
+2025-12-31 19:19:56 - Application version is -1: true
+2025-12-31 19:19:56 - Getting all instance registry info from the eureka server
+2025-12-31 19:19:57 - The response status is 200
+2025-12-31 19:19:57 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:19:57 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:19:57 - Discovery Client initialized at timestamp 1767205197147 with initial instances count: 1
+2025-12-31 19:19:57 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 19:19:57 - Saw local status change event StatusChangeEvent [timestamp=1767205197164, current=UP, previous=STARTING]
+2025-12-31 19:19:57 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 19:19:57 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 19:19:57 - Updating port to 8082
+2025-12-31 19:19:57 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 19:19:57 - Started ProductApplication in 18.353 seconds (process running for 19.736)
+2025-12-31 19:19:57 - Service de produit démarré avec succès
+2025-12-31 19:19:59 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:19:59 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:19:59 - Completed initialization in 0 ms
+2025-12-31 19:26:27 - Starting ProductApplication using Java 17.0.12 with PID 15524 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 19:26:27 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:26:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:26:29 - Finished Spring Data repository scanning in 251 ms. Found 2 JPA repository interfaces.
+2025-12-31 19:26:30 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 19:26:31 - Tomcat initialized with port 8082 (http)
+2025-12-31 19:26:31 - Starting service [Tomcat]
+2025-12-31 19:26:31 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:26:31 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:26:31 - Root WebApplicationContext: initialization completed in 3734 ms
+2025-12-31 19:26:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:26:32 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:26:32 - HHH000026: Second-level cache disabled
+2025-12-31 19:26:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:26:32 - HikariPool-1 - Starting...
+2025-12-31 19:26:37 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 19:26:37 - HikariPool-1 - Start completed.
+2025-12-31 19:26:37 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:26:39 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:26:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:26:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:26:41 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:26:41 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:26:41 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:26:42 - Setting initial instance status as: STARTING
+2025-12-31 19:26:42 - Initializing Eureka in region us-east-1
+2025-12-31 19:26:42 - Resolving eureka endpoints via configuration
+2025-12-31 19:26:42 - Disable delta property : false
+2025-12-31 19:26:42 - Single vip registry refresh property : null
+2025-12-31 19:26:42 - Force full registry fetch : false
+2025-12-31 19:26:42 - Application is null : false
+2025-12-31 19:26:42 - Registered Applications size is zero : true
+2025-12-31 19:26:42 - Application version is -1: true
+2025-12-31 19:26:42 - Getting all instance registry info from the eureka server
+2025-12-31 19:26:42 - The response status is 200
+2025-12-31 19:26:42 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:26:42 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:26:42 - Discovery Client initialized at timestamp 1767205602805 with initial instances count: 2
+2025-12-31 19:26:42 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 19:26:42 - Saw local status change event StatusChangeEvent [timestamp=1767205602821, current=UP, previous=STARTING]
+2025-12-31 19:26:42 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 19:26:42 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 19:26:42 - Updating port to 8082
+2025-12-31 19:26:42 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 19:26:43 - Started ProductApplication in 16.688 seconds (process running for 17.715)
+2025-12-31 19:26:43 - Service de produit démarré avec succès
+2025-12-31 19:26:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:26:43 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:26:43 - Completed initialization in 11 ms
+2025-12-31 19:31:42 - Resolving eureka endpoints via configuration
+2025-12-31 19:35:48 - Starting ProductApplication using Java 17.0.12 with PID 11316 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 19:35:48 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:35:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:35:50 - Finished Spring Data repository scanning in 289 ms. Found 2 JPA repository interfaces.
+2025-12-31 19:35:51 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 19:35:51 - Tomcat initialized with port 8082 (http)
+2025-12-31 19:35:51 - Starting service [Tomcat]
+2025-12-31 19:35:51 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:35:51 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:35:51 - Root WebApplicationContext: initialization completed in 3002 ms
+2025-12-31 19:35:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:35:52 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:35:52 - HHH000026: Second-level cache disabled
+2025-12-31 19:35:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:35:52 - HikariPool-1 - Starting...
+2025-12-31 19:35:57 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 19:35:57 - HikariPool-1 - Start completed.
+2025-12-31 19:35:57 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:35:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:35:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:36:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:36:02 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:36:02 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:36:02 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:36:02 - Setting initial instance status as: STARTING
+2025-12-31 19:36:02 - Initializing Eureka in region us-east-1
+2025-12-31 19:36:02 - Resolving eureka endpoints via configuration
+2025-12-31 19:36:02 - Disable delta property : false
+2025-12-31 19:36:02 - Single vip registry refresh property : null
+2025-12-31 19:36:02 - Force full registry fetch : false
+2025-12-31 19:36:02 - Application is null : false
+2025-12-31 19:36:02 - Registered Applications size is zero : true
+2025-12-31 19:36:02 - Application version is -1: true
+2025-12-31 19:36:02 - Getting all instance registry info from the eureka server
+2025-12-31 19:36:03 - The response status is 200
+2025-12-31 19:36:03 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:36:03 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:36:03 - Discovery Client initialized at timestamp 1767206163014 with initial instances count: 3
+2025-12-31 19:36:03 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 19:36:03 - Saw local status change event StatusChangeEvent [timestamp=1767206163033, current=UP, previous=STARTING]
+2025-12-31 19:36:03 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 19:36:03 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 19:36:03 - Updating port to 8082
+2025-12-31 19:36:03 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 19:36:03 - Started ProductApplication in 15.457 seconds (process running for 16.488)
+2025-12-31 19:36:03 - Service de produit démarré avec succès
+2025-12-31 19:36:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:36:09 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:36:09 - Completed initialization in 4 ms
+2025-12-31 19:39:49 - Starting ProductApplication using Java 17.0.12 with PID 16352 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 19:39:49 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:39:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:39:51 - Finished Spring Data repository scanning in 281 ms. Found 2 JPA repository interfaces.
+2025-12-31 19:39:52 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 19:39:53 - Tomcat initialized with port 8082 (http)
+2025-12-31 19:39:53 - Starting service [Tomcat]
+2025-12-31 19:39:53 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:39:53 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:39:53 - Root WebApplicationContext: initialization completed in 4058 ms
+2025-12-31 19:39:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:39:54 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:39:54 - HHH000026: Second-level cache disabled
+2025-12-31 19:39:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:39:55 - HikariPool-1 - Starting...
+2025-12-31 19:39:59 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 19:39:59 - HikariPool-1 - Start completed.
+2025-12-31 19:39:59 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:40:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:40:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:40:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:40:04 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:40:04 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:40:04 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:40:04 - Setting initial instance status as: STARTING
+2025-12-31 19:40:04 - Initializing Eureka in region us-east-1
+2025-12-31 19:40:04 - Resolving eureka endpoints via configuration
+2025-12-31 19:40:04 - Disable delta property : false
+2025-12-31 19:40:04 - Single vip registry refresh property : null
+2025-12-31 19:40:04 - Force full registry fetch : false
+2025-12-31 19:40:04 - Application is null : false
+2025-12-31 19:40:04 - Registered Applications size is zero : true
+2025-12-31 19:40:04 - Application version is -1: true
+2025-12-31 19:40:04 - Getting all instance registry info from the eureka server
+2025-12-31 19:40:05 - The response status is 200
+2025-12-31 19:40:05 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:40:05 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:40:05 - Discovery Client initialized at timestamp 1767206405589 with initial instances count: 3
+2025-12-31 19:40:05 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 19:40:05 - Saw local status change event StatusChangeEvent [timestamp=1767206405613, current=UP, previous=STARTING]
+2025-12-31 19:40:05 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 19:40:05 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 19:40:05 - Updating port to 8082
+2025-12-31 19:40:05 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 19:40:05 - Started ProductApplication in 17.658 seconds (process running for 18.79)
+2025-12-31 19:40:05 - Service de produit démarré avec succès
+2025-12-31 19:40:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:40:20 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:40:20 - Completed initialization in 3 ms
+2025-12-31 19:46:18 - Starting ProductApplication using Java 17.0.12 with PID 19588 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 19:46:18 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:46:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 19:46:21 - Finished Spring Data repository scanning in 329 ms. Found 2 JPA repository interfaces.
+2025-12-31 19:46:21 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 19:46:23 - Tomcat initialized with port 8082 (http)
+2025-12-31 19:46:23 - Starting service [Tomcat]
+2025-12-31 19:46:23 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:46:23 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:46:23 - Root WebApplicationContext: initialization completed in 4380 ms
+2025-12-31 19:46:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 19:46:24 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 19:46:24 - HHH000026: Second-level cache disabled
+2025-12-31 19:46:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 19:46:25 - HikariPool-1 - Starting...
+2025-12-31 19:46:29 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 19:46:29 - HikariPool-1 - Start completed.
+2025-12-31 19:46:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 19:46:31 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 19:46:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 19:46:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 19:46:34 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 19:46:34 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:46:34 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:46:34 - Setting initial instance status as: STARTING
+2025-12-31 19:46:34 - Initializing Eureka in region us-east-1
+2025-12-31 19:46:34 - Resolving eureka endpoints via configuration
+2025-12-31 19:46:34 - Disable delta property : false
+2025-12-31 19:46:34 - Single vip registry refresh property : null
+2025-12-31 19:46:34 - Force full registry fetch : false
+2025-12-31 19:46:34 - Application is null : false
+2025-12-31 19:46:34 - Registered Applications size is zero : true
+2025-12-31 19:46:34 - Application version is -1: true
+2025-12-31 19:46:34 - Getting all instance registry info from the eureka server
+2025-12-31 19:46:35 - The response status is 200
+2025-12-31 19:46:35 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 19:46:35 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 19:46:35 - Discovery Client initialized at timestamp 1767206795410 with initial instances count: 3
+2025-12-31 19:46:35 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 19:46:35 - Saw local status change event StatusChangeEvent [timestamp=1767206795425, current=UP, previous=STARTING]
+2025-12-31 19:46:35 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 19:46:35 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 19:46:35 - Updating port to 8082
+2025-12-31 19:46:35 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 19:46:35 - Started ProductApplication in 18.02 seconds (process running for 19.249)
+2025-12-31 19:46:35 - Service de produit démarré avec succès
+2025-12-31 19:47:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:47:03 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:47:03 - Completed initialization in 4 ms
+2025-12-31 19:51:34 - Resolving eureka endpoints via configuration
+2025-12-31 19:56:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:01:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:02:34 - Récupération de tous les produits
+2025-12-31 20:02:34 - select p1_0.id,p1_0.actif,p1_0.code,p1_0.description,p1_0.gamme_id,p1_0.grammage,p1_0.id_type_pal_pro,p1_0.maxqu,p1_0.minqu,p1_0.nom,p1_0.peremption,p1_0.prix,p1_0.rang,p1_0.type_gestion,p1_0.ucas,p1_0.unibase,p1_0.upal from product p1_0
+2025-12-31 20:02:34 - select g1_0.id,g1_0.code,g1_0.description,g1_0.nom from gamme g1_0 where g1_0.id=?
+2025-12-31 20:06:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:11:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:16:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:21:34 - Resolving eureka endpoints via configuration
+2025-12-31 20:23:13 - Starting ProductApplication using Java 17.0.12 with PID 28064 (C:\Users\We10\Documents\GitHub\Trace\Backend\product-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\product-service)
+2025-12-31 20:23:13 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 20:23:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31 20:23:16 - Finished Spring Data repository scanning in 344 ms. Found 2 JPA repository interfaces.
+2025-12-31 20:23:17 - BeanFactory id=cb90bc22-4e0a-3c47-96e1-89f7579f2a9e
+2025-12-31 20:23:18 - Tomcat initialized with port 8082 (http)
+2025-12-31 20:23:18 - Starting service [Tomcat]
+2025-12-31 20:23:18 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 20:23:18 - Initializing Spring embedded WebApplicationContext
+2025-12-31 20:23:18 - Root WebApplicationContext: initialization completed in 4538 ms
+2025-12-31 20:23:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31 20:23:19 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-12-31 20:23:19 - HHH000026: Second-level cache disabled
+2025-12-31 20:23:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31 20:23:19 - HikariPool-1 - Starting...
+2025-12-31 20:23:24 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/product_db user=SA
+2025-12-31 20:23:24 - HikariPool-1 - Start completed.
+2025-12-31 20:23:24 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31 20:23:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31 20:23:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31 20:23:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31 20:23:29 - Eureka HTTP Client uses RestTemplate.
+2025-12-31 20:23:29 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 20:23:29 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 20:23:29 - Setting initial instance status as: STARTING
+2025-12-31 20:23:29 - Initializing Eureka in region us-east-1
+2025-12-31 20:23:29 - Resolving eureka endpoints via configuration
+2025-12-31 20:23:29 - Disable delta property : false
+2025-12-31 20:23:29 - Single vip registry refresh property : null
+2025-12-31 20:23:29 - Force full registry fetch : false
+2025-12-31 20:23:29 - Application is null : false
+2025-12-31 20:23:29 - Registered Applications size is zero : true
+2025-12-31 20:23:29 - Application version is -1: true
+2025-12-31 20:23:29 - Getting all instance registry info from the eureka server
+2025-12-31 20:23:30 - The response status is 200
+2025-12-31 20:23:30 - Starting heartbeat executor: renew interval is: 30
+2025-12-31 20:23:30 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-31 20:23:30 - Discovery Client initialized at timestamp 1767209010523 with initial instances count: 3
+2025-12-31 20:23:30 - Registering application PRODUCT-SERVICE with eureka with status UP
+2025-12-31 20:23:30 - Saw local status change event StatusChangeEvent [timestamp=1767209010538, current=UP, previous=STARTING]
+2025-12-31 20:23:30 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082: registering service...
+2025-12-31 20:23:30 - Tomcat started on port 8082 (http) with context path '/'
+2025-12-31 20:23:30 - Updating port to 8082
+2025-12-31 20:23:30 - DiscoveryClient_PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 - registration status: 204
+2025-12-31 20:23:30 - Started ProductApplication in 18.39 seconds (process running for 19.689)
+2025-12-31 20:23:30 - Service de produit démarré avec succès
+2025-12-31 20:23:34 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 20:23:34 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 20:23:34 - Completed initialization in 6 ms

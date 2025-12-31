@@ -1,0 +1,4 @@
+com\trace\product\ProductApplication.class
+com\trace\product\entity\TypePalette.class
+com\trace\product\controller\GlobalExceptionHandler.class
+com\trace\product\enums\TypeGestion.class

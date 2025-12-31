@@ -1,0 +1,565 @@
+2025-12-31 19:18:50 - Starting DiscoveryApplication using Java 17.0.12 with PID 20136 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:18:50 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:18:51 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:18:51 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:18:51 - Starting service [Tomcat]
+2025-12-31 19:18:51 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:18:51 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:18:51 - Root WebApplicationContext: initialization completed in 1710 ms
+2025-12-31 19:18:53 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:18:53 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:18:53 - Using XML encoding codec XStreamXml
+2025-12-31 19:18:53 - Using XML decoding codec XStreamXml
+2025-12-31 19:18:54 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:18:54 - Setting initial instance status as: STARTING
+2025-12-31 19:18:54 - Initializing Eureka in region us-east-1
+2025-12-31 19:18:54 - Client configured to neither register nor query for data.
+2025-12-31 19:18:54 - Discovery Client initialized at timestamp 1767205134865 with initial instances count: 0
+2025-12-31 19:18:54 - Initializing ...
+2025-12-31 19:18:54 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:18:54 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:18:54 - Initialized
+2025-12-31 19:18:54 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:18:55 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:18:55 - isAws returned false
+2025-12-31 19:18:55 - Initialized server context
+2025-12-31 19:18:55 - Got 1 instances from neighboring DS node
+2025-12-31 19:18:55 - Renew threshold is: 1
+2025-12-31 19:18:55 - Changing status to UP
+2025-12-31 19:18:55 - Started Eureka Server
+2025-12-31 19:18:55 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:18:55 - Updating port to 8761
+2025-12-31 19:18:55 - Started DiscoveryApplication in 5.931 seconds (process running for 6.875)
+2025-12-31 19:18:55 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:19:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:19:06 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:19:06 - Completed initialization in 5 ms
+2025-12-31 19:19:07 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:19:31 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:19:51 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:19:55 - Running the evict task with compensationTime 0ms
+2025-12-31 19:19:57 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 19:19:58 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:20:55 - Running the evict task with compensationTime 2ms
+2025-12-31 19:21:55 - Running the evict task with compensationTime 12ms
+2025-12-31 19:22:55 - Running the evict task with compensationTime 9ms
+2025-12-31 19:23:55 - Running the evict task with compensationTime 0ms
+2025-12-31 19:25:40 - Starting DiscoveryApplication using Java 17.0.12 with PID 9632 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:25:40 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:25:41 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:25:42 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:25:42 - Starting service [Tomcat]
+2025-12-31 19:25:42 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:25:42 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:25:42 - Root WebApplicationContext: initialization completed in 1447 ms
+2025-12-31 19:25:43 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:25:43 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:25:43 - Using XML encoding codec XStreamXml
+2025-12-31 19:25:43 - Using XML decoding codec XStreamXml
+2025-12-31 19:25:44 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:25:44 - Setting initial instance status as: STARTING
+2025-12-31 19:25:44 - Initializing Eureka in region us-east-1
+2025-12-31 19:25:44 - Client configured to neither register nor query for data.
+2025-12-31 19:25:44 - Discovery Client initialized at timestamp 1767205544317 with initial instances count: 0
+2025-12-31 19:25:44 - Initializing ...
+2025-12-31 19:25:44 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:25:44 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:25:44 - Initialized
+2025-12-31 19:25:44 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:25:44 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:25:44 - isAws returned false
+2025-12-31 19:25:44 - Initialized server context
+2025-12-31 19:25:44 - Got 1 instances from neighboring DS node
+2025-12-31 19:25:44 - Renew threshold is: 1
+2025-12-31 19:25:44 - Changing status to UP
+2025-12-31 19:25:44 - Started Eureka Server
+2025-12-31 19:25:44 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:25:44 - Updating port to 8761
+2025-12-31 19:25:44 - Started DiscoveryApplication in 4.51 seconds (process running for 5.054)
+2025-12-31 19:25:44 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:25:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:25:56 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:25:56 - Completed initialization in 3 ms
+2025-12-31 19:25:57 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:26:16 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:26:34 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:26:42 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 19:26:44 - Running the evict task with compensationTime 0ms
+2025-12-31 19:27:44 - Running the evict task with compensationTime 4ms
+2025-12-31 19:28:38 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:28:44 - Running the evict task with compensationTime 1ms
+2025-12-31 19:28:44 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 19:28:44 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 19:28:44 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 19:29:04 - DS: Registry: lease doesn't exist, registering resource: USER-SERVICE - DESKTOP-I9GMSBV:user-service:8084
+2025-12-31 19:29:04 - Not Found (Renew): USER-SERVICE - DESKTOP-I9GMSBV:user-service:8084
+2025-12-31 19:29:04 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:29:28 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:29:32 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 19:29:44 - Running the evict task with compensationTime 1ms
+2025-12-31 19:29:55 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:30:44 - Running the evict task with compensationTime 9ms
+2025-12-31 19:31:44 - Running the evict task with compensationTime 2ms
+2025-12-31 19:32:44 - Running the evict task with compensationTime 10ms
+2025-12-31 19:33:33 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:33:36 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 19:33:44 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 19:33:44 - Running the evict task with compensationTime 6ms
+2025-12-31 19:33:47 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 19:33:47 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:34:01 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:34:44 - Running the evict task with compensationTime 10ms
+2025-12-31 19:35:01 - Starting DiscoveryApplication using Java 17.0.12 with PID 22284 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:35:01 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:35:02 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:35:03 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:35:03 - Starting service [Tomcat]
+2025-12-31 19:35:03 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:35:03 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:35:03 - Root WebApplicationContext: initialization completed in 2083 ms
+2025-12-31 19:35:04 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:35:04 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:35:04 - Using XML encoding codec XStreamXml
+2025-12-31 19:35:04 - Using XML decoding codec XStreamXml
+2025-12-31 19:35:06 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:35:06 - Setting initial instance status as: STARTING
+2025-12-31 19:35:06 - Initializing Eureka in region us-east-1
+2025-12-31 19:35:06 - Client configured to neither register nor query for data.
+2025-12-31 19:35:06 - Discovery Client initialized at timestamp 1767206106681 with initial instances count: 0
+2025-12-31 19:35:06 - Initializing ...
+2025-12-31 19:35:06 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:35:06 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:35:06 - Initialized
+2025-12-31 19:35:06 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:35:06 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:35:06 - isAws returned false
+2025-12-31 19:35:06 - Initialized server context
+2025-12-31 19:35:06 - Got 1 instances from neighboring DS node
+2025-12-31 19:35:06 - Renew threshold is: 1
+2025-12-31 19:35:06 - Changing status to UP
+2025-12-31 19:35:06 - Started Eureka Server
+2025-12-31 19:35:06 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:35:06 - Updating port to 8761
+2025-12-31 19:35:07 - Started DiscoveryApplication in 6.701 seconds (process running for 7.625)
+2025-12-31 19:35:07 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:35:18 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:35:18 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:35:18 - Completed initialization in 4 ms
+2025-12-31 19:35:19 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:35:40 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:35:54 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:36:00 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:36:03 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 19:36:06 - Running the evict task with compensationTime 0ms
+2025-12-31 19:37:06 - Running the evict task with compensationTime 0ms
+2025-12-31 19:39:03 - Starting DiscoveryApplication using Java 17.0.12 with PID 15868 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:39:03 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:39:05 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:39:05 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:39:05 - Starting service [Tomcat]
+2025-12-31 19:39:05 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:39:06 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:39:06 - Root WebApplicationContext: initialization completed in 2011 ms
+2025-12-31 19:39:07 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:39:07 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:39:08 - Using XML encoding codec XStreamXml
+2025-12-31 19:39:08 - Using XML decoding codec XStreamXml
+2025-12-31 19:39:10 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:39:10 - Setting initial instance status as: STARTING
+2025-12-31 19:39:10 - Initializing Eureka in region us-east-1
+2025-12-31 19:39:10 - Client configured to neither register nor query for data.
+2025-12-31 19:39:10 - Discovery Client initialized at timestamp 1767206350140 with initial instances count: 0
+2025-12-31 19:39:10 - Initializing ...
+2025-12-31 19:39:10 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:39:10 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:39:10 - Initialized
+2025-12-31 19:39:10 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:39:10 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:39:10 - isAws returned false
+2025-12-31 19:39:10 - Initialized server context
+2025-12-31 19:39:10 - Got 1 instances from neighboring DS node
+2025-12-31 19:39:10 - Renew threshold is: 1
+2025-12-31 19:39:10 - Changing status to UP
+2025-12-31 19:39:10 - Started Eureka Server
+2025-12-31 19:39:10 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:39:10 - Updating port to 8761
+2025-12-31 19:39:10 - Started DiscoveryApplication in 7.754 seconds (process running for 8.648)
+2025-12-31 19:39:10 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:39:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:39:22 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:39:22 - Completed initialization in 4 ms
+2025-12-31 19:39:23 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:39:40 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:39:55 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:40:02 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:40:05 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 19:40:10 - Running the evict task with compensationTime 0ms
+2025-12-31 19:41:10 - Running the evict task with compensationTime 2ms
+2025-12-31 19:42:10 - Running the evict task with compensationTime 13ms
+2025-12-31 19:42:39 - Starting DiscoveryApplication using Java 17.0.12 with PID 19780 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:42:39 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:42:40 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:42:41 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:42:41 - Starting service [Tomcat]
+2025-12-31 19:42:41 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:42:41 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:42:41 - Root WebApplicationContext: initialization completed in 2402 ms
+2025-12-31 19:42:42 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:42:42 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:42:42 - Using XML encoding codec XStreamXml
+2025-12-31 19:42:42 - Using XML decoding codec XStreamXml
+2025-12-31 19:42:43 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:42:44 - Setting initial instance status as: STARTING
+2025-12-31 19:42:44 - Initializing Eureka in region us-east-1
+2025-12-31 19:42:44 - Client configured to neither register nor query for data.
+2025-12-31 19:42:44 - Discovery Client initialized at timestamp 1767206564057 with initial instances count: 0
+2025-12-31 19:42:44 - Initializing ...
+2025-12-31 19:42:44 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:42:44 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:42:44 - Initialized
+2025-12-31 19:42:44 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:42:44 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:42:44 - Unregistering application UNKNOWN with eureka with status DOWN
+2025-12-31 19:42:44 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-31 19:42:44 - Shutting down ...
+2025-12-31 19:42:44 - isAws returned false
+2025-12-31 19:42:44 - Initialized server context
+2025-12-31 19:42:44 - Got 1 instances from neighboring DS node
+2025-12-31 19:42:44 - Renew threshold is: 1
+2025-12-31 19:42:44 - Changing status to UP
+2025-12-31 19:42:44 - Shut down
+2025-12-31 19:42:44 - Shutting down DiscoveryClient ...
+2025-12-31 19:42:44 - Completed shut down of DiscoveryClient
+2025-12-31 19:42:44 - Cannot bootstrap eureka server :
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-31 19:42:44 - Could not initialize Eureka servlet context
+java.lang.RuntimeException: Cannot bootstrap eureka server :
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:76)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	... 2 common frames omitted
+2025-12-31 19:42:44 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31 19:42:44 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+
+2025-12-31 19:43:03 - Starting DiscoveryApplication using Java 17.0.12 with PID 1596 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:43:03 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:43:04 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:43:04 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:43:04 - Starting service [Tomcat]
+2025-12-31 19:43:04 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:43:04 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:43:04 - Root WebApplicationContext: initialization completed in 1664 ms
+2025-12-31 19:43:05 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:43:05 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:43:05 - Using XML encoding codec XStreamXml
+2025-12-31 19:43:05 - Using XML decoding codec XStreamXml
+2025-12-31 19:43:06 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:43:06 - Setting initial instance status as: STARTING
+2025-12-31 19:43:06 - Initializing Eureka in region us-east-1
+2025-12-31 19:43:06 - Client configured to neither register nor query for data.
+2025-12-31 19:43:06 - Discovery Client initialized at timestamp 1767206586840 with initial instances count: 0
+2025-12-31 19:43:06 - Initializing ...
+2025-12-31 19:43:06 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:43:06 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:43:06 - Initialized
+2025-12-31 19:43:06 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:43:06 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:43:06 - Unregistering application UNKNOWN with eureka with status DOWN
+2025-12-31 19:43:06 - isAws returned false
+2025-12-31 19:43:06 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-31 19:43:06 - Shutting down ...
+2025-12-31 19:43:06 - Initialized server context
+2025-12-31 19:43:06 - Got 1 instances from neighboring DS node
+2025-12-31 19:43:06 - Renew threshold is: 1
+2025-12-31 19:43:06 - Changing status to UP
+2025-12-31 19:43:06 - Shut down
+2025-12-31 19:43:06 - Cannot bootstrap eureka server :
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-12-31 19:43:06 - Shutting down DiscoveryClient ...
+2025-12-31 19:43:06 - Could not initialize Eureka servlet context
+java.lang.RuntimeException: Cannot bootstrap eureka server :
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:76)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:409)
+	at java.base/java.util.Timer.schedule(Timer.java:260)
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1226)
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:259)
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:77)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:112)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70)
+	... 2 common frames omitted
+2025-12-31 19:43:06 - Completed shut down of DiscoveryClient
+2025-12-31 19:43:07 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31 19:43:07 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+
+2025-12-31 19:43:10 - Running the evict task with compensationTime 2ms
+2025-12-31 19:44:34 - Starting DiscoveryApplication using Java 17.0.12 with PID 13616 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:44:34 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:44:35 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:44:36 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:44:36 - Starting service [Tomcat]
+2025-12-31 19:44:36 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:44:36 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:44:36 - Root WebApplicationContext: initialization completed in 1757 ms
+2025-12-31 19:44:37 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:44:37 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:44:37 - Using XML encoding codec XStreamXml
+2025-12-31 19:44:37 - Using XML decoding codec XStreamXml
+2025-12-31 19:44:38 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:44:38 - Setting initial instance status as: STARTING
+2025-12-31 19:44:38 - Initializing Eureka in region us-east-1
+2025-12-31 19:44:38 - Client configured to neither register nor query for data.
+2025-12-31 19:44:38 - Discovery Client initialized at timestamp 1767206678548 with initial instances count: 0
+2025-12-31 19:44:38 - Initializing ...
+2025-12-31 19:44:38 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:44:38 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:44:38 - Initialized
+2025-12-31 19:44:38 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:44:38 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:44:38 - isAws returned false
+2025-12-31 19:44:38 - Initialized server context
+2025-12-31 19:44:38 - Got 1 instances from neighboring DS node
+2025-12-31 19:44:38 - Renew threshold is: 1
+2025-12-31 19:44:38 - Changing status to UP
+2025-12-31 19:44:38 - Started Eureka Server
+2025-12-31 19:44:38 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:44:38 - Updating port to 8761
+2025-12-31 19:44:38 - Started DiscoveryApplication in 5.305 seconds (process running for 7.715)
+2025-12-31 19:44:38 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:44:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:44:43 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:44:43 - Completed initialization in 2 ms
+2025-12-31 19:44:43 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:45:11 - Unregistering application UNKNOWN with eureka with status DOWN
+2025-12-31 19:45:11 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31 19:45:11 - Graceful shutdown complete
+2025-12-31 19:45:11 - Shutting down Eureka Server..
+2025-12-31 19:45:11 - Shutting down ...
+2025-12-31 19:45:11 - Shut down
+2025-12-31 19:45:11 - Eureka Service is now shutdown...
+2025-12-31 19:45:11 - Shutting down ...
+2025-12-31 19:45:11 - Shut down
+2025-12-31 19:45:11 - Shutting down DiscoveryClient ...
+2025-12-31 19:45:11 - Completed shut down of DiscoveryClient
+2025-12-31 19:45:30 - Starting DiscoveryApplication using Java 17.0.12 with PID 9076 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 19:45:30 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 19:45:31 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 19:45:31 - Tomcat initialized with port 8761 (http)
+2025-12-31 19:45:31 - Starting service [Tomcat]
+2025-12-31 19:45:31 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 19:45:31 - Initializing Spring embedded WebApplicationContext
+2025-12-31 19:45:31 - Root WebApplicationContext: initialization completed in 1435 ms
+2025-12-31 19:45:32 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 19:45:32 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 19:45:32 - Using XML encoding codec XStreamXml
+2025-12-31 19:45:32 - Using XML decoding codec XStreamXml
+2025-12-31 19:45:33 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 19:45:33 - Setting initial instance status as: STARTING
+2025-12-31 19:45:33 - Initializing Eureka in region us-east-1
+2025-12-31 19:45:33 - Client configured to neither register nor query for data.
+2025-12-31 19:45:33 - Discovery Client initialized at timestamp 1767206733689 with initial instances count: 0
+2025-12-31 19:45:33 - Initializing ...
+2025-12-31 19:45:33 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:45:33 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 19:45:33 - Initialized
+2025-12-31 19:45:33 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 19:45:33 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 19:45:33 - isAws returned false
+2025-12-31 19:45:33 - Initialized server context
+2025-12-31 19:45:33 - Got 1 instances from neighboring DS node
+2025-12-31 19:45:33 - Renew threshold is: 1
+2025-12-31 19:45:33 - Changing status to UP
+2025-12-31 19:45:33 - Started Eureka Server
+2025-12-31 19:45:33 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 19:45:33 - Updating port to 8761
+2025-12-31 19:45:33 - Started DiscoveryApplication in 4.444 seconds (process running for 4.995)
+2025-12-31 19:45:34 - Service de découverte Eureka démarré avec succès
+2025-12-31 19:45:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 19:45:44 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 19:45:44 - Completed initialization in 0 ms
+2025-12-31 19:45:45 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:46:08 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:46:25 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:46:33 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:46:33 - Running the evict task with compensationTime 0ms
+2025-12-31 19:46:35 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 19:47:33 - Running the evict task with compensationTime 12ms
+2025-12-31 19:48:33 - Running the evict task with compensationTime 0ms
+2025-12-31 19:49:33 - Running the evict task with compensationTime 11ms
+2025-12-31 19:50:33 - Running the evict task with compensationTime 0ms
+2025-12-31 19:51:33 - Running the evict task with compensationTime 7ms
+2025-12-31 19:52:33 - Running the evict task with compensationTime 2ms
+2025-12-31 19:52:44 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:52:44 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:52:44 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 19:53:03 - DS: Registry: lease doesn't exist, registering resource: ETABLISSEMENT-SERVICE - DESKTOP-I9GMSBV:etablissement-service:8081
+2025-12-31 19:53:03 - Not Found (Renew): ETABLISSEMENT-SERVICE - DESKTOP-I9GMSBV:etablissement-service:8081
+2025-12-31 19:53:03 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:53:13 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:53:16 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 19:53:33 - Running the evict task with compensationTime 5ms
+2025-12-31 19:53:39 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:54:09 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 19:54:12 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 19:54:33 - Running the evict task with compensationTime 3ms
+2025-12-31 19:54:35 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:54:40 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status DOWN (replication=false)
+2025-12-31 19:54:43 - Cancelled instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 (replication=false)
+2025-12-31 19:54:54 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 19:55:33 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 19:55:33 - Running the evict task with compensationTime 14ms
+2025-12-31 19:56:33 - Running the evict task with compensationTime 1ms
+2025-12-31 19:57:09 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status DOWN (replication=false)
+2025-12-31 19:57:14 - Cancelled instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 (replication=false)
+2025-12-31 19:57:23 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 19:57:26 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 19:57:29 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 19:57:33 - Running the evict task with compensationTime 2ms
+2025-12-31 19:57:39 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 19:57:42 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 19:57:47 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 19:58:02 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 19:58:33 - Running the evict task with compensationTime 15ms
+2025-12-31 19:59:33 - Running the evict task with compensationTime 11ms
+2025-12-31 20:00:33 - Current renewal threshold is : 10
+2025-12-31 20:00:33 - Running the evict task with compensationTime 11ms
+2025-12-31 20:01:33 - Running the evict task with compensationTime 0ms
+2025-12-31 20:01:51 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 20:01:54 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 20:02:06 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 20:02:33 - Running the evict task with compensationTime 3ms
+2025-12-31 20:03:33 - Running the evict task with compensationTime 6ms
+2025-12-31 20:04:33 - Running the evict task with compensationTime 4ms
+2025-12-31 20:05:33 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 20:05:33 - Running the evict task with compensationTime 5ms
+2025-12-31 20:06:33 - Running the evict task with compensationTime 9ms
+2025-12-31 20:07:34 - Running the evict task with compensationTime 12ms
+2025-12-31 20:08:34 - Running the evict task with compensationTime 2ms
+2025-12-31 20:09:34 - Running the evict task with compensationTime 8ms
+2025-12-31 20:10:34 - Running the evict task with compensationTime 15ms
+2025-12-31 20:11:34 - Running the evict task with compensationTime 5ms
+2025-12-31 20:12:34 - Running the evict task with compensationTime 6ms
+2025-12-31 20:13:34 - Running the evict task with compensationTime 3ms
+2025-12-31 20:13:45 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status DOWN (replication=false)
+2025-12-31 20:13:50 - Cancelled instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 (replication=false)
+2025-12-31 20:13:53 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 20:13:56 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 20:14:02 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 20:14:04 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status DOWN (replication=false)
+2025-12-31 20:14:08 - Cancelled instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 (replication=false)
+2025-12-31 20:14:15 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 20:14:26 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 20:14:34 - Running the evict task with compensationTime 9ms
+2025-12-31 20:15:33 - Current renewal threshold is : 10
+2025-12-31 20:15:33 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 20:15:34 - Running the evict task with compensationTime 12ms
+2025-12-31 20:16:34 - Running the evict task with compensationTime 0ms
+2025-12-31 20:17:34 - Running the evict task with compensationTime 4ms
+2025-12-31 20:18:13 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status DOWN (replication=false)
+2025-12-31 20:18:16 - Cancelled instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 (replication=false)
+2025-12-31 20:18:21 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status DOWN (replication=false)
+2025-12-31 20:18:27 - Cancelled instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 (replication=false)
+2025-12-31 20:18:34 - Running the evict task with compensationTime 14ms
+2025-12-31 20:18:36 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 20:18:45 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 20:19:34 - Running the evict task with compensationTime 15ms
+2025-12-31 20:20:34 - Running the evict task with compensationTime 4ms
+2025-12-31 20:21:34 - Running the evict task with compensationTime 6ms
+2025-12-31 20:22:31 - Starting DiscoveryApplication using Java 17.0.12 with PID 23648 (C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\discovery-service)
+2025-12-31 20:22:31 - No active profile set, falling back to 1 default profile: "default"
+2025-12-31 20:22:33 - BeanFactory id=556efc9f-7aaf-34b5-821b-2f482739c8b4
+2025-12-31 20:22:33 - Tomcat initialized with port 8761 (http)
+2025-12-31 20:22:33 - Starting service [Tomcat]
+2025-12-31 20:22:33 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-12-31 20:22:33 - Initializing Spring embedded WebApplicationContext
+2025-12-31 20:22:33 - Root WebApplicationContext: initialization completed in 1653 ms
+2025-12-31 20:22:35 - Using JSON encoding codec LegacyJacksonJson
+2025-12-31 20:22:35 - Using JSON decoding codec LegacyJacksonJson
+2025-12-31 20:22:35 - Using XML encoding codec XStreamXml
+2025-12-31 20:22:35 - Using XML decoding codec XStreamXml
+2025-12-31 20:22:37 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-31 20:22:37 - Setting initial instance status as: STARTING
+2025-12-31 20:22:37 - Initializing Eureka in region us-east-1
+2025-12-31 20:22:37 - Client configured to neither register nor query for data.
+2025-12-31 20:22:37 - Discovery Client initialized at timestamp 1767208957661 with initial instances count: 0
+2025-12-31 20:22:37 - Initializing ...
+2025-12-31 20:22:37 - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-31 20:22:37 - Finished initializing remote region registries. All known remote regions: []
+2025-12-31 20:22:37 - Initialized
+2025-12-31 20:22:37 - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-31 20:22:37 - Registering application UNKNOWN with eureka with status UP
+2025-12-31 20:22:37 - isAws returned false
+2025-12-31 20:22:37 - Initialized server context
+2025-12-31 20:22:37 - Got 1 instances from neighboring DS node
+2025-12-31 20:22:37 - Renew threshold is: 1
+2025-12-31 20:22:37 - Changing status to UP
+2025-12-31 20:22:37 - Started Eureka Server
+2025-12-31 20:22:37 - Tomcat started on port 8761 (http) with context path '/'
+2025-12-31 20:22:37 - Updating port to 8761
+2025-12-31 20:22:38 - Started DiscoveryApplication in 7.352 seconds (process running for 8.362)
+2025-12-31 20:22:38 - Service de découverte Eureka démarré avec succès
+2025-12-31 20:22:47 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31 20:22:47 - Initializing Servlet 'dispatcherServlet'
+2025-12-31 20:22:47 - Completed initialization in 6 ms
+2025-12-31 20:22:48 - Registered instance GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 with status UP (replication=false)
+2025-12-31 20:23:01 - Registered instance DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 with status UP (replication=false)
+2025-12-31 20:23:18 - Registered instance USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 with status UP (replication=false)
+2025-12-31 20:23:30 - Registered instance ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 with status UP (replication=false)
+2025-12-31 20:23:30 - Registered instance PRODUCT-SERVICE/DESKTOP-I9GMSBV:product-service:8082 with status UP (replication=false)
+2025-12-31 20:23:37 - Running the evict task with compensationTime 0ms

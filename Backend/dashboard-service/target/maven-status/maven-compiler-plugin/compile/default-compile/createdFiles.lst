@@ -1,0 +1,3 @@
+com\trace\dashboard\DashboardApplication.class
+com\trace\dashboard\controller\DashboardController.class
+com\trace\dashboard\config\LocaleConfig.class
