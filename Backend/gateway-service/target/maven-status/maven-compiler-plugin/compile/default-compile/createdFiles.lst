@@ -1,0 +1,4 @@
+com\trace\gateway\ErrorPageHandler.class
+com\trace\gateway\WebConfig.class
+com\trace\gateway\GatewayApplication.class
+com\trace\gateway\FaviconController.class

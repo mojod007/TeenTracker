@@ -1,234 +1,407 @@
-2025-12-31 19:19:19 - Starting DashboardApplication using Java 17.0.12 with PID 2636 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:19:19 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:19:22 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:19:24 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:19:24 - Starting service [Tomcat]
-2025-12-31 19:19:24 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:19:25 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:19:25 - Root WebApplicationContext: initialization completed in 5440 ms
-2025-12-31 19:19:27 - Adding welcome page template: index
-2025-12-31 19:19:29 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:19:29 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:19:29 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:19:29 - Setting initial instance status as: STARTING
-2025-12-31 19:19:30 - Initializing Eureka in region us-east-1
-2025-12-31 19:19:30 - Resolving eureka endpoints via configuration
-2025-12-31 19:19:30 - Disable delta property : false
-2025-12-31 19:19:30 - Single vip registry refresh property : null
-2025-12-31 19:19:30 - Force full registry fetch : false
-2025-12-31 19:19:30 - Application is null : false
-2025-12-31 19:19:30 - Registered Applications size is zero : true
-2025-12-31 19:19:30 - Application version is -1: true
-2025-12-31 19:19:30 - Getting all instance registry info from the eureka server
-2025-12-31 19:19:31 - The response status is 200
-2025-12-31 19:19:31 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:19:31 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:19:31 - Discovery Client initialized at timestamp 1767205171442 with initial instances count: 1
-2025-12-31 19:19:31 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:19:31 - Saw local status change event StatusChangeEvent [timestamp=1767205171457, current=UP, previous=STARTING]
-2025-12-31 19:19:31 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:19:31 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:19:31 - Updating port to 8083
-2025-12-31 19:19:31 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:19:32 - Started DashboardApplication in 14.292 seconds (process running for 15.839)
-2025-12-31 19:19:32 - Service de tableau de bord démarré avec succès
-2025-12-31 19:19:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:19:37 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:19:37 - Completed initialization in 4 ms
-2025-12-31 19:19:37 - Accès à la page d'introduction du dashboard
-2025-12-31 19:19:37 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 19:19:37 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:19:37 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 19:19:37 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:19:51 - Accès à la page d'introduction du dashboard
-2025-12-31 19:19:51 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 19:19:51 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:19:52 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:19:54 - Accès à la page d'introduction du dashboard
-2025-12-31 19:19:54 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 19:19:54 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:19:54 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:19:59 - Accès à la page d'introduction du dashboard
-2025-12-31 19:20:00 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:20:05 - Accès à la page du dashboard
-2025-12-31 19:24:30 - Resolving eureka endpoints via configuration
-2025-12-31 19:26:04 - Starting DashboardApplication using Java 17.0.12 with PID 25344 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:26:04 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:26:09 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:26:10 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:26:10 - Starting service [Tomcat]
-2025-12-31 19:26:10 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:26:10 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:26:10 - Root WebApplicationContext: initialization completed in 5484 ms
-2025-12-31 19:26:11 - Adding welcome page template: index
-2025-12-31 19:26:13 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:26:14 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:26:14 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:26:14 - Setting initial instance status as: STARTING
-2025-12-31 19:26:14 - Initializing Eureka in region us-east-1
-2025-12-31 19:26:14 - Resolving eureka endpoints via configuration
-2025-12-31 19:26:14 - Disable delta property : false
-2025-12-31 19:26:14 - Single vip registry refresh property : null
-2025-12-31 19:26:14 - Force full registry fetch : false
-2025-12-31 19:26:14 - Application is null : false
-2025-12-31 19:26:14 - Registered Applications size is zero : true
-2025-12-31 19:26:14 - Application version is -1: true
-2025-12-31 19:26:14 - Getting all instance registry info from the eureka server
-2025-12-31 19:26:16 - The response status is 200
-2025-12-31 19:26:16 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:26:16 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:26:16 - Discovery Client initialized at timestamp 1767205576413 with initial instances count: 1
-2025-12-31 19:26:16 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:26:16 - Saw local status change event StatusChangeEvent [timestamp=1767205576427, current=UP, previous=STARTING]
-2025-12-31 19:26:16 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:26:16 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:26:16 - Updating port to 8083
-2025-12-31 19:26:16 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:26:16 - Started DashboardApplication in 14.067 seconds (process running for 15.299)
-2025-12-31 19:26:17 - Service de tableau de bord démarré avec succès
-2025-12-31 19:26:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:26:36 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:26:36 - Completed initialization in 2 ms
-2025-12-31 19:26:36 - Accès à la page d'introduction du dashboard
-2025-12-31 19:26:37 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 19:26:37 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:26:37 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:26:43 - Accès à la page d'introduction du dashboard
-2025-12-31 19:26:43 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:26:43 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:26:48 - Accès à la page d'introduction du dashboard
-2025-12-31 19:26:48 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:26:48 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:26:53 - Accès à la page d'introduction du dashboard
-2025-12-31 19:26:53 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:26:53 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:26:58 - Accès à la page d'introduction du dashboard
-2025-12-31 19:26:58 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:26:58 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:03 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:03 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:03 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:09 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:09 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:09 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:15 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:15 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:15 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:21 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:21 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:21 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:27 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:27 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:27 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:32 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:32 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:32 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:37 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:37 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:37 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:43 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:43 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:43 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:49 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:49 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:49 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:27:55 - Accès à la page d'introduction du dashboard
-2025-12-31 19:27:55 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:27:55 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:01 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:01 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:01 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:07 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:07 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:07 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:13 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:13 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:13 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:19 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:19 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:19 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:25 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:25 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:25 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:31 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:31 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:31 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:37 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:37 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 19:28:37 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:28:43 - Accès à la page d'introduction du dashboard
-2025-12-31 19:28:43 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:30:04 - Accès à la page du dashboard
-2025-12-31 19:31:14 - Resolving eureka endpoints via configuration
-2025-12-31 19:34:06 - Accès à la page d'introduction du dashboard
-2025-12-31 19:34:07 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:34:09 - Accès à la page du dashboard
-2025-12-31 19:35:26 - Starting DashboardApplication using Java 17.0.12 with PID 24044 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:35:26 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:35:32 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:35:33 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:35:33 - Starting service [Tomcat]
-2025-12-31 19:35:33 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:35:33 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:35:33 - Root WebApplicationContext: initialization completed in 7240 ms
-2025-12-31 19:35:36 - Adding welcome page template: index
-2025-12-31 19:35:39 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:35:39 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:35:39 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:35:39 - Setting initial instance status as: STARTING
-2025-12-31 19:35:39 - Initializing Eureka in region us-east-1
-2025-12-31 19:35:39 - Resolving eureka endpoints via configuration
-2025-12-31 19:35:39 - Disable delta property : false
-2025-12-31 19:35:39 - Single vip registry refresh property : null
-2025-12-31 19:35:39 - Force full registry fetch : false
-2025-12-31 19:35:39 - Application is null : false
-2025-12-31 19:35:39 - Registered Applications size is zero : true
-2025-12-31 19:35:39 - Application version is -1: true
-2025-12-31 19:35:39 - Getting all instance registry info from the eureka server
-2025-12-31 19:35:40 - The response status is 200
-2025-12-31 19:35:40 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:35:40 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:35:40 - Discovery Client initialized at timestamp 1767206140578 with initial instances count: 1
-2025-12-31 19:35:40 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:35:40 - Saw local status change event StatusChangeEvent [timestamp=1767206140586, current=UP, previous=STARTING]
-2025-12-31 19:35:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:35:40 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:35:40 - Updating port to 8083
-2025-12-31 19:35:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:35:40 - Started DashboardApplication in 17.027 seconds (process running for 19.038)
-2025-12-31 19:35:41 - Service de tableau de bord démarré avec succès
-2025-12-31 19:36:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:36:09 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:36:09 - Completed initialization in 2 ms
-2025-12-31 19:36:09 - Accès à la page d'introduction du dashboard
-2025-12-31 19:36:09 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:36:11 - Accès à la page du dashboard
-2025-12-31 19:36:49 - Accès à la page d'introduction du dashboard
-2025-12-31 19:36:49 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:36:50 - Accès à la page du dashboard
-2025-12-31 19:38:36 - Starting DashboardApplication using Java 17.0.12 with PID 17088 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:38:36 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:38:40 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:38:42 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:38:42 - Starting service [Tomcat]
-2025-12-31 19:38:42 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:38:42 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:38:42 - Root WebApplicationContext: initialization completed in 6138 ms
-2025-12-31 19:38:43 - Adding welcome page template: index
-2025-12-31 19:38:47 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:38:47 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:38:47 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:38:47 - Setting initial instance status as: STARTING
-2025-12-31 19:38:48 - Initializing Eureka in region us-east-1
-2025-12-31 19:38:48 - Resolving eureka endpoints via configuration
-2025-12-31 19:38:48 - Disable delta property : false
-2025-12-31 19:38:48 - Single vip registry refresh property : null
-2025-12-31 19:38:48 - Force full registry fetch : false
-2025-12-31 19:38:48 - Application is null : false
-2025-12-31 19:38:48 - Registered Applications size is zero : true
-2025-12-31 19:38:48 - Application version is -1: true
-2025-12-31 19:38:48 - Getting all instance registry info from the eureka server
-2025-12-31 19:38:49 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 00:12:30 - Starting DashboardApplication using Java 17.0.12 with PID 14980 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 00:12:30 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 00:12:36 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 00:12:38 - Tomcat initialized with port 8083 (http)
+2026-01-01 00:12:38 - Starting service [Tomcat]
+2026-01-01 00:12:38 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 00:12:38 - Initializing Spring embedded WebApplicationContext
+2026-01-01 00:12:38 - Root WebApplicationContext: initialization completed in 7592 ms
+2026-01-01 00:12:39 - Adding welcome page template: index
+2026-01-01 00:12:41 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 00:12:41 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 00:12:41 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 00:12:42 - Setting initial instance status as: STARTING
+2026-01-01 00:12:42 - Initializing Eureka in region us-east-1
+2026-01-01 00:12:42 - Resolving eureka endpoints via configuration
+2026-01-01 00:12:42 - Disable delta property : false
+2026-01-01 00:12:42 - Single vip registry refresh property : null
+2026-01-01 00:12:42 - Force full registry fetch : false
+2026-01-01 00:12:42 - Application is null : false
+2026-01-01 00:12:42 - Registered Applications size is zero : true
+2026-01-01 00:12:42 - Application version is -1: true
+2026-01-01 00:12:42 - Getting all instance registry info from the eureka server
+2026-01-01 00:12:43 - The response status is 200
+2026-01-01 00:12:43 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 00:12:43 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 00:12:43 - Discovery Client initialized at timestamp 1767222763605 with initial instances count: 1
+2026-01-01 00:12:43 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 00:12:43 - Saw local status change event StatusChangeEvent [timestamp=1767222763618, current=UP, previous=STARTING]
+2026-01-01 00:12:43 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 00:12:43 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 00:12:43 - Updating port to 8083
+2026-01-01 00:12:43 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 00:12:44 - Started DashboardApplication in 16.726 seconds (process running for 21.118)
+2026-01-01 00:12:44 - Service de tableau de bord démarré avec succès
+2026-01-01 00:13:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 00:13:21 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 00:13:21 - Completed initialization in 7 ms
+2026-01-01 00:13:21 - Accès à la page d'introduction du dashboard
+2026-01-01 00:13:22 - Statut des services vérifié: tous actifs = true
+2026-01-01 00:13:26 - Accès à la page du dashboard
+2026-01-01 00:17:42 - Resolving eureka endpoints via configuration
+2026-01-01 00:22:42 - Resolving eureka endpoints via configuration
+2026-01-01 00:27:42 - Resolving eureka endpoints via configuration
+2026-01-01 00:28:45 - Accès à la page d'introduction du dashboard
+2026-01-01 00:28:46 - Statut des services vérifié: tous actifs = true
+2026-01-01 00:28:53 - Accès à la page du dashboard
+2026-01-01 00:32:42 - Resolving eureka endpoints via configuration
+2026-01-01 00:37:33 - Starting DashboardApplication using Java 17.0.12 with PID 9996 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 00:37:33 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 00:37:39 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 00:37:41 - Tomcat initialized with port 8083 (http)
+2026-01-01 00:37:41 - Starting service [Tomcat]
+2026-01-01 00:37:41 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 00:37:42 - Initializing Spring embedded WebApplicationContext
+2026-01-01 00:37:42 - Root WebApplicationContext: initialization completed in 8841 ms
+2026-01-01 00:37:44 - Adding welcome page template: index
+2026-01-01 00:37:47 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 00:37:48 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 00:37:48 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 00:37:48 - Setting initial instance status as: STARTING
+2026-01-01 00:37:48 - Initializing Eureka in region us-east-1
+2026-01-01 00:37:48 - Resolving eureka endpoints via configuration
+2026-01-01 00:37:48 - Disable delta property : false
+2026-01-01 00:37:48 - Single vip registry refresh property : null
+2026-01-01 00:37:48 - Force full registry fetch : false
+2026-01-01 00:37:48 - Application is null : false
+2026-01-01 00:37:48 - Registered Applications size is zero : true
+2026-01-01 00:37:48 - Application version is -1: true
+2026-01-01 00:37:48 - Getting all instance registry info from the eureka server
+2026-01-01 00:37:50 - The response status is 200
+2026-01-01 00:37:50 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 00:37:50 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 00:37:50 - Discovery Client initialized at timestamp 1767224270461 with initial instances count: 0
+2026-01-01 00:37:50 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 00:37:50 - Saw local status change event StatusChangeEvent [timestamp=1767224270481, current=UP, previous=STARTING]
+2026-01-01 00:37:50 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 00:37:50 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 00:37:50 - Updating port to 8083
+2026-01-01 00:37:50 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 00:37:51 - Started DashboardApplication in 24.299 seconds (process running for 27.363)
+2026-01-01 00:37:51 - Service de tableau de bord démarré avec succès
+2026-01-01 00:38:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 00:38:05 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 00:38:05 - Completed initialization in 4 ms
+2026-01-01 00:38:05 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:05 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Statut des services vérifié: tous actifs = false
+2026-01-01 00:38:06 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:06 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-01 00:38:06 - Statut des services vérifié: tous actifs = false
+2026-01-01 00:38:12 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:12 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 00:38:12 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 00:38:12 - Statut des services vérifié: tous actifs = false
+2026-01-01 00:38:17 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:17 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 00:38:17 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 00:38:17 - Statut des services vérifié: tous actifs = false
+2026-01-01 00:38:20 - Disable delta property : false
+2026-01-01 00:38:20 - Single vip registry refresh property : null
+2026-01-01 00:38:20 - Force full registry fetch : false
+2026-01-01 00:38:20 - Application is null : false
+2026-01-01 00:38:20 - Registered Applications size is zero : true
+2026-01-01 00:38:20 - Application version is -1: false
+2026-01-01 00:38:20 - Getting all instance registry info from the eureka server
+2026-01-01 00:38:20 - The response status is 200
+2026-01-01 00:38:22 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:22 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 00:38:23 - Statut des services vérifié: tous actifs = false
+2026-01-01 00:38:28 - Accès à la page d'introduction du dashboard
+2026-01-01 00:38:28 - Statut des services vérifié: tous actifs = true
+2026-01-01 00:38:32 - Accès à la page du dashboard
+2026-01-01 00:47:27 - Starting DashboardApplication using Java 17.0.12 with PID 19260 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 00:47:27 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 00:47:34 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 00:47:36 - Tomcat initialized with port 8083 (http)
+2026-01-01 00:47:36 - Starting service [Tomcat]
+2026-01-01 00:47:36 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 00:47:37 - Initializing Spring embedded WebApplicationContext
+2026-01-01 00:47:37 - Root WebApplicationContext: initialization completed in 9365 ms
+2026-01-01 00:47:41 - Adding welcome page template: index
+2026-01-01 00:47:43 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 00:47:43 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 00:47:44 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 00:47:44 - Setting initial instance status as: STARTING
+2026-01-01 00:47:44 - Initializing Eureka in region us-east-1
+2026-01-01 00:47:44 - Resolving eureka endpoints via configuration
+2026-01-01 00:47:44 - Disable delta property : false
+2026-01-01 00:47:44 - Single vip registry refresh property : null
+2026-01-01 00:47:44 - Force full registry fetch : false
+2026-01-01 00:47:44 - Application is null : false
+2026-01-01 00:47:44 - Registered Applications size is zero : true
+2026-01-01 00:47:44 - Application version is -1: true
+2026-01-01 00:47:44 - Getting all instance registry info from the eureka server
+2026-01-01 00:47:45 - The response status is 200
+2026-01-01 00:47:45 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 00:47:45 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 00:47:45 - Discovery Client initialized at timestamp 1767224865864 with initial instances count: 0
+2026-01-01 00:47:45 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 00:47:45 - Saw local status change event StatusChangeEvent [timestamp=1767224865883, current=UP, previous=STARTING]
+2026-01-01 00:47:45 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 00:47:45 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 00:47:45 - Updating port to 8083
+2026-01-01 00:47:46 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 00:47:46 - Started DashboardApplication in 22.401 seconds (process running for 25.458)
+2026-01-01 00:47:46 - Service de tableau de bord démarré avec succès
+2026-01-01 00:48:15 - Disable delta property : false
+2026-01-01 00:48:15 - Single vip registry refresh property : null
+2026-01-01 00:48:15 - Force full registry fetch : false
+2026-01-01 00:48:15 - Application is null : false
+2026-01-01 00:48:15 - Registered Applications size is zero : true
+2026-01-01 00:48:15 - Application version is -1: false
+2026-01-01 00:48:15 - Getting all instance registry info from the eureka server
+2026-01-01 00:48:15 - The response status is 200
+2026-01-01 00:49:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 00:49:27 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 00:49:27 - Completed initialization in 0 ms
+2026-01-01 00:49:27 - Accès à la page d'introduction du dashboard
+2026-01-01 00:49:28 - Statut des services vérifié: tous actifs = true
+2026-01-01 00:49:31 - Accès à la page du dashboard
+2026-01-01 00:52:44 - Resolving eureka endpoints via configuration
+2026-01-01 00:53:09 - Accès à la page d'introduction du dashboard
+2026-01-01 00:53:09 - Statut des services vérifié: tous actifs = true
+2026-01-01 00:53:12 - Accès à la page du dashboard
+2026-01-01 00:59:58 - Starting DashboardApplication using Java 17.0.12 with PID 16092 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 00:59:58 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 01:00:03 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 01:00:05 - Tomcat initialized with port 8083 (http)
+2026-01-01 01:00:05 - Starting service [Tomcat]
+2026-01-01 01:00:05 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 01:00:05 - Initializing Spring embedded WebApplicationContext
+2026-01-01 01:00:05 - Root WebApplicationContext: initialization completed in 7004 ms
+2026-01-01 01:00:07 - Adding welcome page template: index
+2026-01-01 01:00:10 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 01:00:10 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 01:00:10 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 01:00:10 - Setting initial instance status as: STARTING
+2026-01-01 01:00:10 - Initializing Eureka in region us-east-1
+2026-01-01 01:00:10 - Resolving eureka endpoints via configuration
+2026-01-01 01:00:10 - Disable delta property : false
+2026-01-01 01:00:10 - Single vip registry refresh property : null
+2026-01-01 01:00:10 - Force full registry fetch : false
+2026-01-01 01:00:10 - Application is null : false
+2026-01-01 01:00:10 - Registered Applications size is zero : true
+2026-01-01 01:00:10 - Application version is -1: true
+2026-01-01 01:00:10 - Getting all instance registry info from the eureka server
+2026-01-01 01:00:12 - The response status is 200
+2026-01-01 01:00:12 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 01:00:12 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 01:00:12 - Discovery Client initialized at timestamp 1767225612129 with initial instances count: 0
+2026-01-01 01:00:12 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 01:00:12 - Saw local status change event StatusChangeEvent [timestamp=1767225612147, current=UP, previous=STARTING]
+2026-01-01 01:00:12 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 01:00:12 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 01:00:12 - Updating port to 8083
+2026-01-01 01:00:12 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 01:00:12 - Started DashboardApplication in 18.994 seconds (process running for 22.69)
+2026-01-01 01:00:12 - Service de tableau de bord démarré avec succès
+2026-01-01 01:00:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 01:00:31 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 01:00:31 - Completed initialization in 4 ms
+2026-01-01 01:00:31 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:31 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 01:00:32 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 01:00:32 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:32 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 01:00:32 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 01:00:32 - Statut des services vérifié: tous actifs = false
+2026-01-01 01:00:32 - Statut des services vérifié: tous actifs = false
+2026-01-01 01:00:33 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:33 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 01:00:33 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 01:00:33 - Statut des services vérifié: tous actifs = false
+2026-01-01 01:00:34 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:34 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 01:00:34 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 01:00:34 - Statut des services vérifié: tous actifs = false
+2026-01-01 01:00:39 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:39 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 01:00:39 - Statut des services vérifié: tous actifs = false
+2026-01-01 01:00:42 - Disable delta property : false
+2026-01-01 01:00:42 - Single vip registry refresh property : null
+2026-01-01 01:00:42 - Force full registry fetch : false
+2026-01-01 01:00:42 - Application is null : false
+2026-01-01 01:00:42 - Registered Applications size is zero : true
+2026-01-01 01:00:42 - Application version is -1: false
+2026-01-01 01:00:42 - Getting all instance registry info from the eureka server
+2026-01-01 01:00:42 - The response status is 200
+2026-01-01 01:00:44 - Accès à la page d'introduction du dashboard
+2026-01-01 01:00:45 - Statut des services vérifié: tous actifs = true
+2026-01-01 01:00:46 - Accès à la page du dashboard
+2026-01-01 01:05:10 - Resolving eureka endpoints via configuration
+2026-01-01 01:10:10 - Resolving eureka endpoints via configuration
+2026-01-01 01:15:10 - Resolving eureka endpoints via configuration
+2026-01-01 17:44:07 - Accès à la page d'introduction du dashboard
+2026-01-01 17:44:07 - Statut des services vérifié: tous actifs = true
+2026-01-01 17:44:11 - Accès à la page du dashboard
+2026-01-01 17:45:34 - Accès à la page d'introduction du dashboard
+2026-01-01 17:45:34 - Statut des services vérifié: tous actifs = true
+2026-01-01 17:47:52 - Resolving eureka endpoints via configuration
+2026-01-01 17:53:42 - Resolving eureka endpoints via configuration
+2026-01-01 17:58:42 - Resolving eureka endpoints via configuration
+2026-01-01 18:00:37 - Starting DashboardApplication using Java 17.0.12 with PID 744 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 18:00:37 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 18:00:40 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 18:00:41 - Tomcat initialized with port 8083 (http)
+2026-01-01 18:00:41 - Starting service [Tomcat]
+2026-01-01 18:00:41 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 18:00:41 - Initializing Spring embedded WebApplicationContext
+2026-01-01 18:00:41 - Root WebApplicationContext: initialization completed in 4024 ms
+2026-01-01 18:00:43 - Adding welcome page template: index
+2026-01-01 18:00:45 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 18:00:45 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 18:00:45 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 18:00:45 - Setting initial instance status as: STARTING
+2026-01-01 18:00:45 - Initializing Eureka in region us-east-1
+2026-01-01 18:00:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:00:45 - Disable delta property : false
+2026-01-01 18:00:45 - Single vip registry refresh property : null
+2026-01-01 18:00:45 - Force full registry fetch : false
+2026-01-01 18:00:45 - Application is null : false
+2026-01-01 18:00:45 - Registered Applications size is zero : true
+2026-01-01 18:00:45 - Application version is -1: true
+2026-01-01 18:00:45 - Getting all instance registry info from the eureka server
+2026-01-01 18:00:47 - The response status is 200
+2026-01-01 18:00:47 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 18:00:47 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 18:00:47 - Discovery Client initialized at timestamp 1767286847079 with initial instances count: 0
+2026-01-01 18:00:47 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 18:00:47 - Saw local status change event StatusChangeEvent [timestamp=1767286847122, current=UP, previous=STARTING]
+2026-01-01 18:00:47 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 18:00:47 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 18:00:47 - Updating port to 8083
+2026-01-01 18:00:47 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 18:00:47 - Started DashboardApplication in 11.952 seconds (process running for 13.124)
+2026-01-01 18:00:47 - Service de tableau de bord démarré avec succès
+2026-01-01 18:01:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 18:01:03 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 18:01:03 - Completed initialization in 6 ms
+2026-01-01 18:01:03 - Accès à la page d'introduction du dashboard
+2026-01-01 18:01:03 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 18:01:03 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 18:01:03 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-01 18:01:03 - Statut des services vérifié: tous actifs = false
+2026-01-01 18:01:09 - Accès à la page d'introduction du dashboard
+2026-01-01 18:01:09 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 18:01:09 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-01 18:01:09 - Statut des services vérifié: tous actifs = false
+2026-01-01 18:01:14 - Accès à la page d'introduction du dashboard
+2026-01-01 18:01:14 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-01 18:01:15 - Statut des services vérifié: tous actifs = false
+2026-01-01 18:01:17 - Disable delta property : false
+2026-01-01 18:01:17 - Single vip registry refresh property : null
+2026-01-01 18:01:17 - Force full registry fetch : false
+2026-01-01 18:01:17 - Application is null : false
+2026-01-01 18:01:17 - Registered Applications size is zero : true
+2026-01-01 18:01:17 - Application version is -1: false
+2026-01-01 18:01:17 - Getting all instance registry info from the eureka server
+2026-01-01 18:01:17 - The response status is 200
+2026-01-01 18:01:20 - Accès à la page d'introduction du dashboard
+2026-01-01 18:01:20 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:01:21 - Accès à la page du dashboard
+2026-01-01 18:05:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:07:36 - Starting DashboardApplication using Java 17.0.12 with PID 6412 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 18:07:36 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 18:07:40 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 18:07:41 - Tomcat initialized with port 8083 (http)
+2026-01-01 18:07:41 - Starting service [Tomcat]
+2026-01-01 18:07:41 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 18:07:41 - Initializing Spring embedded WebApplicationContext
+2026-01-01 18:07:41 - Root WebApplicationContext: initialization completed in 5017 ms
+2026-01-01 18:07:43 - Adding welcome page template: index
+2026-01-01 18:07:45 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 18:07:45 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 18:07:45 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 18:07:45 - Setting initial instance status as: STARTING
+2026-01-01 18:07:45 - Initializing Eureka in region us-east-1
+2026-01-01 18:07:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:07:45 - Disable delta property : false
+2026-01-01 18:07:45 - Single vip registry refresh property : null
+2026-01-01 18:07:45 - Force full registry fetch : false
+2026-01-01 18:07:45 - Application is null : false
+2026-01-01 18:07:45 - Registered Applications size is zero : true
+2026-01-01 18:07:45 - Application version is -1: true
+2026-01-01 18:07:45 - Getting all instance registry info from the eureka server
+2026-01-01 18:07:46 - The response status is 200
+2026-01-01 18:07:46 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 18:07:46 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 18:07:46 - Discovery Client initialized at timestamp 1767287266692 with initial instances count: 0
+2026-01-01 18:07:46 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 18:07:46 - Saw local status change event StatusChangeEvent [timestamp=1767287266702, current=UP, previous=STARTING]
+2026-01-01 18:07:46 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 18:07:46 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 18:07:46 - Updating port to 8083
+2026-01-01 18:07:46 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-01 18:07:47 - Started DashboardApplication in 12.52 seconds (process running for 14.628)
+2026-01-01 18:07:47 - Service de tableau de bord démarré avec succès
+2026-01-01 18:08:16 - Disable delta property : false
+2026-01-01 18:08:16 - Single vip registry refresh property : null
+2026-01-01 18:08:16 - Force full registry fetch : false
+2026-01-01 18:08:16 - Application is null : false
+2026-01-01 18:08:16 - Registered Applications size is zero : true
+2026-01-01 18:08:16 - Application version is -1: false
+2026-01-01 18:08:16 - Getting all instance registry info from the eureka server
+2026-01-01 18:08:16 - The response status is 200
+2026-01-01 18:09:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 18:09:21 - Initializing Servlet 'dispatcherServlet'
+2026-01-01 18:09:21 - Completed initialization in 2 ms
+2026-01-01 18:09:22 - Accès à la page d'introduction du dashboard
+2026-01-01 18:09:22 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:09:24 - Accès à la page du dashboard
+2026-01-01 18:12:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:13:58 - Accès à la page d'introduction du dashboard
+2026-01-01 18:13:59 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:14:00 - Accès à la page du dashboard
+2026-01-01 18:17:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:22:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:27:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:32:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:36:01 - Accès à la page d'introduction du dashboard
+2026-01-01 18:36:01 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:36:02 - Accès à la page du dashboard
+2026-01-01 18:37:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:41:41 - Accès à la page d'introduction du dashboard
+2026-01-01 18:41:41 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-01 18:41:41 - Statut des services vérifié: tous actifs = false
+2026-01-01 18:41:47 - Accès à la page d'introduction du dashboard
+2026-01-01 18:41:47 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:41:48 - Accès à la page du dashboard
+2026-01-01 18:42:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:45:20 - Accès à la page d'introduction du dashboard
+2026-01-01 18:45:21 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:45:24 - Accès à la page du dashboard
+2026-01-01 18:47:45 - Resolving eureka endpoints via configuration
+2026-01-01 18:48:47 - Accès à la page d'introduction du dashboard
+2026-01-01 18:48:48 - Statut des services vérifié: tous actifs = true
+2026-01-01 18:48:49 - Accès à la page du dashboard
+2026-01-01 18:53:18 - Starting DashboardApplication using Java 17.0.12 with PID 8328 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-01 18:53:18 - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 18:53:22 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
+2026-01-01 18:53:23 - Tomcat initialized with port 8083 (http)
+2026-01-01 18:53:23 - Starting service [Tomcat]
+2026-01-01 18:53:23 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-01 18:53:23 - Initializing Spring embedded WebApplicationContext
+2026-01-01 18:53:23 - Root WebApplicationContext: initialization completed in 5272 ms
+2026-01-01 18:53:25 - Adding welcome page template: index
+2026-01-01 18:53:28 - Eureka HTTP Client uses RestTemplate.
+2026-01-01 18:53:28 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-01 18:53:29 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 18:53:29 - Setting initial instance status as: STARTING
+2026-01-01 18:53:29 - Initializing Eureka in region us-east-1
+2026-01-01 18:53:29 - Resolving eureka endpoints via configuration
+2026-01-01 18:53:29 - Disable delta property : false
+2026-01-01 18:53:29 - Single vip registry refresh property : null
+2026-01-01 18:53:29 - Force full registry fetch : false
+2026-01-01 18:53:29 - Application is null : false
+2026-01-01 18:53:29 - Registered Applications size is zero : true
+2026-01-01 18:53:29 - Application version is -1: true
+2026-01-01 18:53:29 - Getting all instance registry info from the eureka server
+2026-01-01 18:53:30 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -336,8 +509,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 68 more
 
-2025-12-31 19:38:49 - Request execution failed with message: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2025-12-31 19:38:49 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2026-01-01 18:53:30 - Request execution failed with message: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:53:30 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
@@ -398,18 +571,18 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at com.trace.dashboard.DashboardApplication.main(DashboardApplication.java:14)
 
-2025-12-31 19:38:49 - Initial registry fetch from primary servers failed
-2025-12-31 19:38:49 - Using default backup registry implementation which does not do anything.
-2025-12-31 19:38:49 - Initial registry fetch from backup servers failed
-2025-12-31 19:38:49 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:38:49 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:38:49 - Discovery Client initialized at timestamp 1767206329730 with initial instances count: 0
-2025-12-31 19:38:49 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:38:49 - Saw local status change event StatusChangeEvent [timestamp=1767206329740, current=UP, previous=STARTING]
-2025-12-31 19:38:49 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:38:49 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:38:49 - Updating port to 8083
-2025-12-31 19:38:49 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:53:30 - Initial registry fetch from primary servers failed
+2026-01-01 18:53:30 - Using default backup registry implementation which does not do anything.
+2026-01-01 18:53:30 - Initial registry fetch from backup servers failed
+2026-01-01 18:53:30 - Starting heartbeat executor: renew interval is: 30
+2026-01-01 18:53:30 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-01 18:53:30 - Discovery Client initialized at timestamp 1767290010201 with initial instances count: 0
+2026-01-01 18:53:30 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-01 18:53:30 - Saw local status change event StatusChangeEvent [timestamp=1767290010217, current=UP, previous=STARTING]
+2026-01-01 18:53:30 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 18:53:30 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-01 18:53:30 - Updating port to 8083
+2026-01-01 18:53:30 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -471,8 +644,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
-2025-12-31 19:38:49 - Request execution failed with message: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2025-12-31 19:38:49 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration failed Cannot execute request on any known server
+2026-01-01 18:53:30 - Request execution failed with message: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:53:30 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration failed Cannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -488,7 +661,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-12-31 19:38:49 - There was a problem with the instance info replicator
+2026-01-01 18:53:30 - There was a problem with the instance info replicator
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -504,242 +677,260 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-12-31 19:38:50 - Started DashboardApplication in 16.99 seconds (process running for 18.61)
-2025-12-31 19:38:50 - Service de tableau de bord démarré avec succès
-2025-12-31 19:39:29 - Starting DashboardApplication using Java 17.0.12 with PID 14524 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:39:29 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:39:33 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:39:34 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:39:34 - Starting service [Tomcat]
-2025-12-31 19:39:34 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:39:34 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:39:34 - Root WebApplicationContext: initialization completed in 4806 ms
-2025-12-31 19:39:36 - Adding welcome page template: index
-2025-12-31 19:39:38 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:39:38 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:39:38 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:39:38 - Setting initial instance status as: STARTING
-2025-12-31 19:39:38 - Initializing Eureka in region us-east-1
-2025-12-31 19:39:38 - Resolving eureka endpoints via configuration
-2025-12-31 19:39:39 - Disable delta property : false
-2025-12-31 19:39:39 - Single vip registry refresh property : null
-2025-12-31 19:39:39 - Force full registry fetch : false
-2025-12-31 19:39:39 - Application is null : false
-2025-12-31 19:39:39 - Registered Applications size is zero : true
-2025-12-31 19:39:39 - Application version is -1: true
-2025-12-31 19:39:39 - Getting all instance registry info from the eureka server
-2025-12-31 19:39:40 - The response status is 200
-2025-12-31 19:39:40 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:39:40 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:39:40 - Discovery Client initialized at timestamp 1767206380301 with initial instances count: 1
-2025-12-31 19:39:40 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:39:40 - Saw local status change event StatusChangeEvent [timestamp=1767206380316, current=UP, previous=STARTING]
-2025-12-31 19:39:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:39:40 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:39:40 - Updating port to 8083
-2025-12-31 19:39:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:39:40 - Started DashboardApplication in 13.898 seconds (process running for 15.6)
-2025-12-31 19:39:40 - Service de tableau de bord démarré avec succès
-2025-12-31 19:40:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:40:20 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:40:20 - Completed initialization in 0 ms
-2025-12-31 19:40:20 - Accès à la page d'introduction du dashboard
-2025-12-31 19:40:21 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:40:22 - Accès à la page du dashboard
-2025-12-31 19:45:55 - Starting DashboardApplication using Java 17.0.12 with PID 24352 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:45:55 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:45:59 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:46:00 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:46:00 - Starting service [Tomcat]
-2025-12-31 19:46:00 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:46:00 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:46:00 - Root WebApplicationContext: initialization completed in 4528 ms
-2025-12-31 19:46:02 - Adding welcome page template: index
-2025-12-31 19:46:05 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:46:05 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:46:05 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:46:06 - Setting initial instance status as: STARTING
-2025-12-31 19:46:06 - Initializing Eureka in region us-east-1
-2025-12-31 19:46:06 - Resolving eureka endpoints via configuration
-2025-12-31 19:46:06 - Disable delta property : false
-2025-12-31 19:46:06 - Single vip registry refresh property : null
-2025-12-31 19:46:06 - Force full registry fetch : false
-2025-12-31 19:46:06 - Application is null : false
-2025-12-31 19:46:06 - Registered Applications size is zero : true
-2025-12-31 19:46:06 - Application version is -1: true
-2025-12-31 19:46:06 - Getting all instance registry info from the eureka server
-2025-12-31 19:46:07 - The response status is 200
-2025-12-31 19:46:07 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:46:07 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:46:07 - Discovery Client initialized at timestamp 1767206767915 with initial instances count: 1
-2025-12-31 19:46:07 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:46:07 - Saw local status change event StatusChangeEvent [timestamp=1767206767928, current=UP, previous=STARTING]
-2025-12-31 19:46:07 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:46:07 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:46:07 - Updating port to 8083
-2025-12-31 19:46:08 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:46:08 - Started DashboardApplication in 14.426 seconds (process running for 15.735)
-2025-12-31 19:46:08 - Service de tableau de bord démarré avec succès
-2025-12-31 19:47:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:47:03 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:47:03 - Completed initialization in 0 ms
-2025-12-31 19:47:03 - Accès à la page d'introduction du dashboard
-2025-12-31 19:47:03 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:47:05 - Accès à la page du dashboard
-2025-12-31 19:51:06 - Resolving eureka endpoints via configuration
-2025-12-31 19:54:28 - Accès à la page d'introduction du dashboard
-2025-12-31 19:54:28 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 19:54:28 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:54:34 - Accès à la page d'introduction du dashboard
-2025-12-31 19:54:34 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 19:54:34 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:54:40 - Accès à la page d'introduction du dashboard
-2025-12-31 19:54:40 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:54:40 - Unregistering application DASHBOARD-SERVICE with eureka with status DOWN
-2025-12-31 19:54:40 - Saw local status change event StatusChangeEvent [timestamp=1767207280420, current=DOWN, previous=UP]
-2025-12-31 19:54:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:54:40 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-31 19:54:40 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:54:40 - Graceful shutdown complete
-2025-12-31 19:54:40 - Shutting down DiscoveryClient ...
-2025-12-31 19:54:43 - Unregistering ...
-2025-12-31 19:54:43 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - deregister  status: 200
-2025-12-31 19:54:43 - Completed shut down of DiscoveryClient
-2025-12-31 19:54:51 - Starting DashboardApplication using Java 17.0.12 with PID 25824 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 19:54:51 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 19:54:52 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 19:54:52 - Tomcat initialized with port 8083 (http)
-2025-12-31 19:54:52 - Starting service [Tomcat]
-2025-12-31 19:54:52 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 19:54:52 - Initializing Spring embedded WebApplicationContext
-2025-12-31 19:54:52 - Root WebApplicationContext: initialization completed in 1360 ms
-2025-12-31 19:54:53 - Adding welcome page template: index
-2025-12-31 19:54:53 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 19:54:53 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 19:54:53 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 19:54:53 - Setting initial instance status as: STARTING
-2025-12-31 19:54:53 - Initializing Eureka in region us-east-1
-2025-12-31 19:54:53 - Resolving eureka endpoints via configuration
-2025-12-31 19:54:53 - Disable delta property : false
-2025-12-31 19:54:53 - Single vip registry refresh property : null
-2025-12-31 19:54:53 - Force full registry fetch : false
-2025-12-31 19:54:53 - Application is null : false
-2025-12-31 19:54:53 - Registered Applications size is zero : true
-2025-12-31 19:54:53 - Application version is -1: true
-2025-12-31 19:54:53 - Getting all instance registry info from the eureka server
-2025-12-31 19:54:54 - The response status is 200
-2025-12-31 19:54:54 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 19:54:54 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 19:54:54 - Discovery Client initialized at timestamp 1767207294074 with initial instances count: 4
-2025-12-31 19:54:54 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 19:54:54 - Saw local status change event StatusChangeEvent [timestamp=1767207294091, current=UP, previous=STARTING]
-2025-12-31 19:54:54 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 19:54:54 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 19:54:54 - Updating port to 8083
-2025-12-31 19:54:54 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 19:54:54 - Started DashboardApplication in 3.676 seconds (process running for 4.198)
-2025-12-31 19:54:54 - Service de tableau de bord démarré avec succès
-2025-12-31 19:54:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 19:54:58 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 19:54:58 - Completed initialization in 0 ms
-2025-12-31 19:54:58 - Accès à la page d'introduction du dashboard
-2025-12-31 19:54:58 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:55:00 - Accès à la page du dashboard
-2025-12-31 19:57:54 - Accès à la page d'introduction du dashboard
-2025-12-31 19:57:54 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 19:57:54 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:57:59 - Accès à la page d'introduction du dashboard
-2025-12-31 19:57:59 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 19:57:59 - Statut des services vérifié: tous actifs = false
-2025-12-31 19:58:05 - Accès à la page d'introduction du dashboard
-2025-12-31 19:58:05 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:58:09 - Accès à la page du dashboard
-2025-12-31 19:58:33 - Accès à la page d'introduction du dashboard
-2025-12-31 19:58:33 - Statut des services vérifié: tous actifs = true
-2025-12-31 19:58:34 - Accès à la page du dashboard
-2025-12-31 19:59:53 - Resolving eureka endpoints via configuration
-2025-12-31 20:02:26 - Accès à la page d'introduction du dashboard
-2025-12-31 20:02:26 - Statut des services vérifié: tous actifs = true
-2025-12-31 20:02:27 - Accès à la page du dashboard
-2025-12-31 20:04:53 - Resolving eureka endpoints via configuration
-2025-12-31 20:09:53 - Resolving eureka endpoints via configuration
-2025-12-31 20:14:15 - Accès à la page d'introduction du dashboard
-2025-12-31 20:14:15 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:14:15 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:14:20 - Accès à la page d'introduction du dashboard
-2025-12-31 20:14:20 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:14:20 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:14:25 - Accès à la page d'introduction du dashboard
-2025-12-31 20:14:25 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:14:25 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:14:30 - Accès à la page d'introduction du dashboard
-2025-12-31 20:14:31 - Statut des services vérifié: tous actifs = true
-2025-12-31 20:14:33 - Accès à la page du dashboard
-2025-12-31 20:14:53 - Resolving eureka endpoints via configuration
-2025-12-31 20:19:02 - Accès à la page d'introduction du dashboard
-2025-12-31 20:19:02 - Statut des services vérifié: tous actifs = true
-2025-12-31 20:19:03 - Accès à la page du dashboard
-2025-12-31 20:19:53 - Resolving eureka endpoints via configuration
-2025-12-31 20:22:52 - Starting DashboardApplication using Java 17.0.12 with PID 17752 (C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\Trace\Backend\dashboard-service)
-2025-12-31 20:22:52 - No active profile set, falling back to 1 default profile: "default"
-2025-12-31 20:22:55 - BeanFactory id=d1c4ddbe-06f8-3536-a2b6-b3fce473be4d
-2025-12-31 20:22:56 - Tomcat initialized with port 8083 (http)
-2025-12-31 20:22:56 - Starting service [Tomcat]
-2025-12-31 20:22:56 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-12-31 20:22:57 - Initializing Spring embedded WebApplicationContext
-2025-12-31 20:22:57 - Root WebApplicationContext: initialization completed in 4256 ms
-2025-12-31 20:22:58 - Adding welcome page template: index
-2025-12-31 20:23:00 - Eureka HTTP Client uses RestTemplate.
-2025-12-31 20:23:00 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-31 20:23:00 - Exposing 1 endpoint beneath base path '/actuator'
-2025-12-31 20:23:00 - Setting initial instance status as: STARTING
-2025-12-31 20:23:00 - Initializing Eureka in region us-east-1
-2025-12-31 20:23:00 - Resolving eureka endpoints via configuration
-2025-12-31 20:23:00 - Disable delta property : false
-2025-12-31 20:23:00 - Single vip registry refresh property : null
-2025-12-31 20:23:00 - Force full registry fetch : false
-2025-12-31 20:23:00 - Application is null : false
-2025-12-31 20:23:00 - Registered Applications size is zero : true
-2025-12-31 20:23:00 - Application version is -1: true
-2025-12-31 20:23:00 - Getting all instance registry info from the eureka server
-2025-12-31 20:23:01 - The response status is 200
-2025-12-31 20:23:01 - Starting heartbeat executor: renew interval is: 30
-2025-12-31 20:23:01 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-31 20:23:01 - Discovery Client initialized at timestamp 1767208981825 with initial instances count: 1
-2025-12-31 20:23:01 - Registering application DASHBOARD-SERVICE with eureka with status UP
-2025-12-31 20:23:01 - Saw local status change event StatusChangeEvent [timestamp=1767208981840, current=UP, previous=STARTING]
-2025-12-31 20:23:01 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
-2025-12-31 20:23:01 - Tomcat started on port 8083 (http) with context path '/'
-2025-12-31 20:23:01 - Updating port to 8083
-2025-12-31 20:23:01 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
-2025-12-31 20:23:02 - Started DashboardApplication in 11.084 seconds (process running for 12.195)
-2025-12-31 20:23:02 - Service de tableau de bord démarré avec succès
-2025-12-31 20:23:12 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-31 20:23:12 - Initializing Servlet 'dispatcherServlet'
-2025-12-31 20:23:12 - Completed initialization in 5 ms
-2025-12-31 20:23:12 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:12 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 20:23:12 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:23:12 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 20:23:12 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:23:13 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:13 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 20:23:13 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:23:13 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 20:23:13 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:23:18 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:18 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 20:23:18 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:23:18 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
-2025-12-31 20:23:18 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:23:23 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:23 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 20:23:23 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:23:23 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:23:28 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:28 - User Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
-2025-12-31 20:23:28 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
-2025-12-31 20:23:28 - Statut des services vérifié: tous actifs = false
-2025-12-31 20:23:33 - Accès à la page d'introduction du dashboard
-2025-12-31 20:23:34 - Statut des services vérifié: tous actifs = true
-2025-12-31 20:23:36 - Accès à la page du dashboard
+2026-01-01 18:53:30 - Started DashboardApplication in 14.78 seconds (process running for 16.787)
+2026-01-01 18:53:30 - Service de tableau de bord démarré avec succès
+2026-01-01 18:54:00 - Disable delta property : false
+2026-01-01 18:54:00 - Single vip registry refresh property : null
+2026-01-01 18:54:00 - Force full registry fetch : false
+2026-01-01 18:54:00 - Application is null : false
+2026-01-01 18:54:00 - Registered Applications size is zero : true
+2026-01-01 18:54:00 - Application version is -1: true
+2026-01-01 18:54:00 - Getting all instance registry info from the eureka server
+2026-01-01 18:54:00 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 20 more
+
+2026-01-01 18:54:00 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 23 more
+
+2026-01-01 18:54:00 - Request execution failed with message: I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:54:00 - Request execution failed with message: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:54:00 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+2026-01-01 18:54:00 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-01-01 18:54:00 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-01 18:54:00 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2026-01-01 18:54:00 - Request execution failed with message: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/DASHBOARD-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
+2026-01-01 18:54:00 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-01-01 18:54:00 - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)

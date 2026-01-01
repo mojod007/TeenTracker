@@ -222,8 +222,7 @@
                                                 data-placeholder="Choisir Établissements">
                                                 <option th:each="etab : ${allEtablissements}" th:value="${etab.id}"
                                                     th:text="${etab.nom}"
-                                                    th:selected="${assignedEtabIds.contains(etab.id.longValue())}">
-                                                </option>
+                                                    th:selected="${assignedEtabIds != null && #lists.contains(assignedEtabIds, etab.id)}"></option>
                                             </select>
                                         </div>
                                     </div>
@@ -269,39 +268,49 @@
             });
 
             const allEtablissements = /*[[${allEtablissements}]]*/[];
+            const allDepots = /*[[${allDepots}]]*/[];
             const assignedEtabIds = /*[[${assignedEtabIds}]]*/[];
             const assignedDepotIds = /*[[${assignedDepotIds}]]*/[];
-            const userEtablissements = /*[[${userEtablissements}]]*/[];
-            const userDepots = /*[[${userDepots}]]*/[];
+
+            console.log('allEtablissements:', allEtablissements);
+            console.log('allDepots:', allDepots);
+            console.log('assignedEtabIds:', assignedEtabIds);
+            console.log('assignedDepotIds:', assignedDepotIds);
             const $etabSelect = $('#etab-select');
             const $depotSelect = $('#depot-select');
-
-            // Pre-select assigned establishments
-            $etabSelect.val(assignedEtabIds.map(String)).trigger('change');
 
             function updateDepots() {
                 const selectedEtabIds = $etabSelect.val() || [];
                 $depotSelect.empty();
 
-                allEtablissements.forEach(etab => {
-                    if (selectedEtabIds.includes(etab.id.toString())) {
-                        const optGroup = $('<optgroup>').attr('label', etab.nom);
-                        etab.depots.forEach(depot => {
-                            const option = $('<option>')
-                                .attr('value', depot.id)
-                                .text(depot.nom);
-                            optGroup.append(option);
-                        });
-                        $depotSelect.append(optGroup);
-                    }
-                });
+                if (allDepots && allDepots.length > 0) {
+                    // Filter depots based on selected establishments
+                    const filteredDepots = allDepots.filter(function(depot) {
+                        return depot.etablissement && depot.etablissement.id && selectedEtabIds.includes(String(depot.etablissement.id));
+                    });
+
+                    filteredDepots.forEach(function(depot) {
+                        const etabName = depot.etablissement && depot.etablissement.nom ? ' (' + depot.etablissement.nom + ')' : '';
+                        const text = depot.nom + etabName;
+                        const option = new Option(text, depot.id, false, false);
+                        $depotSelect.append(option);
+                    });
+                }
 
                 // Pre-select assigned depots
-                $depotSelect.val(assignedDepotIds.map(String)).trigger('change');
+                if (assignedDepotIds && assignedDepotIds.length > 0) {
+                    $depotSelect.val(assignedDepotIds.map(String)).trigger('change');
+                }
             }
 
             $etabSelect.on('change', updateDepots);
-            updateDepots(); // Initial call
+            
+            // Initial selection for Establishments
+            if (assignedEtabIds && assignedEtabIds.length > 0) {
+                $etabSelect.val(assignedEtabIds.map(String)).trigger('change');
+            } else {
+                updateDepots();
+            }
         });
         /*]]>*/
     </script>

@@ -20,7 +20,7 @@ public class UserController {
     private final ProfileService profileService;
     private final org.springframework.web.client.RestTemplate restTemplate;
 
-    private static final String ETAB_SERVICE_URL = "http://localhost:8080/api/etablissements";
+    private static final String ETAB_SERVICE_URL = "http://gateway-service/api/etablissements";
 
     @GetMapping
     public String list(Model model) {
@@ -33,6 +33,7 @@ public class UserController {
         model.addAttribute("user", new User());
         model.addAttribute("profiles", profileService.findAll());
         model.addAttribute("allEtablissements", fetchEtablissements());
+        model.addAttribute("allDepots", fetchAllDepots());
         model.addAttribute("assignedEtabIds", new java.util.ArrayList<Long>());
         model.addAttribute("assignedDepotIds", new java.util.ArrayList<Long>());
         return "user-form";
@@ -43,10 +44,11 @@ public class UserController {
         model.addAttribute("user", userService.findById(id));
         model.addAttribute("profiles", profileService.findAll());
         model.addAttribute("allEtablissements", fetchEtablissements());
+        model.addAttribute("allDepots", fetchAllDepots());
 
         Map<String, Object> assignments = fetchUserAssignments(id);
-        model.addAttribute("assignedEtabIds", assignments.get("etablissementIds"));
-        model.addAttribute("assignedDepotIds", assignments.get("depotIds"));
+        model.addAttribute("assignedEtabIds", assignments.getOrDefault("etablissementIds", new java.util.ArrayList<>()));
+        model.addAttribute("assignedDepotIds", assignments.getOrDefault("depotIds", new java.util.ArrayList<>()));
         model.addAttribute("userEtablissements", assignments.get("etablissements"));
         model.addAttribute("userDepots", assignments.get("depots"));
 
@@ -88,8 +90,11 @@ public class UserController {
 
     private java.util.List<java.util.Map<String, Object>> fetchEtablissements() {
         try {
-            return restTemplate.getForObject(ETAB_SERVICE_URL + "/all", java.util.List.class);
+            java.util.List<java.util.Map<String, Object>> result = restTemplate.getForObject(ETAB_SERVICE_URL + "/all", java.util.List.class);
+            System.out.println("Fetched etablissements: " + (result != null ? result.size() : 0) + " items");
+            return result != null ? result : java.util.Collections.emptyList();
         } catch (Exception e) {
+            System.err.println("Error fetching etablissements: " + e.getMessage());
             return java.util.Collections.emptyList();
         }
     }
@@ -114,6 +119,14 @@ public class UserController {
         } catch (Exception e) {
             // Log error
             System.err.println("Failed to save assignments for user " + userId + ": " + e.getMessage());
+        }
+    }
+
+    private java.util.List<java.util.Map<String, Object>> fetchAllDepots() {
+        try {
+            return restTemplate.getForObject(ETAB_SERVICE_URL + "/depots/all", java.util.List.class);
+        } catch (Exception e) {
+            return java.util.Collections.emptyList();
         }
     }
 }

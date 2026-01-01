@@ -78,7 +78,7 @@ class ProductServiceTest {
         // When & Then
         assertThatThrownBy(() -> productService.findById(1L))
                 .isInstanceOf(RuntimeException.class)
-                .hasMessage("Product non trouvé");
+                .hasMessage("Produit non trouvé avec l'ID: 1");
     }
 
     @Test
@@ -97,6 +97,9 @@ class ProductServiceTest {
 
     @Test
     void deleteById_ShouldCallRepositoryDelete() {
+        // Given
+        when(productRepository.existsById(1L)).thenReturn(true);
+
         // When
         productService.deleteById(1L);
 

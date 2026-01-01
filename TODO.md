@@ -1,19 +1,12 @@
-# TODO: Fix User Assignment Fields Loading Issue
+# TODO: Fix Empty Attributes in User-Form Page
 
 ## Completed Tasks
-- [x] Analyzed the issue: Establishment and depot fields not loading in user form
-- [x] Investigated UserController and found URL mismatch for etablissement-service API calls
-- [x] Fixed ETAB_SERVICE_URL from "http://localhost:8080/etablissements/api" to "http://localhost:8080/etablissements/api/etablissements"
-- [x] Verified the EtablissementRestController endpoints match the corrected URLs
+- [x] Identified the issue: UserController was using hardcoded localhost:8080 URL instead of service name for load balancing.
+- [x] Updated ETAB_SERVICE_URL in UserController.java from "http://localhost:8080/api/etablissements" to "http://gateway-service/api/etablissements".
+- [x] Added logging to fetchEtablissements() method to verify data retrieval.
 
 ## Next Steps
-- [x] Restart the services to apply the changes (services started via runprojet.bat)
-- [ ] Test the user form to ensure establishments and depots load properly
-- [ ] Verify that user assignments can be saved successfully
-
-# TODO: Add View Button for User Details
-
-## Tasks
-- [x] Add @GetMapping("/view/{id}") method in UserController to display user details
-- [x] Create user-details.html template to show user information
-- [x] Add "View" button in actions column of user-list.html
+- [ ] Restart the user-service to apply the changes.
+- [ ] Test the user-form page to verify that allEtablissements, allDepots, assignedEtabIds, and assignedDepotIds are populated.
+- [ ] Check the user-service logs for the "Fetched etablissements:" message to confirm data is being retrieved.
+- [ ] Ensure Eureka server and all services (gateway, etablissement-service, user-service) are running for load balancing to work.

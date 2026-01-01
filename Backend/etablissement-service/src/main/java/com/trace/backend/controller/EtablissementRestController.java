@@ -79,4 +79,10 @@ public class EtablissementRestController {
         etablissementService.saveUserAssignments(userId, etablissementIds, depotIds);
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping("/depots/all")
+    public ResponseEntity<List<Map<String, Object>>> getAllDepots() {
+        List<Map<String, Object>> depots = etablissementService.getAllDepots();
+        return ResponseEntity.ok(depots);
+    }
 }

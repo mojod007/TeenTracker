@@ -213,4 +213,27 @@ public class EtablissementService {
 
         return result;
     }
+
+    public List<Map<String, Object>> getAllDepots() {
+        log.info("Récupération de tous les dépôts");
+
+        List<Depot> depots = depotRepository.findAll();
+        List<Map<String, Object>> result = new java.util.ArrayList<>();
+
+        for (Depot depot : depots) {
+            Map<String, Object> depotMap = new HashMap<>();
+            depotMap.put("id", depot.getId());
+            depotMap.put("code", depot.getCode());
+            depotMap.put("nom", depot.getNom());
+            depotMap.put("actif", depot.isActif());
+            depotMap.put("location", depot.getLocation());
+            depotMap.put("etablissement", Map.of(
+                "id", depot.getEtablissement().getId(),
+                "nom", depot.getEtablissement().getNom()
+            ));
+            result.add(depotMap);
+        }
+
+        return result;
+    }
 }
