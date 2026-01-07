@@ -1,12 +1,7 @@
-# TODO: Fix Empty Attributes in User-Form Page
+# TODO: Add auth-service to start_all.bat
 
-## Completed Tasks
-- [x] Identified the issue: UserController was using hardcoded localhost:8080 URL instead of service name for load balancing.
-- [x] Updated ETAB_SERVICE_URL in UserController.java from "http://localhost:8080/api/etablissements" to "http://gateway-service/api/etablissements".
-- [x] Added logging to fetchEtablissements() method to verify data retrieval.
-
-## Next Steps
-- [ ] Restart the user-service to apply the changes.
-- [ ] Test the user-form page to verify that allEtablissements, allDepots, assignedEtabIds, and assignedDepotIds are populated.
-- [ ] Check the user-service logs for the "Fetched etablissements:" message to confirm data is being retrieved.
-- [ ] Ensure Eureka server and all services (gateway, etablissement-service, user-service) are running for load balancing to work.
+- [x] Update PORTS variable to include port 8085 for auth-service
+- [x] Update the ports comment to include auth-service on port 8085
+- [x] Change all service start messages from [x/6] to [x/7]
+- [x] Add new [7/7] section to start auth-service after etablissement-service
+- [x] Update the final services list to include auth-service

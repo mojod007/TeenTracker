@@ -1,3 +1,8 @@
-com\trace\dashboard\DashboardApplication.class
+com\trace\dashboard\config\SecurityConfig.class
+com\trace\dashboard\security\JwtUtils.class
 com\trace\dashboard\controller\DashboardController.class
 com\trace\dashboard\config\LocaleConfig.class
+com\trace\dashboard\DashboardApplication.class
+com\trace\dashboard\controller\HealthCheckController$ServiceStatus.class
+com\trace\dashboard\controller\HealthCheckController.class
+com\trace\dashboard\security\JwtRequestFilter.class

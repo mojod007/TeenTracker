@@ -28,6 +28,20 @@
                     <a href="/" class="nav-link">Accueil</a>
                 </li>
             </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
 
         <!-- Main Sidebar Container -->
@@ -91,7 +105,8 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Liste des Dépôts</h3>
                                     <div class="card-tools">
-                                        <a th:href="@{'/etablissement/' + ${etabId} + '/depots/new'}" class="btn btn-primary btn-sm">
+                                        <a th:href="@{'/etablissement/' + ${etabId} + '/depots/new'}"
+                                            class="btn btn-primary btn-sm">
                                             <i class="fas fa-plus"></i> Nouveau
                                         </a>
                                     </div>
@@ -119,7 +134,8 @@
                                                     <span th:if="${!depot.actif}" class="badge badge-danger">Non</span>
                                                 </td>
                                                 <td>
-                                                    <a th:href="@{'/depots/' + ${depot.id} + '/zones'}" class="btn btn-warning btn-sm">
+                                                    <a th:href="@{'/depots/' + ${depot.id} + '/zones'}"
+                                                        class="btn btn-warning btn-sm">
                                                         <i class="fas fa-map-marker-alt"></i> Zones
                                                     </a>
                                                 </td>

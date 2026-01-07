@@ -76,6 +76,11 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -239,12 +244,15 @@
                                     <div class="detail-row">
                                         <span class="detail-label">Établissements:</span>
                                         <div class="detail-value">
-                                            <ul th:if="${assignedEtabIds != null and !assignedEtabIds.isEmpty()}" class="list-unstyled">
+                                            <ul th:if="${assignedEtabIds != null and !assignedEtabIds.isEmpty()}"
+                                                class="list-unstyled">
                                                 <li th:each="etabId : ${assignedEtabIds}">
-                                                    <span th:each="etab : ${allEtablissements}" th:if="${etab.id == etabId}" th:text="${etab.nom}"></span>
+                                                    <span th:each="etab : ${allEtablissements}"
+                                                        th:if="${etab.id == etabId}" th:text="${etab.nom}"></span>
                                                 </li>
                                             </ul>
-                                            <span th:if="${assignedEtabIds == null or assignedEtabIds.isEmpty()}" class="text-muted">Aucun établissement assigné</span>
+                                            <span th:if="${assignedEtabIds == null or assignedEtabIds.isEmpty()}"
+                                                class="text-muted">Aucun établissement assigné</span>
                                         </div>
                                     </div>
                                 </div>
@@ -252,12 +260,16 @@
                                     <div class="detail-row">
                                         <span class="detail-label">Dépôts:</span>
                                         <div class="detail-value">
-                                            <ul th:if="${assignedDepotIds != null and !assignedDepotIds.isEmpty()}" class="list-unstyled">
+                                            <ul th:if="${assignedDepotIds != null and !assignedDepotIds.isEmpty()}"
+                                                class="list-unstyled">
                                                 <li th:each="etab : ${allEtablissements}">
-                                                    <span th:each="depot : ${etab['depots']}" th:if="${assignedDepotIds.contains(depot.id)}" th:text="${depot.nom}"></span>
+                                                    <span th:each="depot : ${etab['depots']}"
+                                                        th:if="${assignedDepotIds.contains(depot.id)}"
+                                                        th:text="${depot.nom}"></span>
                                                 </li>
                                             </ul>
-                                            <span th:if="${assignedDepotIds == null or assignedDepotIds.isEmpty()}" class="text-muted">Aucun dépôt assigné</span>
+                                            <span th:if="${assignedDepotIds == null or assignedDepotIds.isEmpty()}"
+                                                class="text-muted">Aucun dépôt assigné</span>
                                         </div>
                                     </div>
                                 </div>

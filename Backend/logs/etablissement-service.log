@@ -1,21 +1,21 @@
-2026-01-01 00:12:41 - Starting EtablissementApplication using Java 17.0.12 with PID 14572 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 00:12:41 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 00:12:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 00:12:45 - Finished Spring Data repository scanning in 414 ms. Found 5 JPA repository interfaces.
-2026-01-01 00:12:46 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 00:12:48 - Tomcat initialized with port 8081 (http)
-2026-01-01 00:12:48 - Starting service [Tomcat]
-2026-01-01 00:12:48 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 00:12:48 - Initializing Spring embedded WebApplicationContext
-2026-01-01 00:12:48 - Root WebApplicationContext: initialization completed in 6347 ms
-2026-01-01 00:12:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 00:12:49 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 00:12:49 - HHH000026: Second-level cache disabled
-2026-01-01 00:12:50 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 00:12:50 - HikariPool-1 - Starting...
-2026-01-01 00:12:55 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 00:12:55 - HikariPool-1 - Start completed.
-2026-01-01 00:12:55 - HHH10001005: Database info:
+2026-01-07 15:22:41 - Starting EtablissementApplication using Java 17.0.17 with PID 22488 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:22:41 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:22:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:22:49 - Finished Spring Data repository scanning in 874 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:22:50 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:22:54 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:22:54 - Starting service [Tomcat]
+2026-01-07 15:22:54 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:22:54 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:22:54 - Root WebApplicationContext: initialization completed in 13050 ms
+2026-01-07 15:22:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:22:59 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:22:59 - HHH000026: Second-level cache disabled
+2026-01-07 15:23:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:23:00 - HikariPool-1 - Starting...
+2026-01-07 15:23:06 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:23:06 - HikariPool-1 - Start completed.
+2026-01-07 15:23:06 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -23,1162 +23,62 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-01 00:12:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 00:12:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:13:00 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 00:13:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 00:13:04 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 00:13:04 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 00:13:04 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 00:13:05 - Setting initial instance status as: STARTING
-2026-01-01 00:13:05 - Initializing Eureka in region us-east-1
-2026-01-01 00:13:05 - Resolving eureka endpoints via configuration
-2026-01-01 00:13:05 - Disable delta property : false
-2026-01-01 00:13:05 - Single vip registry refresh property : null
-2026-01-01 00:13:05 - Force full registry fetch : false
-2026-01-01 00:13:05 - Application is null : false
-2026-01-01 00:13:05 - Registered Applications size is zero : true
-2026-01-01 00:13:05 - Application version is -1: true
-2026-01-01 00:13:05 - Getting all instance registry info from the eureka server
-2026-01-01 00:13:06 - The response status is 200
-2026-01-01 00:13:06 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 00:13:06 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 00:13:06 - Discovery Client initialized at timestamp 1767222786107 with initial instances count: 3
-2026-01-01 00:13:06 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 00:13:06 - Saw local status change event StatusChangeEvent [timestamp=1767222786125, current=UP, previous=STARTING]
-2026-01-01 00:13:06 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:13:06 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 00:13:06 - Updating port to 8081
-2026-01-01 00:13:06 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:13:06 - Started EtablissementApplication in 26.61 seconds (process running for 28.48)
-2026-01-01 00:13:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 00:13:22 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 00:13:22 - Completed initialization in 5 ms
-2026-01-01 00:13:33 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 00:13:34 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 00:13:35 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 00:16:41 - Unregistering application ETABLISSEMENT-SERVICE with eureka with status DOWN
-2026-01-01 00:16:41 - Saw local status change event StatusChangeEvent [timestamp=1767223001922, current=DOWN, previous=UP]
-2026-01-01 00:16:41 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:16:41 - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-01 00:16:41 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:16:42 - Graceful shutdown complete
-2026-01-01 00:16:42 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:16:42 - HikariPool-1 - Shutdown initiated...
-2026-01-01 00:16:42 - HikariPool-1 - Shutdown completed.
-2026-01-01 00:16:42 - Shutting down DiscoveryClient ...
-2026-01-01 00:16:45 - Unregistering ...
-2026-01-01 00:16:45 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - deregister  status: 200
-2026-01-01 00:16:45 - Completed shut down of DiscoveryClient
-2026-01-01 00:17:16 - Starting EtablissementApplication using Java 17.0.12 with PID 7288 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 00:17:16 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 00:17:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 00:17:19 - Finished Spring Data repository scanning in 306 ms. Found 5 JPA repository interfaces.
-2026-01-01 00:17:19 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 00:17:21 - Tomcat initialized with port 8081 (http)
-2026-01-01 00:17:21 - Starting service [Tomcat]
-2026-01-01 00:17:21 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 00:17:21 - Initializing Spring embedded WebApplicationContext
-2026-01-01 00:17:21 - Root WebApplicationContext: initialization completed in 5028 ms
-2026-01-01 00:17:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 00:17:22 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 00:17:22 - HHH000026: Second-level cache disabled
-2026-01-01 00:17:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 00:17:23 - HikariPool-1 - Starting...
-2026-01-01 00:17:24 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 00:17:24 - HikariPool-1 - Start completed.
-2026-01-01 00:17:24 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 00:17:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 00:17:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:17:29 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 00:17:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 00:17:34 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 00:17:34 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 00:17:34 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 00:17:34 - Setting initial instance status as: STARTING
-2026-01-01 00:17:34 - Initializing Eureka in region us-east-1
-2026-01-01 00:17:34 - Resolving eureka endpoints via configuration
-2026-01-01 00:17:34 - Disable delta property : false
-2026-01-01 00:17:34 - Single vip registry refresh property : null
-2026-01-01 00:17:34 - Force full registry fetch : false
-2026-01-01 00:17:34 - Application is null : false
-2026-01-01 00:17:34 - Registered Applications size is zero : true
-2026-01-01 00:17:34 - Application version is -1: true
-2026-01-01 00:17:34 - Getting all instance registry info from the eureka server
-2026-01-01 00:17:36 - The response status is 200
-2026-01-01 00:17:36 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 00:17:36 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 00:17:36 - Discovery Client initialized at timestamp 1767223056126 with initial instances count: 3
-2026-01-01 00:17:36 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 00:17:36 - Saw local status change event StatusChangeEvent [timestamp=1767223056145, current=UP, previous=STARTING]
-2026-01-01 00:17:36 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:17:36 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 00:17:36 - Updating port to 8081
-2026-01-01 00:17:36 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:17:36 - Started EtablissementApplication in 21.864 seconds (process running for 23.237)
-2026-01-01 00:22:34 - Resolving eureka endpoints via configuration
-2026-01-01 00:27:28 - Unregistering application ETABLISSEMENT-SERVICE with eureka with status DOWN
-2026-01-01 00:27:28 - Saw local status change event StatusChangeEvent [timestamp=1767223648720, current=DOWN, previous=UP]
-2026-01-01 00:27:28 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:27:28 - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-01 00:27:28 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:27:29 - Graceful shutdown complete
-2026-01-01 00:27:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:27:29 - HikariPool-1 - Shutdown initiated...
-2026-01-01 00:27:29 - HikariPool-1 - Shutdown completed.
-2026-01-01 00:27:29 - Shutting down DiscoveryClient ...
-2026-01-01 00:27:32 - Unregistering ...
-2026-01-01 00:27:32 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - deregister  status: 200
-2026-01-01 00:27:32 - Completed shut down of DiscoveryClient
-2026-01-01 00:27:46 - Starting EtablissementApplication using Java 17.0.12 with PID 13748 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 00:27:46 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 00:27:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 00:27:49 - Finished Spring Data repository scanning in 505 ms. Found 5 JPA repository interfaces.
-2026-01-01 00:27:50 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 00:27:52 - Tomcat initialized with port 8081 (http)
-2026-01-01 00:27:52 - Starting service [Tomcat]
-2026-01-01 00:27:52 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 00:27:53 - Initializing Spring embedded WebApplicationContext
-2026-01-01 00:27:53 - Root WebApplicationContext: initialization completed in 6817 ms
-2026-01-01 00:27:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 00:27:54 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 00:27:54 - HHH000026: Second-level cache disabled
-2026-01-01 00:27:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 00:27:55 - HikariPool-1 - Starting...
-2026-01-01 00:27:56 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 00:27:56 - HikariPool-1 - Start completed.
-2026-01-01 00:27:56 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 00:27:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 00:27:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:28:00 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 00:28:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 00:28:05 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 00:28:05 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 00:28:05 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 00:28:05 - Setting initial instance status as: STARTING
-2026-01-01 00:28:05 - Initializing Eureka in region us-east-1
-2026-01-01 00:28:05 - Resolving eureka endpoints via configuration
-2026-01-01 00:28:05 - Disable delta property : false
-2026-01-01 00:28:05 - Single vip registry refresh property : null
-2026-01-01 00:28:05 - Force full registry fetch : false
-2026-01-01 00:28:05 - Application is null : false
-2026-01-01 00:28:05 - Registered Applications size is zero : true
-2026-01-01 00:28:05 - Application version is -1: true
-2026-01-01 00:28:05 - Getting all instance registry info from the eureka server
-2026-01-01 00:28:06 - The response status is 200
-2026-01-01 00:28:06 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 00:28:06 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 00:28:06 - Discovery Client initialized at timestamp 1767223686969 with initial instances count: 3
-2026-01-01 00:28:06 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 00:28:06 - Saw local status change event StatusChangeEvent [timestamp=1767223686990, current=UP, previous=STARTING]
-2026-01-01 00:28:06 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:28:07 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 00:28:07 - Updating port to 8081
-2026-01-01 00:28:07 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:28:07 - Started EtablissementApplication in 22.925 seconds (process running for 24.282)
-2026-01-01 00:28:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 00:28:45 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 00:28:46 - Completed initialization in 5 ms
-2026-01-01 00:33:05 - Resolving eureka endpoints via configuration
-2026-01-01 00:37:51 - Starting EtablissementApplication using Java 17.0.12 with PID 22116 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 00:37:51 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 00:37:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 00:37:56 - Finished Spring Data repository scanning in 524 ms. Found 5 JPA repository interfaces.
-2026-01-01 00:37:57 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 00:37:59 - Tomcat initialized with port 8081 (http)
-2026-01-01 00:37:59 - Starting service [Tomcat]
-2026-01-01 00:37:59 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 00:37:59 - Initializing Spring embedded WebApplicationContext
-2026-01-01 00:37:59 - Root WebApplicationContext: initialization completed in 7447 ms
-2026-01-01 00:38:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 00:38:00 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 00:38:00 - HHH000026: Second-level cache disabled
-2026-01-01 00:38:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 00:38:01 - HikariPool-1 - Starting...
-2026-01-01 00:38:07 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 00:38:07 - HikariPool-1 - Start completed.
-2026-01-01 00:38:07 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 00:38:10 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 00:38:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:38:11 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 00:38:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 00:38:16 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 00:38:16 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 00:38:16 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 00:38:16 - Setting initial instance status as: STARTING
-2026-01-01 00:38:16 - Initializing Eureka in region us-east-1
-2026-01-01 00:38:16 - Resolving eureka endpoints via configuration
-2026-01-01 00:38:16 - Disable delta property : false
-2026-01-01 00:38:16 - Single vip registry refresh property : null
-2026-01-01 00:38:16 - Force full registry fetch : false
-2026-01-01 00:38:16 - Application is null : false
-2026-01-01 00:38:16 - Registered Applications size is zero : true
-2026-01-01 00:38:16 - Application version is -1: true
-2026-01-01 00:38:16 - Getting all instance registry info from the eureka server
-2026-01-01 00:38:17 - The response status is 200
-2026-01-01 00:38:17 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 00:38:17 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 00:38:17 - Discovery Client initialized at timestamp 1767224297800 with initial instances count: 2
-2026-01-01 00:38:17 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 00:38:17 - Saw local status change event StatusChangeEvent [timestamp=1767224297822, current=UP, previous=STARTING]
-2026-01-01 00:38:17 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:38:17 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 00:38:17 - Updating port to 8081
-2026-01-01 00:38:17 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:38:18 - Started EtablissementApplication in 29.385 seconds (process running for 33.352)
-2026-01-01 00:38:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 00:38:23 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 00:38:23 - Completed initialization in 0 ms
-2026-01-01 00:47:41 - Starting EtablissementApplication using Java 17.0.12 with PID 3780 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 00:47:41 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 00:47:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 00:47:46 - Finished Spring Data repository scanning in 479 ms. Found 5 JPA repository interfaces.
-2026-01-01 00:47:47 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 00:47:49 - Tomcat initialized with port 8081 (http)
-2026-01-01 00:47:49 - Starting service [Tomcat]
-2026-01-01 00:47:49 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 00:47:49 - Initializing Spring embedded WebApplicationContext
-2026-01-01 00:47:49 - Root WebApplicationContext: initialization completed in 7774 ms
-2026-01-01 00:47:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 00:47:51 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 00:47:51 - HHH000026: Second-level cache disabled
-2026-01-01 00:47:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 00:47:52 - HikariPool-1 - Starting...
-2026-01-01 00:47:56 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 00:47:56 - HikariPool-1 - Start completed.
-2026-01-01 00:47:56 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 00:47:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 00:47:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 00:48:00 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 00:48:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 00:48:05 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 00:48:05 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 00:48:05 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 00:48:06 - Setting initial instance status as: STARTING
-2026-01-01 00:48:06 - Initializing Eureka in region us-east-1
-2026-01-01 00:48:06 - Resolving eureka endpoints via configuration
-2026-01-01 00:48:06 - Disable delta property : false
-2026-01-01 00:48:06 - Single vip registry refresh property : null
-2026-01-01 00:48:06 - Force full registry fetch : false
-2026-01-01 00:48:06 - Application is null : false
-2026-01-01 00:48:06 - Registered Applications size is zero : true
-2026-01-01 00:48:06 - Application version is -1: true
-2026-01-01 00:48:06 - Getting all instance registry info from the eureka server
-2026-01-01 00:48:07 - The response status is 200
-2026-01-01 00:48:07 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 00:48:07 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 00:48:07 - Discovery Client initialized at timestamp 1767224887211 with initial instances count: 2
-2026-01-01 00:48:07 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 00:48:07 - Saw local status change event StatusChangeEvent [timestamp=1767224887235, current=UP, previous=STARTING]
-2026-01-01 00:48:07 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 00:48:07 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 00:48:07 - Updating port to 8081
-2026-01-01 00:48:07 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 00:48:07 - Started EtablissementApplication in 30.519 seconds (process running for 33.982)
-2026-01-01 00:49:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 00:49:28 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 00:49:28 - Completed initialization in 6 ms
-2026-01-01 00:53:06 - Resolving eureka endpoints via configuration
-2026-01-01 01:00:10 - Starting EtablissementApplication using Java 17.0.12 with PID 5592 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 01:00:10 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 01:00:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 01:00:14 - Finished Spring Data repository scanning in 568 ms. Found 5 JPA repository interfaces.
-2026-01-01 01:00:15 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 01:00:18 - Tomcat initialized with port 8081 (http)
-2026-01-01 01:00:18 - Starting service [Tomcat]
-2026-01-01 01:00:18 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 01:00:18 - Initializing Spring embedded WebApplicationContext
-2026-01-01 01:00:18 - Root WebApplicationContext: initialization completed in 8121 ms
-2026-01-01 01:00:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 01:00:19 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 01:00:19 - HHH000026: Second-level cache disabled
-2026-01-01 01:00:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 01:00:20 - HikariPool-1 - Starting...
-2026-01-01 01:00:25 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 01:00:25 - HikariPool-1 - Start completed.
-2026-01-01 01:00:26 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 01:00:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 01:00:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 01:00:30 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 01:00:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 01:00:35 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 01:00:35 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 01:00:35 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 01:00:36 - Setting initial instance status as: STARTING
-2026-01-01 01:00:36 - Initializing Eureka in region us-east-1
-2026-01-01 01:00:36 - Resolving eureka endpoints via configuration
-2026-01-01 01:00:36 - Disable delta property : false
-2026-01-01 01:00:36 - Single vip registry refresh property : null
-2026-01-01 01:00:36 - Force full registry fetch : false
-2026-01-01 01:00:36 - Application is null : false
-2026-01-01 01:00:36 - Registered Applications size is zero : true
-2026-01-01 01:00:36 - Application version is -1: true
-2026-01-01 01:00:36 - Getting all instance registry info from the eureka server
-2026-01-01 01:00:37 - The response status is 200
-2026-01-01 01:00:37 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 01:00:37 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 01:00:37 - Discovery Client initialized at timestamp 1767225637085 with initial instances count: 2
-2026-01-01 01:00:37 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 01:00:37 - Saw local status change event StatusChangeEvent [timestamp=1767225637095, current=UP, previous=STARTING]
-2026-01-01 01:00:37 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 01:00:37 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 01:00:37 - Updating port to 8081
-2026-01-01 01:00:37 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 01:00:37 - Started EtablissementApplication in 30.261 seconds (process running for 32.783)
-2026-01-01 01:00:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 01:00:39 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 01:00:39 - Completed initialization in 0 ms
-2026-01-01 01:02:41 - Récupération de tous les établissements
-2026-01-01 01:02:41 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 01:02:41 - select d1_0.etablissement_id,d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0 where d1_0.etablissement_id=?
-2026-01-01 01:02:41 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 01:02:41 - select l1_0.zone_id,l1_0.id,l1_0.actif,l1_0.code,l1_0.created_at,l1_0.depth_meters,l1_0.description,l1_0.height_meters,l1_0.nom,l1_0.type_gestion,l1_0.updated_at,l1_0.max_weight_kg,l1_0.width_meters from location l1_0 where l1_0.zone_id=?
-2026-01-01 01:02:41 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 01:05:20 - Récupération de tous les établissements
-2026-01-01 01:05:20 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 01:05:20 - select d1_0.etablissement_id,d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0 where d1_0.etablissement_id=?
-2026-01-01 01:05:20 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 01:05:20 - select l1_0.zone_id,l1_0.id,l1_0.actif,l1_0.code,l1_0.created_at,l1_0.depth_meters,l1_0.description,l1_0.height_meters,l1_0.nom,l1_0.type_gestion,l1_0.updated_at,l1_0.max_weight_kg,l1_0.width_meters from location l1_0 where l1_0.zone_id=?
-2026-01-01 01:05:20 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 01:05:36 - Resolving eureka endpoints via configuration
-2026-01-01 01:10:36 - Resolving eureka endpoints via configuration
-2026-01-01 01:15:36 - Resolving eureka endpoints via configuration
-2026-01-01 17:44:07 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h28m16s26ms87µs200ns).
-2026-01-01 17:46:01 - Récupération de tous les établissements
-2026-01-01 17:46:01 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 17:46:01 - select d1_0.etablissement_id,d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0 where d1_0.etablissement_id=?
-2026-01-01 17:46:01 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 17:46:01 - select l1_0.zone_id,l1_0.id,l1_0.actif,l1_0.code,l1_0.created_at,l1_0.depth_meters,l1_0.description,l1_0.height_meters,l1_0.nom,l1_0.type_gestion,l1_0.updated_at,l1_0.max_weight_kg,l1_0.width_meters from location l1_0 where l1_0.zone_id=?
-2026-01-01 17:46:01 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 17:48:17 - Resolving eureka endpoints via configuration
-2026-01-01 17:51:27 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s812ms962µs500ns).
-2026-01-01 17:54:07 - Resolving eureka endpoints via configuration
-2026-01-01 17:57:43 - Unregistering application ETABLISSEMENT-SERVICE with eureka with status DOWN
-2026-01-01 17:57:43 - Saw local status change event StatusChangeEvent [timestamp=1767286663974, current=DOWN, previous=UP]
-2026-01-01 17:57:43 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 17:57:43 - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-01 17:57:43 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 17:57:44 - Graceful shutdown complete
-2026-01-01 17:57:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 17:57:44 - HikariPool-1 - Shutdown initiated...
-2026-01-01 17:57:44 - HikariPool-1 - Shutdown completed.
-2026-01-01 17:57:44 - Shutting down DiscoveryClient ...
-2026-01-01 17:57:47 - Unregistering ...
-2026-01-01 17:57:47 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - deregister  status: 200
-2026-01-01 17:57:47 - Completed shut down of DiscoveryClient
-2026-01-01 17:57:56 - Starting EtablissementApplication using Java 17.0.12 with PID 5968 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 17:57:56 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 17:57:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 17:57:57 - Finished Spring Data repository scanning in 142 ms. Found 5 JPA repository interfaces.
-2026-01-01 17:57:58 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 17:57:58 - Tomcat initialized with port 8081 (http)
-2026-01-01 17:57:58 - Starting service [Tomcat]
-2026-01-01 17:57:58 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 17:57:58 - Initializing Spring embedded WebApplicationContext
-2026-01-01 17:57:58 - Root WebApplicationContext: initialization completed in 2754 ms
-2026-01-01 17:57:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 17:57:59 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 17:57:59 - HHH000026: Second-level cache disabled
-2026-01-01 17:57:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 17:57:59 - HikariPool-1 - Starting...
-2026-01-01 17:58:00 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 17:58:00 - HikariPool-1 - Start completed.
-2026-01-01 17:58:00 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 17:58:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 17:58:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 17:58:01 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 17:58:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 17:58:03 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 17:58:04 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 17:58:04 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 17:58:04 - Setting initial instance status as: STARTING
-2026-01-01 17:58:04 - Initializing Eureka in region us-east-1
-2026-01-01 17:58:04 - Resolving eureka endpoints via configuration
-2026-01-01 17:58:04 - Disable delta property : false
-2026-01-01 17:58:04 - Single vip registry refresh property : null
-2026-01-01 17:58:04 - Force full registry fetch : false
-2026-01-01 17:58:04 - Application is null : false
-2026-01-01 17:58:04 - Registered Applications size is zero : true
-2026-01-01 17:58:04 - Application version is -1: true
-2026-01-01 17:58:04 - Getting all instance registry info from the eureka server
-2026-01-01 17:58:04 - The response status is 200
-2026-01-01 17:58:04 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 17:58:04 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 17:58:04 - Discovery Client initialized at timestamp 1767286684944 with initial instances count: 4
-2026-01-01 17:58:04 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 17:58:04 - Saw local status change event StatusChangeEvent [timestamp=1767286684955, current=UP, previous=STARTING]
-2026-01-01 17:58:04 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 17:58:04 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 17:58:04 - Updating port to 8081
-2026-01-01 17:58:05 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 17:58:05 - Started EtablissementApplication in 9.634 seconds (process running for 10.227)
-2026-01-01 17:59:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 17:59:10 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 17:59:10 - Completed initialization in 14 ms
-2026-01-01 17:59:10 - Récupération de tous les établissements
-2026-01-01 17:59:10 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 17:59:10 - select d1_0.etablissement_id,d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0 where d1_0.etablissement_id=?
-2026-01-01 17:59:10 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 17:59:10 - select l1_0.zone_id,l1_0.id,l1_0.actif,l1_0.code,l1_0.created_at,l1_0.depth_meters,l1_0.description,l1_0.height_meters,l1_0.nom,l1_0.type_gestion,l1_0.updated_at,l1_0.max_weight_kg,l1_0.width_meters from location l1_0 where l1_0.zone_id=?
-2026-01-01 17:59:10 - select z1_0.depot_id,z1_0.id,z1_0.actif,z1_0.code,z1_0.created_at,z1_0.description,z1_0.nom,z1_0.updated_at from zone z1_0 where z1_0.depot_id=?
-2026-01-01 18:00:55 - Starting EtablissementApplication using Java 17.0.12 with PID 6432 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 18:00:55 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 18:00:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 18:00:58 - Finished Spring Data repository scanning in 307 ms. Found 5 JPA repository interfaces.
-2026-01-01 18:00:58 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 18:01:00 - Tomcat initialized with port 8081 (http)
-2026-01-01 18:01:00 - Starting service [Tomcat]
-2026-01-01 18:01:00 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 18:01:00 - Initializing Spring embedded WebApplicationContext
-2026-01-01 18:01:00 - Root WebApplicationContext: initialization completed in 4748 ms
-2026-01-01 18:01:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 18:01:01 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 18:01:01 - HHH000026: Second-level cache disabled
-2026-01-01 18:01:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 18:01:02 - HikariPool-1 - Starting...
-2026-01-01 18:01:06 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 18:01:06 - HikariPool-1 - Start completed.
-2026-01-01 18:01:06 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 18:01:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 18:01:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 18:01:09 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 18:01:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 18:01:12 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 18:01:12 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 18:01:12 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 18:01:13 - Setting initial instance status as: STARTING
-2026-01-01 18:01:13 - Initializing Eureka in region us-east-1
-2026-01-01 18:01:13 - Resolving eureka endpoints via configuration
-2026-01-01 18:01:13 - Disable delta property : false
-2026-01-01 18:01:13 - Single vip registry refresh property : null
-2026-01-01 18:01:13 - Force full registry fetch : false
-2026-01-01 18:01:13 - Application is null : false
-2026-01-01 18:01:13 - Registered Applications size is zero : true
-2026-01-01 18:01:13 - Application version is -1: true
-2026-01-01 18:01:13 - Getting all instance registry info from the eureka server
-2026-01-01 18:01:13 - The response status is 200
-2026-01-01 18:01:13 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 18:01:13 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 18:01:13 - Discovery Client initialized at timestamp 1767286873880 with initial instances count: 2
-2026-01-01 18:01:13 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 18:01:13 - Saw local status change event StatusChangeEvent [timestamp=1767286873894, current=UP, previous=STARTING]
-2026-01-01 18:01:13 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 18:01:13 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 18:01:13 - Updating port to 8081
-2026-01-01 18:01:13 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 18:01:14 - Started EtablissementApplication in 19.873 seconds (process running for 21.188)
-2026-01-01 18:01:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 18:01:15 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 18:01:15 - Completed initialization in 0 ms
-2026-01-01 18:06:13 - Resolving eureka endpoints via configuration
-2026-01-01 18:07:49 - Starting EtablissementApplication using Java 17.0.12 with PID 27532 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 18:07:49 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 18:07:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 18:07:51 - Finished Spring Data repository scanning in 312 ms. Found 5 JPA repository interfaces.
-2026-01-01 18:07:52 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 18:07:53 - Tomcat initialized with port 8081 (http)
-2026-01-01 18:07:53 - Starting service [Tomcat]
-2026-01-01 18:07:53 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 18:07:53 - Initializing Spring embedded WebApplicationContext
-2026-01-01 18:07:53 - Root WebApplicationContext: initialization completed in 4567 ms
-2026-01-01 18:07:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 18:07:54 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 18:07:54 - HHH000026: Second-level cache disabled
-2026-01-01 18:07:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 18:07:55 - HikariPool-1 - Starting...
-2026-01-01 18:08:00 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 18:08:00 - HikariPool-1 - Start completed.
-2026-01-01 18:08:00 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 18:08:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 18:08:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 18:08:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 18:08:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 18:08:05 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 18:08:05 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 18:08:05 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 18:08:05 - Setting initial instance status as: STARTING
-2026-01-01 18:08:05 - Initializing Eureka in region us-east-1
-2026-01-01 18:08:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:08:05 - Disable delta property : false
-2026-01-01 18:08:05 - Single vip registry refresh property : null
-2026-01-01 18:08:05 - Force full registry fetch : false
-2026-01-01 18:08:05 - Application is null : false
-2026-01-01 18:08:05 - Registered Applications size is zero : true
-2026-01-01 18:08:05 - Application version is -1: true
-2026-01-01 18:08:05 - Getting all instance registry info from the eureka server
-2026-01-01 18:08:06 - The response status is 200
-2026-01-01 18:08:06 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 18:08:06 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 18:08:06 - Discovery Client initialized at timestamp 1767287286330 with initial instances count: 2
-2026-01-01 18:08:06 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 18:08:06 - Saw local status change event StatusChangeEvent [timestamp=1767287286345, current=UP, previous=STARTING]
-2026-01-01 18:08:06 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 18:08:06 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 18:08:06 - Updating port to 8081
-2026-01-01 18:08:06 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 18:08:06 - Started EtablissementApplication in 18.822 seconds (process running for 20.272)
-2026-01-01 18:09:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 18:09:22 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 18:09:22 - Completed initialization in 3 ms
-2026-01-01 18:13:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:18:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:23:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:27:49 - Récupération de tous les dépôts
-2026-01-01 18:27:49 - select d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.etablissement_id,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0
-2026-01-01 18:27:49 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0 where e1_0.id=?
-2026-01-01 18:28:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:33:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:38:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:43:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:48:05 - Resolving eureka endpoints via configuration
-2026-01-01 18:53:31 - Starting EtablissementApplication using Java 17.0.12 with PID 8356 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 18:53:31 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 18:53:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 18:53:33 - Finished Spring Data repository scanning in 323 ms. Found 5 JPA repository interfaces.
-2026-01-01 18:53:33 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 18:53:35 - Tomcat initialized with port 8081 (http)
-2026-01-01 18:53:35 - Starting service [Tomcat]
-2026-01-01 18:53:35 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 18:53:35 - Initializing Spring embedded WebApplicationContext
-2026-01-01 18:53:35 - Root WebApplicationContext: initialization completed in 4151 ms
-2026-01-01 18:53:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 18:53:36 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 18:53:36 - HHH000026: Second-level cache disabled
-2026-01-01 18:53:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 18:53:36 - HikariPool-1 - Starting...
-2026-01-01 18:53:41 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 18:53:41 - HikariPool-1 - Start completed.
-2026-01-01 18:53:41 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-01 18:53:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 18:53:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 18:53:44 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 18:53:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 18:53:46 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 18:53:47 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 18:53:47 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 18:53:47 - Setting initial instance status as: STARTING
-2026-01-01 18:53:47 - Initializing Eureka in region us-east-1
-2026-01-01 18:53:47 - Resolving eureka endpoints via configuration
-2026-01-01 18:53:47 - Disable delta property : false
-2026-01-01 18:53:47 - Single vip registry refresh property : null
-2026-01-01 18:53:47 - Force full registry fetch : false
-2026-01-01 18:53:47 - Application is null : false
-2026-01-01 18:53:47 - Registered Applications size is zero : true
-2026-01-01 18:53:47 - Application version is -1: true
-2026-01-01 18:53:47 - Getting all instance registry info from the eureka server
-2026-01-01 18:53:47 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:410)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:245)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:240)
-	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:375)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:372)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
-	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.trace.backend.EtablissementApplication.main(EtablissementApplication.java:13)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 68 more
+2026-01-07 15:23:10 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:23:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:23:11 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:23:16 - 
 
-2026-01-01 18:53:47 - Request execution failed with message: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2026-01-01 18:53:47 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:410)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:245)
-	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:240)
-	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68)
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:375)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:375)
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:372)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:128)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:116)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
-	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$SpringCGLIB$$0.getEurekaClient(<generated>)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:83)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:66)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:89)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.trace.backend.EtablissementApplication.main(EtablissementApplication.java:13)
+Using generated security password: 743c2fae-12e2-430f-bbda-eb60d952e0e7
 
-2026-01-01 18:53:47 - Initial registry fetch from primary servers failed
-2026-01-01 18:53:48 - Using default backup registry implementation which does not do anything.
-2026-01-01 18:53:48 - Initial registry fetch from backup servers failed
-2026-01-01 18:53:48 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 18:53:48 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 18:53:48 - Discovery Client initialized at timestamp 1767290028007 with initial instances count: 0
-2026-01-01 18:53:48 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 18:53:48 - Saw local status change event StatusChangeEvent [timestamp=1767290028022, current=UP, previous=STARTING]
-2026-01-01 18:53:48 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 18:53:48 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 18:53:48 - Updating port to 8081
-2026-01-01 18:53:48 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 22 more
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-01-01 18:53:48 - Request execution failed with message: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2026-01-01 18:53:48 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration failed Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-01 18:53:48 - There was a problem with the instance info replicator
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-01 18:53:48 - Started EtablissementApplication in 18.802 seconds (process running for 21.736)
-2026-01-01 18:54:18 - Disable delta property : false
-2026-01-01 18:54:18 - Single vip registry refresh property : null
-2026-01-01 18:54:18 - Force full registry fetch : false
-2026-01-01 18:54:18 - Application is null : false
-2026-01-01 18:54:18 - Registered Applications size is zero : true
-2026-01-01 18:54:18 - Application version is -1: true
-2026-01-01 18:54:18 - Getting all instance registry info from the eureka server
-2026-01-01 18:54:18 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:119)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 20 more
-
-2026-01-01 18:54:18 - Request execution failed with message: I/O error on PUT request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2026-01-01 18:54:18 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:174)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:162)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 23 more
-
-2026-01-01 18:54:18 - Request execution failed with message: I/O error on GET request for "http://127.0.0.1:8761/eureka/apps/": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2026-01-01 18:54:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - was unable to send heartbeat!
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-01 18:54:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1046)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:961)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1441)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-
-2026-01-01 18:54:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 18:54:18 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:8761/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 21 more
-
-2026-01-01 18:54:18 - Request execution failed with message: I/O error on POST request for "http://127.0.0.1:8761/eureka/apps/ETABLISSEMENT-SERVICE": Connect to http://127.0.0.1:8761 [/127.0.0.1] failed: Connection refused: no further information
-2026-01-01 18:54:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration failed Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-01 18:54:18 - There was a problem with the instance info replicator
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-01 18:55:36 - Starting EtablissementApplication using Java 17.0.12 with PID 6052 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
-2026-01-01 18:55:36 - No active profile set, falling back to 1 default profile: "default"
-2026-01-01 18:55:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 18:55:38 - Finished Spring Data repository scanning in 369 ms. Found 5 JPA repository interfaces.
-2026-01-01 18:55:39 - BeanFactory id=f61106dd-3e8e-3286-aedd-bd18d5c4121c
-2026-01-01 18:55:40 - Tomcat initialized with port 8081 (http)
-2026-01-01 18:55:40 - Starting service [Tomcat]
-2026-01-01 18:55:40 - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2026-01-01 18:55:40 - Initializing Spring embedded WebApplicationContext
-2026-01-01 18:55:40 - Root WebApplicationContext: initialization completed in 3829 ms
-2026-01-01 18:55:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 18:55:41 - HHH000412: Hibernate ORM core version 6.6.2.Final
-2026-01-01 18:55:41 - HHH000026: Second-level cache disabled
-2026-01-01 18:55:42 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 18:55:42 - HikariPool-1 - Starting...
-2026-01-01 18:55:47 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
-2026-01-01 18:55:47 - HikariPool-1 - Start completed.
-2026-01-01 18:55:47 - HHH10001005: Database info:
+2026-01-07 15:23:16 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:23:16 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:23:17 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:23:17 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:23:17 - Setting initial instance status as: STARTING
+2026-01-07 15:23:17 - Initializing Eureka in region us-east-1
+2026-01-07 15:23:17 - Resolving eureka endpoints via configuration
+2026-01-07 15:23:18 - Disable delta property : false
+2026-01-07 15:23:18 - Single vip registry refresh property : null
+2026-01-07 15:23:18 - Force full registry fetch : false
+2026-01-07 15:23:18 - Application is null : false
+2026-01-07 15:23:18 - Registered Applications size is zero : true
+2026-01-07 15:23:18 - Application version is -1: true
+2026-01-07 15:23:18 - Getting all instance registry info from the eureka server
+2026-01-07 15:23:19 - The response status is 200
+2026-01-07 15:23:19 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:23:19 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:23:19 - Discovery Client initialized at timestamp 1767795799310 with initial instances count: 2
+2026-01-07 15:23:19 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:23:19 - Saw local status change event StatusChangeEvent [timestamp=1767795799336, current=UP, previous=STARTING]
+2026-01-07 15:23:19 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:23:19 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:23:19 - Updating port to 8081
+2026-01-07 15:23:19 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:23:19 - Started EtablissementApplication in 42.778 seconds (process running for 48.272)
+2026-01-07 15:23:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:23:24 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:23:24 - Completed initialization in 6 ms
+2026-01-07 15:28:17 - Resolving eureka endpoints via configuration
+2026-01-07 15:31:38 - Starting EtablissementApplication using Java 17.0.17 with PID 15040 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:31:38 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:31:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:31:46 - Finished Spring Data repository scanning in 856 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:31:48 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:31:51 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:31:51 - Starting service [Tomcat]
+2026-01-07 15:31:51 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:31:51 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:31:51 - Root WebApplicationContext: initialization completed in 12931 ms
+2026-01-07 15:31:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:31:53 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:31:53 - HHH000026: Second-level cache disabled
+2026-01-07 15:31:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:31:54 - HikariPool-1 - Starting...
+2026-01-07 15:31:59 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:31:59 - HikariPool-1 - Start completed.
+2026-01-07 15:32:00 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -1186,52 +86,546 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-01 18:55:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 18:55:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 18:55:50 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 18:55:51 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01 18:55:53 - Eureka HTTP Client uses RestTemplate.
-2026-01-01 18:55:53 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-01 18:55:53 - Exposing 1 endpoint beneath base path '/actuator'
-2026-01-01 18:55:53 - Setting initial instance status as: STARTING
-2026-01-01 18:55:53 - Initializing Eureka in region us-east-1
-2026-01-01 18:55:53 - Resolving eureka endpoints via configuration
-2026-01-01 18:55:53 - Disable delta property : false
-2026-01-01 18:55:53 - Single vip registry refresh property : null
-2026-01-01 18:55:53 - Force full registry fetch : false
-2026-01-01 18:55:53 - Application is null : false
-2026-01-01 18:55:53 - Registered Applications size is zero : true
-2026-01-01 18:55:53 - Application version is -1: true
-2026-01-01 18:55:53 - Getting all instance registry info from the eureka server
-2026-01-01 18:55:54 - The response status is 200
-2026-01-01 18:55:54 - Starting heartbeat executor: renew interval is: 30
-2026-01-01 18:55:54 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-01-01 18:55:54 - Discovery Client initialized at timestamp 1767290154342 with initial instances count: 1
-2026-01-01 18:55:54 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
-2026-01-01 18:55:54 - Saw local status change event StatusChangeEvent [timestamp=1767290154354, current=UP, previous=STARTING]
-2026-01-01 18:55:54 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 18:55:54 - Tomcat started on port 8081 (http) with context path '/'
-2026-01-01 18:55:54 - Updating port to 8081
-2026-01-01 18:55:54 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 18:55:54 - Started EtablissementApplication in 19.296 seconds (process running for 20.695)
-2026-01-01 18:58:18 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 18:58:18 - Initializing Servlet 'dispatcherServlet'
-2026-01-01 18:58:18 - Completed initialization in 0 ms
-2026-01-01 18:58:18 - Récupération de tous les établissements avec leurs dépôts
-2026-01-01 18:58:18 - Récupération de tous les établissements
-2026-01-01 18:58:18 - select e1_0.id,e1_0.actif,e1_0.code,e1_0.created_at,e1_0.location,e1_0.nom,e1_0.updated_at from etablissement e1_0
-2026-01-01 18:58:18 - select d1_0.etablissement_id,d1_0.id,d1_0.actif,d1_0.code,d1_0.created_at,d1_0.location,d1_0.nom,d1_0.updated_at from depot d1_0 where d1_0.etablissement_id=?
-2026-01-01 19:00:53 - Resolving eureka endpoints via configuration
-2026-01-01 19:02:48 - Unregistering application ETABLISSEMENT-SERVICE with eureka with status DOWN
-2026-01-01 19:02:48 - Saw local status change event StatusChangeEvent [timestamp=1767290568752, current=DOWN, previous=UP]
-2026-01-01 19:02:48 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
-2026-01-01 19:02:48 - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-01 19:02:48 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
-2026-01-01 19:02:48 - Graceful shutdown complete
-2026-01-01 19:02:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 19:02:48 - HikariPool-1 - Shutdown initiated...
-2026-01-01 19:02:48 - HikariPool-1 - Shutdown completed.
-2026-01-01 19:02:48 - Shutting down DiscoveryClient ...
-2026-01-01 19:02:51 - Unregistering ...
-2026-01-01 19:02:52 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - deregister  status: 200
-2026-01-01 19:02:52 - Completed shut down of DiscoveryClient
+2026-01-07 15:32:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:32:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:32:04 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:32:09 - 
+
+Using generated security password: 247f2062-e4d1-4469-bf70-f406eb73394f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 15:32:09 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:32:10 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:32:10 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:32:10 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:32:11 - Setting initial instance status as: STARTING
+2026-01-07 15:32:11 - Initializing Eureka in region us-east-1
+2026-01-07 15:32:11 - Resolving eureka endpoints via configuration
+2026-01-07 15:32:11 - Disable delta property : false
+2026-01-07 15:32:11 - Single vip registry refresh property : null
+2026-01-07 15:32:11 - Force full registry fetch : false
+2026-01-07 15:32:11 - Application is null : false
+2026-01-07 15:32:11 - Registered Applications size is zero : true
+2026-01-07 15:32:11 - Application version is -1: true
+2026-01-07 15:32:11 - Getting all instance registry info from the eureka server
+2026-01-07 15:32:12 - The response status is 200
+2026-01-07 15:32:12 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:32:12 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:32:12 - Discovery Client initialized at timestamp 1767796332362 with initial instances count: 3
+2026-01-07 15:32:12 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:32:12 - Saw local status change event StatusChangeEvent [timestamp=1767796332386, current=UP, previous=STARTING]
+2026-01-07 15:32:12 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:32:12 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:32:12 - Updating port to 8081
+2026-01-07 15:32:12 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:32:12 - Started EtablissementApplication in 40.451 seconds (process running for 47.225)
+2026-01-07 15:32:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:32:13 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:32:13 - Completed initialization in 5 ms
+2026-01-07 15:36:59 - Starting EtablissementApplication using Java 17.0.17 with PID 13720 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:36:59 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:37:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:37:10 - Finished Spring Data repository scanning in 994 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:37:13 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:37:17 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:37:17 - Starting service [Tomcat]
+2026-01-07 15:37:17 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:37:17 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:37:17 - Root WebApplicationContext: initialization completed in 17673 ms
+2026-01-07 15:37:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:37:20 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:37:20 - HHH000026: Second-level cache disabled
+2026-01-07 15:37:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:37:22 - HikariPool-1 - Starting...
+2026-01-07 15:37:27 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:37:27 - HikariPool-1 - Start completed.
+2026-01-07 15:37:27 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 15:37:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:37:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:37:34 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:37:39 - 
+
+Using generated security password: cef04538-bcbf-4f80-a0d8-9774484b7e30
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 15:37:39 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:37:39 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:37:40 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:37:40 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:37:40 - Setting initial instance status as: STARTING
+2026-01-07 15:37:40 - Initializing Eureka in region us-east-1
+2026-01-07 15:37:40 - Resolving eureka endpoints via configuration
+2026-01-07 15:37:40 - Disable delta property : false
+2026-01-07 15:37:40 - Single vip registry refresh property : null
+2026-01-07 15:37:40 - Force full registry fetch : false
+2026-01-07 15:37:40 - Application is null : false
+2026-01-07 15:37:40 - Registered Applications size is zero : true
+2026-01-07 15:37:40 - Application version is -1: true
+2026-01-07 15:37:40 - Getting all instance registry info from the eureka server
+2026-01-07 15:37:42 - The response status is 200
+2026-01-07 15:37:42 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:37:42 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:37:42 - Discovery Client initialized at timestamp 1767796662036 with initial instances count: 3
+2026-01-07 15:37:42 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:37:42 - Saw local status change event StatusChangeEvent [timestamp=1767796662062, current=UP, previous=STARTING]
+2026-01-07 15:37:42 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:37:42 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:37:42 - Updating port to 8081
+2026-01-07 15:37:42 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:37:42 - Started EtablissementApplication in 48.097 seconds (process running for 52.982)
+2026-01-07 15:37:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:37:44 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:37:44 - Completed initialization in 3 ms
+2026-01-07 15:42:02 - Starting EtablissementApplication using Java 17.0.17 with PID 16864 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:42:02 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:42:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:42:07 - Finished Spring Data repository scanning in 618 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:42:08 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:42:10 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:42:11 - Starting service [Tomcat]
+2026-01-07 15:42:11 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:42:11 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:42:11 - Root WebApplicationContext: initialization completed in 8129 ms
+2026-01-07 15:42:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:42:12 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:42:12 - HHH000026: Second-level cache disabled
+2026-01-07 15:42:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:42:13 - HikariPool-1 - Starting...
+2026-01-07 15:42:18 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:42:18 - HikariPool-1 - Start completed.
+2026-01-07 15:42:18 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 15:42:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:42:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:42:23 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:42:27 - 
+
+Using generated security password: 0953c5e3-743c-478b-8dc5-b46458d3c0a7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 15:42:28 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:42:28 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:42:29 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:42:29 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:42:29 - Setting initial instance status as: STARTING
+2026-01-07 15:42:29 - Initializing Eureka in region us-east-1
+2026-01-07 15:42:29 - Resolving eureka endpoints via configuration
+2026-01-07 15:42:29 - Disable delta property : false
+2026-01-07 15:42:29 - Single vip registry refresh property : null
+2026-01-07 15:42:29 - Force full registry fetch : false
+2026-01-07 15:42:29 - Application is null : false
+2026-01-07 15:42:29 - Registered Applications size is zero : true
+2026-01-07 15:42:29 - Application version is -1: true
+2026-01-07 15:42:29 - Getting all instance registry info from the eureka server
+2026-01-07 15:42:30 - The response status is 200
+2026-01-07 15:42:30 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:42:30 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:42:30 - Discovery Client initialized at timestamp 1767796950813 with initial instances count: 3
+2026-01-07 15:42:30 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:42:30 - Saw local status change event StatusChangeEvent [timestamp=1767796950837, current=UP, previous=STARTING]
+2026-01-07 15:42:30 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:42:30 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:42:30 - Updating port to 8081
+2026-01-07 15:42:30 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:42:31 - Started EtablissementApplication in 32.465 seconds (process running for 35.662)
+2026-01-07 15:42:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:42:32 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:42:32 - Completed initialization in 7 ms
+2026-01-07 15:47:08 - Starting EtablissementApplication using Java 17.0.17 with PID 13688 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:47:08 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:47:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:47:15 - Finished Spring Data repository scanning in 550 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:47:16 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:47:18 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:47:18 - Starting service [Tomcat]
+2026-01-07 15:47:18 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:47:19 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:47:19 - Root WebApplicationContext: initialization completed in 10546 ms
+2026-01-07 15:47:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:47:20 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:47:20 - HHH000026: Second-level cache disabled
+2026-01-07 15:47:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:47:21 - HikariPool-1 - Starting...
+2026-01-07 15:47:26 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:47:26 - HikariPool-1 - Start completed.
+2026-01-07 15:47:26 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 15:47:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:47:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:47:31 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:47:36 - 
+
+Using generated security password: 524c6bf7-8b18-4ba7-b0e9-c7b7684e8bf1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 15:47:36 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:47:36 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:47:37 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:47:37 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:47:38 - Setting initial instance status as: STARTING
+2026-01-07 15:47:38 - Initializing Eureka in region us-east-1
+2026-01-07 15:47:38 - Resolving eureka endpoints via configuration
+2026-01-07 15:47:38 - Disable delta property : false
+2026-01-07 15:47:38 - Single vip registry refresh property : null
+2026-01-07 15:47:38 - Force full registry fetch : false
+2026-01-07 15:47:38 - Application is null : false
+2026-01-07 15:47:38 - Registered Applications size is zero : true
+2026-01-07 15:47:38 - Application version is -1: true
+2026-01-07 15:47:38 - Getting all instance registry info from the eureka server
+2026-01-07 15:47:39 - The response status is 200
+2026-01-07 15:47:39 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:47:39 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:47:39 - Discovery Client initialized at timestamp 1767797259486 with initial instances count: 2
+2026-01-07 15:47:39 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:47:39 - Saw local status change event StatusChangeEvent [timestamp=1767797259512, current=UP, previous=STARTING]
+2026-01-07 15:47:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:47:39 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:47:39 - Updating port to 8081
+2026-01-07 15:47:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:47:39 - Started EtablissementApplication in 35.4 seconds (process running for 41.879)
+2026-01-07 15:47:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:47:58 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:47:58 - Completed initialization in 2 ms
+2026-01-07 15:51:47 - Starting EtablissementApplication using Java 17.0.17 with PID 19568 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 15:51:47 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 15:51:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 15:51:53 - Finished Spring Data repository scanning in 577 ms. Found 5 JPA repository interfaces.
+2026-01-07 15:51:54 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 15:51:57 - Tomcat initialized with port 8081 (http)
+2026-01-07 15:51:57 - Starting service [Tomcat]
+2026-01-07 15:51:57 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 15:51:57 - Initializing Spring embedded WebApplicationContext
+2026-01-07 15:51:57 - Root WebApplicationContext: initialization completed in 9315 ms
+2026-01-07 15:51:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 15:51:59 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 15:51:59 - HHH000026: Second-level cache disabled
+2026-01-07 15:52:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 15:52:00 - HikariPool-1 - Starting...
+2026-01-07 15:52:05 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 15:52:05 - HikariPool-1 - Start completed.
+2026-01-07 15:52:05 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 15:52:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 15:52:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 15:52:10 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 15:52:15 - 
+
+Using generated security password: 766f831d-e267-405a-a792-a32429eda3ad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 15:52:15 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 15:52:15 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 15:52:16 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 15:52:16 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 15:52:16 - Setting initial instance status as: STARTING
+2026-01-07 15:52:16 - Initializing Eureka in region us-east-1
+2026-01-07 15:52:16 - Resolving eureka endpoints via configuration
+2026-01-07 15:52:16 - Disable delta property : false
+2026-01-07 15:52:16 - Single vip registry refresh property : null
+2026-01-07 15:52:16 - Force full registry fetch : false
+2026-01-07 15:52:16 - Application is null : false
+2026-01-07 15:52:16 - Registered Applications size is zero : true
+2026-01-07 15:52:16 - Application version is -1: true
+2026-01-07 15:52:16 - Getting all instance registry info from the eureka server
+2026-01-07 15:52:18 - The response status is 200
+2026-01-07 15:52:18 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 15:52:18 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 15:52:18 - Discovery Client initialized at timestamp 1767797538194 with initial instances count: 2
+2026-01-07 15:52:18 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 15:52:18 - Saw local status change event StatusChangeEvent [timestamp=1767797538223, current=UP, previous=STARTING]
+2026-01-07 15:52:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 15:52:18 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 15:52:18 - Updating port to 8081
+2026-01-07 15:52:18 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 15:52:18 - Started EtablissementApplication in 36.042 seconds (process running for 40.52)
+2026-01-07 15:52:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 15:52:24 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 15:52:24 - Completed initialization in 5 ms
+2026-01-07 15:55:59 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s428ms604µs200ns).
+2026-01-07 15:58:10 - Resolving eureka endpoints via configuration
+2026-01-07 16:03:13 - Starting EtablissementApplication using Java 17.0.17 with PID 21564 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 16:03:13 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:03:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 16:03:24 - Finished Spring Data repository scanning in 898 ms. Found 5 JPA repository interfaces.
+2026-01-07 16:03:27 - BeanFactory id=8d7d02bd-6f1c-3fe8-9de2-8dac2febaa8d
+2026-01-07 16:03:34 - Tomcat initialized with port 8081 (http)
+2026-01-07 16:03:34 - Starting service [Tomcat]
+2026-01-07 16:03:34 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:03:35 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:03:35 - Root WebApplicationContext: initialization completed in 21467 ms
+2026-01-07 16:03:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:03:45 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:03:45 - HHH000026: Second-level cache disabled
+2026-01-07 16:03:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:03:48 - HikariPool-1 - Starting...
+2026-01-07 16:03:55 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 16:03:55 - HikariPool-1 - Start completed.
+2026-01-07 16:03:55 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:04:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:04:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:04:05 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:04:15 - 
+
+Using generated security password: ad05b40b-2567-40fa-9626-0665e0164fea
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:04:15 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:04:16 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:04:19 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:04:19 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:04:20 - Setting initial instance status as: STARTING
+2026-01-07 16:04:20 - Initializing Eureka in region us-east-1
+2026-01-07 16:04:20 - Resolving eureka endpoints via configuration
+2026-01-07 16:04:20 - Disable delta property : false
+2026-01-07 16:04:20 - Single vip registry refresh property : null
+2026-01-07 16:04:20 - Force full registry fetch : false
+2026-01-07 16:04:20 - Application is null : false
+2026-01-07 16:04:20 - Registered Applications size is zero : true
+2026-01-07 16:04:20 - Application version is -1: true
+2026-01-07 16:04:20 - Getting all instance registry info from the eureka server
+2026-01-07 16:04:23 - The response status is 200
+2026-01-07 16:04:23 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:04:23 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:04:23 - Discovery Client initialized at timestamp 1767798263921 with initial instances count: 2
+2026-01-07 16:04:23 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 16:04:23 - Saw local status change event StatusChangeEvent [timestamp=1767798263950, current=UP, previous=STARTING]
+2026-01-07 16:04:23 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 16:04:24 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 16:04:24 - Updating port to 8081
+2026-01-07 16:04:24 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 16:04:24 - Started EtablissementApplication in 74.411 seconds (process running for 79.686)
+2026-01-07 16:04:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:04:56 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:04:56 - Completed initialization in 5 ms
+2026-01-07 16:09:20 - Resolving eureka endpoints via configuration
+2026-01-07 16:15:41 - Starting EtablissementApplication using Java 17.0.17 with PID 15704 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 16:15:41 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:15:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 16:15:51 - Finished Spring Data repository scanning in 975 ms. Found 5 JPA repository interfaces.
+2026-01-07 16:15:54 - BeanFactory id=8254a898-03d0-324f-b608-1dd43fbb9a8f
+2026-01-07 16:15:59 - Tomcat initialized with port 8081 (http)
+2026-01-07 16:15:59 - Starting service [Tomcat]
+2026-01-07 16:15:59 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:15:59 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:15:59 - Root WebApplicationContext: initialization completed in 17860 ms
+2026-01-07 16:16:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:16:02 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:16:02 - HHH000026: Second-level cache disabled
+2026-01-07 16:16:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:16:04 - HikariPool-1 - Starting...
+2026-01-07 16:16:10 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 16:16:10 - HikariPool-1 - Start completed.
+2026-01-07 16:16:10 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:16:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:16:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:16:19 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:16:25 - 
+
+Using generated security password: be1410b5-84fa-4f42-beb2-aff5b30f3e6a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:16:25 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:16:25 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:16:26 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:16:26 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:16:27 - Setting initial instance status as: STARTING
+2026-01-07 16:16:27 - Initializing Eureka in region us-east-1
+2026-01-07 16:16:27 - Resolving eureka endpoints via configuration
+2026-01-07 16:16:27 - Disable delta property : false
+2026-01-07 16:16:27 - Single vip registry refresh property : null
+2026-01-07 16:16:27 - Force full registry fetch : false
+2026-01-07 16:16:27 - Application is null : false
+2026-01-07 16:16:27 - Registered Applications size is zero : true
+2026-01-07 16:16:27 - Application version is -1: true
+2026-01-07 16:16:27 - Getting all instance registry info from the eureka server
+2026-01-07 16:16:29 - The response status is 200
+2026-01-07 16:16:29 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:16:29 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:16:29 - Discovery Client initialized at timestamp 1767798989426 with initial instances count: 0
+2026-01-07 16:16:29 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 16:16:29 - Saw local status change event StatusChangeEvent [timestamp=1767798989458, current=UP, previous=STARTING]
+2026-01-07 16:16:29 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 16:16:29 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 16:16:29 - Updating port to 8081
+2026-01-07 16:16:29 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 16:16:30 - Started EtablissementApplication in 60.437 seconds (process running for 68.61)
+2026-01-07 16:16:59 - Disable delta property : false
+2026-01-07 16:16:59 - Single vip registry refresh property : null
+2026-01-07 16:16:59 - Force full registry fetch : false
+2026-01-07 16:16:59 - Application is null : false
+2026-01-07 16:16:59 - Registered Applications size is zero : true
+2026-01-07 16:16:59 - Application version is -1: false
+2026-01-07 16:16:59 - Getting all instance registry info from the eureka server
+2026-01-07 16:16:59 - The response status is 200
+2026-01-07 16:20:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:20:41 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:20:41 - Completed initialization in 5 ms
+2026-01-07 16:21:27 - Resolving eureka endpoints via configuration
+2026-01-07 16:26:14 - Starting EtablissementApplication using Java 17.0.17 with PID 12564 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 16:26:14 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:26:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 16:26:19 - Finished Spring Data repository scanning in 514 ms. Found 5 JPA repository interfaces.
+2026-01-07 16:26:20 - BeanFactory id=8254a898-03d0-324f-b608-1dd43fbb9a8f
+2026-01-07 16:26:22 - Tomcat initialized with port 8081 (http)
+2026-01-07 16:26:22 - Starting service [Tomcat]
+2026-01-07 16:26:22 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:26:23 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:26:23 - Root WebApplicationContext: initialization completed in 8736 ms
+2026-01-07 16:26:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:26:24 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:26:24 - HHH000026: Second-level cache disabled
+2026-01-07 16:26:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:26:25 - HikariPool-1 - Starting...
+2026-01-07 16:26:30 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 16:26:30 - HikariPool-1 - Start completed.
+2026-01-07 16:26:30 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:26:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:26:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:26:33 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:26:36 - 
+
+Using generated security password: 71294ee6-c651-4eb9-a90b-def147e8f9d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:26:37 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:26:37 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:26:37 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:26:37 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:26:38 - Setting initial instance status as: STARTING
+2026-01-07 16:26:38 - Initializing Eureka in region us-east-1
+2026-01-07 16:26:38 - Resolving eureka endpoints via configuration
+2026-01-07 16:26:38 - Disable delta property : false
+2026-01-07 16:26:38 - Single vip registry refresh property : null
+2026-01-07 16:26:38 - Force full registry fetch : false
+2026-01-07 16:26:38 - Application is null : false
+2026-01-07 16:26:38 - Registered Applications size is zero : true
+2026-01-07 16:26:38 - Application version is -1: true
+2026-01-07 16:26:38 - Getting all instance registry info from the eureka server
+2026-01-07 16:26:39 - The response status is 200
+2026-01-07 16:26:39 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:26:39 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:26:39 - Discovery Client initialized at timestamp 1767799599169 with initial instances count: 2
+2026-01-07 16:26:39 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 16:26:39 - Saw local status change event StatusChangeEvent [timestamp=1767799599186, current=UP, previous=STARTING]
+2026-01-07 16:26:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 16:26:39 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 16:26:39 - Updating port to 8081
+2026-01-07 16:26:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 16:26:39 - Started EtablissementApplication in 28.623 seconds (process running for 31.966)
+2026-01-07 16:27:45 - Starting EtablissementApplication using Java 17.0.17 with PID 14880 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 16:27:45 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:27:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 16:27:50 - Finished Spring Data repository scanning in 452 ms. Found 5 JPA repository interfaces.
+2026-01-07 16:27:50 - BeanFactory id=8254a898-03d0-324f-b608-1dd43fbb9a8f
+2026-01-07 16:27:52 - Tomcat initialized with port 8081 (http)
+2026-01-07 16:27:52 - Starting service [Tomcat]
+2026-01-07 16:27:52 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:27:52 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:27:52 - Root WebApplicationContext: initialization completed in 6569 ms
+2026-01-07 16:27:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:27:53 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:27:53 - HHH000026: Second-level cache disabled
+2026-01-07 16:27:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:27:54 - HikariPool-1 - Starting...
+2026-01-07 16:27:59 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 16:27:59 - HikariPool-1 - Start completed.
+2026-01-07 16:27:59 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:28:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:28:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:28:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:28:05 - 
+
+Using generated security password: 4b363342-8fcb-4a99-8ab6-775d3d22107b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:28:06 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:28:06 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:28:06 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:28:06 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:28:07 - Setting initial instance status as: STARTING
+2026-01-07 16:28:07 - Initializing Eureka in region us-east-1
+2026-01-07 16:28:07 - Resolving eureka endpoints via configuration
+2026-01-07 16:28:07 - Disable delta property : false
+2026-01-07 16:28:07 - Single vip registry refresh property : null
+2026-01-07 16:28:07 - Force full registry fetch : false
+2026-01-07 16:28:07 - Application is null : false
+2026-01-07 16:28:07 - Registered Applications size is zero : true
+2026-01-07 16:28:07 - Application version is -1: true
+2026-01-07 16:28:07 - Getting all instance registry info from the eureka server
+2026-01-07 16:28:08 - The response status is 200
+2026-01-07 16:28:08 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:28:08 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:28:08 - Discovery Client initialized at timestamp 1767799688048 with initial instances count: 2
+2026-01-07 16:28:08 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 16:28:08 - Saw local status change event StatusChangeEvent [timestamp=1767799688067, current=UP, previous=STARTING]
+2026-01-07 16:28:08 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 16:28:08 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 16:28:08 - Updating port to 8081
+2026-01-07 16:28:08 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 16:28:08 - Started EtablissementApplication in 24.236 seconds (process running for 27.229)
+2026-01-07 16:28:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:28:13 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:28:13 - Completed initialization in 2 ms
+2026-01-07 16:33:07 - Resolving eureka endpoints via configuration

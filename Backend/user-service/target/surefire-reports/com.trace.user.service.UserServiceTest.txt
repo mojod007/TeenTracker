@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.trace.user.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.002 s <<< FAILURE! -- in com.trace.user.service.UserServiceTest
+com.trace.user.service.UserServiceTest.save_ShouldEncodePasswordAndSaveUser_WhenNewUser -- Time elapsed: 0.324 s <<< FAILURE!
+Wanted but not invoked:
+passwordEncoder.encode("password123");
+-> at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:106)
+Actually, there were zero interactions with this mock.
+
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:106)
+	at com.trace.user.service.UserServiceTest.save_ShouldEncodePasswordAndSaveUser_WhenNewUser(UserServiceTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

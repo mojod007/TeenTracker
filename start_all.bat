@@ -1,8 +1,8 @@
 @echo off
 echo Stopping all Trace microservices...
 
-:: Ports: 8761 (Discovery), 8080 (Gateway), 8081 (Establishment), 8082 (Product), 8083 (Dashboard), 8084 (User)
-set PORTS=8761 8080 8081 8082 8083 8084
+:: Ports: 8761 (Discovery), 8080 (Gateway), 8081 (Establishment), 8082 (Product), 8083 (Dashboard), 8084 (User), 8085 (Auth)
+set PORTS=8761 8080 8081 8082 8083 8084 8085
 
 for %%p in (%PORTS%) do (
     echo Checking port %%p...
@@ -31,45 +31,52 @@ if not exist "%~dp0logs" (
     mkdir "%~dp0logs"
 )
 
-echo [1/6] Starting Discovery Service...
+echo [1/7] Starting Discovery Service...
 pushd "%BASE_DIR%\discovery-service"
 start "Trace - Discovery Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 10 /nobreak
 echo.
 
-echo [2/6] Starting Gateway Service...
+echo [2/7] Starting Gateway Service...
 pushd "%BASE_DIR%\gateway-service"
 start "Trace - Gateway Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 7 /nobreak
 echo.
 
-echo [3/6] Starting Dashboard Service...
+echo [3/7] Starting Dashboard Service...
 pushd "%BASE_DIR%\dashboard-service"
 start "Trace - Dashboard Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 3 /nobreak
 echo.
 
-echo [4/6] Starting User Service...
+echo [4/7] Starting User Service...
 pushd "%BASE_DIR%\user-service"
 start "Trace - User Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 3 /nobreak
 echo.
 
-echo [5/6] Starting Product Service...
+echo [5/7] Starting Product Service...
 pushd "%BASE_DIR%\product-service"
 start "Trace - Product Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 3 /nobreak
 echo.
 
-echo [6/6] Starting Etablissement Service...
+echo [6/7] Starting Etablissement Service...
 timeout /t 3 /nobreak
 pushd "%BASE_DIR%\etablissement-service"
 start "Trace - Etablissement Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
+popd
+timeout /t 3 /nobreak
+echo.
+
+echo [7/7] Starting Auth Service...
+pushd "%BASE_DIR%\auth-service"
+start "Trace - Auth Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 echo.
 
@@ -84,4 +91,5 @@ echo - Dashboard            : http://localhost:8080/
 echo - User Service         : http://localhost:8080/users
 echo - Product Service      : http://localhost:8080/products
 echo - Etablissement Service: http://localhost:8080/etablissements
+echo - Auth Service         : http://localhost:8080/auth
 PAUSE

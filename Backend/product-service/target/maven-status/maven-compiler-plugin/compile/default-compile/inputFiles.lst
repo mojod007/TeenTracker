@@ -1,3 +1,4 @@
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\config\SecurityConfig.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\config\SwaggerConfig.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\controller\GammeRestController.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\controller\GammeWebController.java
@@ -10,5 +11,7 @@ C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\ProductApplication.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\repository\GammeRepository.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\repository\ProductRepository.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\security\JwtRequestFilter.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\security\JwtUtils.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\service\GammeService.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\product-service\src\main\java\com\trace\product\service\ProductService.java

@@ -137,11 +137,27 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Permissions</label>
-                                    <select multiple class="form-control" name="permissionIds" size="10">
-                                        <option th:each="p : ${permissions}" th:value="${p.id}"
-                                            th:text="${p.module + ' - ' + p.nom}"
-                                            th:selected="${#lists.contains(profile.permissions, p)}"></option>
-                                    </select>
+                                    <div class="row">
+                                        <div th:each="moduleEntry : ${permissions.stream().collect(java.util.stream.Collectors.groupingBy(p -> p.module))}"
+                                            class="col-md-4 mb-3">
+                                            <div class="card card-outline card-info">
+                                                <div class="card-header">
+                                                    <h3 class="card-title" th:text="${moduleEntry.key}">Module</h3>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div th:each="p : ${moduleEntry.value}"
+                                                        class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            name="permissionIds" th:id="${'perm_' + p.id}"
+                                                            th:value="${p.id}"
+                                                            th:checked="${profile.permissions != null && profile.permissions.contains(p)}">
+                                                        <label th:for="${'perm_' + p.id}" class="custom-control-label"
+                                                            th:text="${p.nom}">Permission</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-footer">

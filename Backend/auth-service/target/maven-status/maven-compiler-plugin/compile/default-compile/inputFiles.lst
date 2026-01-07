@@ -1,0 +1,11 @@
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\AuthServiceApplication.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\config\AuthConfiguration.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\config\SecurityConfig.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\controller\AuthController.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\dto\AuthRequest.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\entity\Profile.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\entity\User.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\repository\UserRepository.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\security\JwtRequestFilter.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\security\JwtUtils.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\auth-service\src\main\java\com\trace\auth\service\CustomUserDetailsService.java

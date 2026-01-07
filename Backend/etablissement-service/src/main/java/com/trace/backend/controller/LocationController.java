@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.util.List;
 import java.util.Optional;
@@ -23,6 +24,7 @@ public class LocationController {
     private ZoneRepository zoneRepository;
 
     @GetMapping("/new")
+    @PreAuthorize("hasAuthority('LOCATION_CREATE')")
     public String newLocation(@PathVariable Long zoneId, Model model) {
         Optional<Zone> zone = zoneRepository.findById(zoneId);
         if (zone.isEmpty() || zone.get().getDepot() == null) {
@@ -35,6 +37,7 @@ public class LocationController {
     }
 
     @PostMapping("/save")
+    @PreAuthorize("hasAuthority('LOCATION_CREATE')")
     public String saveLocation(@PathVariable Long zoneId, @ModelAttribute Location location) {
         Optional<Zone> zone = zoneRepository.findById(zoneId);
         if (zone.isPresent()) {
@@ -45,6 +48,7 @@ public class LocationController {
     }
 
     @GetMapping
+    @PreAuthorize("hasAuthority('LOCATION_VIEW')")
     public String listLocations(@PathVariable Long zoneId, Model model) {
         Optional<Zone> zone = zoneRepository.findById(zoneId);
         if (zone.isEmpty()) {
@@ -58,6 +62,7 @@ public class LocationController {
     }
 
     @GetMapping("/{id}/edit")
+    @PreAuthorize("hasAuthority('LOCATION_UPDATE')")
     public String editLocation(@PathVariable Long zoneId, @PathVariable Long id, Model model) {
         Optional<Zone> zone = zoneRepository.findById(zoneId);
         Optional<Location> location = locationRepository.findById(id);
@@ -72,6 +77,7 @@ public class LocationController {
     }
 
     @PostMapping("/{id}/update")
+    @PreAuthorize("hasAuthority('LOCATION_UPDATE')")
     public String updateLocation(@PathVariable Long zoneId, @PathVariable Long id, @ModelAttribute Location location) {
         Optional<Zone> zone = zoneRepository.findById(zoneId);
         if (zone.isPresent()) {
@@ -83,6 +89,7 @@ public class LocationController {
     }
 
     @GetMapping("/{id}/delete")
+    @PreAuthorize("hasAuthority('LOCATION_DELETE')")
     public String deleteLocation(@PathVariable Long zoneId, @PathVariable Long id) {
         locationRepository.deleteById(id);
         return "redirect:/zones/" + zoneId + "/locations";

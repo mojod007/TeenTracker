@@ -1,6 +1,9 @@
+com\trace\user\controller\HomeController.class
+com\trace\user\UserApplication$1.class
 com\trace\user\controller\ProfileController.class
 com\trace\user\config\DataInitializer.class
 com\trace\user\service\PermissionService.class
+com\trace\user\service\CustomUserDetailsService.class
 com\trace\user\controller\UserController.class
 com\trace\user\entity\Profile.class
 com\trace\user\service\ProfileService.class
@@ -14,6 +17,9 @@ com\trace\user\repository\PermissionRepository.class
 com\trace\user\UserApplication.class
 com\trace\user\controller\GlobalExceptionHandler.class
 com\trace\user\entity\Permission$PermissionBuilder.class
+com\trace\user\config\SecurityConfig.class
 com\trace\user\repository\ProfileRepository.class
+com\trace\user\security\JwtUtils.class
+com\trace\user\security\JwtRequestFilter.class
 com\trace\user\entity\User.class
 com\trace\user\service\UserService.class

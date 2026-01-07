@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.util.List;
 import java.util.Optional;
@@ -22,7 +23,13 @@ public class DepotController {
     @Autowired
     private EtablissementRepository etablissementRepository;
 
+    @GetMapping("")
+    public String redirectToEtablissements() {
+        return "redirect:/etablissements";
+    }
+
     @GetMapping("/{etabId}/depots/new")
+    @PreAuthorize("hasAuthority('DEPOT_CREATE')")
     public String newDepot(@PathVariable Long etabId, Model model) {
         Optional<Etablissement> etablissement = etablissementRepository.findById(etabId);
         if (etablissement.isEmpty()) {
@@ -34,6 +41,7 @@ public class DepotController {
     }
 
     @PostMapping("/{etabId}/depots/save")
+    @PreAuthorize("hasAuthority('DEPOT_CREATE')")
     public String saveDepot(@PathVariable Long etabId, @ModelAttribute Depot depot) {
         Optional<Etablissement> etablissement = etablissementRepository.findById(etabId);
         if (etablissement.isPresent()) {
@@ -44,6 +52,7 @@ public class DepotController {
     }
 
     @GetMapping("/{etabId}/depots")
+    @PreAuthorize("hasAuthority('DEPOT_VIEW')")
     public String listDepots(@PathVariable Long etabId, Model model) {
         Optional<Etablissement> etablissement = etablissementRepository.findById(etabId);
         if (etablissement.isEmpty()) {

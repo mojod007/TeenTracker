@@ -7,12 +7,15 @@ com\trace\backend\client\UserServiceClient.class
 com\trace\backend\controller\ZoneController.class
 com\trace\backend\enums\TypeGestion.class
 com\trace\backend\controller\LocationController.class
+com\trace\etablissement\security\JwtRequestFilter.class
 com\trace\backend\entity\Location.class
 com\trace\backend\repository\UserAssignmentRepository.class
 com\trace\backend\repository\EtablissementRepository.class
+com\trace\etablissement\config\SecurityConfig.class
 com\trace\backend\controller\EtablissementController.class
 com\trace\backend\repository\ZoneRepository.class
 com\trace\backend\controller\EtablissementRestController.class
+com\trace\etablissement\security\JwtUtils.class
 com\trace\backend\entity\Etablissement.class
 com\trace\backend\repository\LocationRepository.class
 com\trace\backend\controller\DepotController.class

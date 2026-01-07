@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.util.List;
 import java.util.Optional;
@@ -23,6 +24,7 @@ public class ZoneController {
     private DepotRepository depotRepository;
 
     @GetMapping("/new")
+    @PreAuthorize("hasAuthority('ZONE_CREATE')")
     public String newZone(@PathVariable Long depotId, Model model) {
         Optional<Depot> depot = depotRepository.findById(depotId);
         if (depot.isEmpty() || depot.get().getEtablissement() == null) {
@@ -35,6 +37,7 @@ public class ZoneController {
     }
 
     @PostMapping("/save")
+    @PreAuthorize("hasAuthority('ZONE_CREATE')")
     public String saveZone(@PathVariable Long depotId, @ModelAttribute Zone zone) {
         Optional<Depot> depot = depotRepository.findById(depotId);
         if (depot.isPresent()) {
@@ -45,6 +48,7 @@ public class ZoneController {
     }
 
     @GetMapping
+    @PreAuthorize("hasAuthority('ZONE_VIEW')")
     public String listZones(@PathVariable Long depotId, Model model) {
         Optional<Depot> depot = depotRepository.findById(depotId);
         if (depot.isEmpty()) {

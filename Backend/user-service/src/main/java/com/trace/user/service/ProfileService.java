@@ -8,18 +8,23 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 @Transactional
 public class ProfileService {
-    
+
     private final ProfileRepository profileRepository;
     private final PermissionRepository permissionRepository;
 
     public List<Profile> findAll() {
         return profileRepository.findAll();
+    }
+
+    public List<Profile> findAllWithUsers() {
+        return profileRepository.findAllWithUsers();
     }
 
     public Profile findById(Long id) {
@@ -44,7 +49,7 @@ public class ProfileService {
         Profile profile = findById(profileId);
         Permission permission = permissionRepository.findById(permissionId)
                 .orElseThrow(() -> new RuntimeException("Permission not found"));
-        
+
         if (!profile.getPermissions().contains(permission)) {
             profile.getPermissions().add(permission);
             return profileRepository.save(profile);
@@ -56,8 +61,18 @@ public class ProfileService {
         Profile profile = findById(profileId);
         Permission permission = permissionRepository.findById(permissionId)
                 .orElseThrow(() -> new RuntimeException("Permission not found"));
-        
+
         profile.getPermissions().remove(permission);
+        return profileRepository.save(profile);
+    }
+
+    public Profile updatePermissions(Long profileId, List<Long> permissionIds) {
+        Profile profile = findById(profileId);
+        List<Permission> permissions = new ArrayList<>();
+        if (permissionIds != null && !permissionIds.isEmpty()) {
+            permissions = permissionRepository.findAllById(permissionIds);
+        }
+        profile.setPermissions(permissions);
         return profileRepository.save(profile);
     }
 }

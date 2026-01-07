@@ -1,5 +1,6 @@
 server:
   port: 8080
+  address: 0.0.0.0
 spring:
   application:
     name: gateway-service
@@ -8,27 +9,55 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/login, /logout, /api/auth/**
+          filters:
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**, /profiles/**, /permissions/**
+            - Path=/users, /users/**, /profiles, /profiles/**, /permissions, /permissions/**
+          filters:
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
+            - SaveSession
+            - JwtGatewayFilter
         - id: product-service
           uri: lb://product-service
           predicates:
             - Path=/products/**, /produits/**, /produit/**, /gammes/**
+          filters:
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
+            - SaveSession
+            - JwtGatewayFilter
         - id: etablissement-service
           uri: lb://etablissement-service
           predicates:
-            - Path=/etablissements/**, /etablissement/**, /emplacements/**, /regions/**, /depots/**, /zones/**,/api/etablissements/**
+            - Path=/etablissements, /etablissements/**, /etablissement, /etablissement/**, /emplacements, /emplacements/**, /regions, /regions/**, /depots, /depots/**, /zones, /zones/**, /api/etablissements/**
+          filters:
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
+            - SaveSession
+            - JwtGatewayFilter
         - id: dashboard-service
           uri: lb://dashboard-service
           predicates:
-            - Path=/, /dashboard/**, /api/services/status/**
+            - Path=/dashboard, /dashboard/**, /api/services/status/**
+          filters:
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
+            - SaveSession
+            - JwtGatewayFilter
+        - id: root-redirect
+          uri: no://op
+          predicates:
+            - Path=/
+          filters:
+            - RedirectTo=302, /login
 
 eureka:
   instance:
-    hostname: 127.0.0.1
-    prefer-ip-address: true
+    hostname: localhost
+    prefer-ip-address: false
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/

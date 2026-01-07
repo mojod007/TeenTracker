@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trace | Intro</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>TRACE</b> Microservices</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Bienvenue sur la plateforme TRACE</p>
+
+                <div th:if="${allServicesUp}" class="social-auth-links text-center mb-3">
+                    <a href="/login" class="btn btn-block btn-primary">
+                        <i class="fas fa-sign-in-alt mr-2"></i> Se connecter
+                    </a>
+                </div>
+                <div th:if="${!allServicesUp}" class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i> Veuillez patienter, tous les services ne sont pas encore disponibles.
+                    <hr>
+                    <h6>État des services :</h6>
+                    <ul class="list-unstyled">
+                        <li th:each="status : ${serviceStatuses}" class="mb-1">
+                            <i th:class="${status.value ? 'fas fa-check-circle text-success' : 'fas fa-times-circle text-danger'}"></i>
+                            <span th:text="${status.key}"></span>
+                            <small th:class="${status.value ? 'text-success' : 'text-danger'}" th:text="${status.value ? '(Disponible)' : '(Indisponible)'}"></small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <script>
+        // Auto-refresh every 5 seconds if services are not up
+        if (![[${allServicesUp}]]) {
+            setTimeout(function() {
+                location.reload();
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>

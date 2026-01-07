@@ -1,0 +1,3 @@
+- [x] Add findAllWithUsers() method in ProfileRepository with @Query and JOIN FETCH
+- [x] Add findAllWithUsers() method in ProfileService
+- [x] Update ProfileController.list() to use profileService.findAllWithUsers()

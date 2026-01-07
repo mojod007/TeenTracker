@@ -1,0 +1,45 @@
+server:
+  port: 8085
+  address: 0.0.0.0
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: auth-service
+  jwt:
+    secret: mysuperlongsecretkeythatissecureandlongenoughforjwttokengeneration1234567890
+    expiration: 86400000
+  datasource:
+    url: jdbc:h2:file:./data/auth_db;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+logging:
+  level:
+    "[com.trace]": INFO
+    "[org.springframework.web]": INFO
+    "[org.hibernate.SQL]": DEBUG
+  file:
+    name: ../logs/auth-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

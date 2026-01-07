@@ -17,3 +17,6 @@ C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\mai
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\backend\repository\UserAssignmentRepository.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\backend\repository\ZoneRepository.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\backend\service\EtablissementService.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\etablissement\config\SecurityConfig.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\etablissement\security\JwtRequestFilter.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\src\main\java\com\trace\etablissement\security\JwtUtils.java

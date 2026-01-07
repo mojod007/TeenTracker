@@ -17,17 +17,7 @@ public class DashboardController {
 
     private final RestTemplate restTemplate;
 
-    @GetMapping("/")
-    public String intro(Model model) {
-        log.info("Accès à la page d'introduction du dashboard");
-        // Check status of each service
-        Map<String, Boolean> serviceStatuses = checkServiceStatuses();
-        model.addAttribute("serviceStatuses", serviceStatuses);
-        boolean allServicesUp = serviceStatuses.values().stream().allMatch(Boolean::booleanValue);
-        model.addAttribute("allServicesUp", allServicesUp);
-        log.info("Statut des services vérifié: tous actifs = {}", allServicesUp);
-        return "intro";
-    }
+
 
     @GetMapping("/dashboard")
     public String dashboard() {
@@ -41,7 +31,7 @@ public class DashboardController {
             // Check Eureka server
             restTemplate.getForObject("http://localhost:8761/eureka/apps", String.class);
             // Check user-service
-            restTemplate.getForObject("http://localhost:8082/actuator/health", String.class);
+            restTemplate.getForObject("http://localhost:8084/actuator/health", String.class);
             // Check product-service
             restTemplate.getForObject("http://localhost:8083/actuator/health", String.class);
             // Check etablissement-service
@@ -70,7 +60,7 @@ public class DashboardController {
         }
         // Check user-service
         try {
-            restTemplate.getForObject("http://localhost:8082/actuator/health", String.class);
+            restTemplate.getForObject("http://localhost:8084/actuator/health", String.class);
             statuses.put("User Service", true);
             log.debug("User Service: UP");
         } catch (Exception e) {
@@ -97,7 +87,7 @@ public class DashboardController {
         }
         // Check dashboard-service itself
         try {
-            restTemplate.getForObject("http://localhost:8084/actuator/health", String.class);
+            restTemplate.getForObject("http://localhost:8083/actuator/health", String.class);
             statuses.put("Dashboard Service", true);
             log.debug("Dashboard Service: UP");
         } catch (Exception e) {

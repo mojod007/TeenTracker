@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import jakarta.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
@@ -34,9 +35,26 @@ public class UserRestController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> getUserById(@PathVariable Long id) {
         User user = userService.findById(id);
-        return ResponseEntity.ok(user);
+        Map<String, Object> userMap = new java.util.HashMap<>();
+        userMap.put("id", user.getId());
+        userMap.put("username", user.getUsername());
+        userMap.put("email", user.getEmail());
+        userMap.put("firstName", user.getFirstName());
+        userMap.put("lastName", user.getLastName());
+        userMap.put("active", user.getActive());
+        userMap.put("createdAt", user.getCreatedAt());
+        userMap.put("updatedAt", user.getUpdatedAt());
+        if (user.getProfile() != null) {
+            Map<String, Object> profileMap = new java.util.HashMap<>();
+            profileMap.put("id", user.getProfile().getId());
+            profileMap.put("code", user.getProfile().getCode());
+            profileMap.put("nom", user.getProfile().getNom());
+            profileMap.put("description", user.getProfile().getDescription());
+            userMap.put("profile", profileMap);
+        }
+        return ResponseEntity.ok(userMap);
     }
 
     @GetMapping("/username/{username}")

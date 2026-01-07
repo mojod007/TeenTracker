@@ -28,6 +28,20 @@
                     <a href="/" class="nav-link">Accueil</a>
                 </li>
             </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
 
         <!-- Main Sidebar Container -->
@@ -75,8 +89,11 @@
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                                 <li class="breadcrumb-item"><a href="/etablissements">Établissements</a></li>
-                                <li class="breadcrumb-item"><a th:href="@{'/etablissement/' + ${depot.etablissement.id} + '/depots'}">Dépôts</a></li>
-                                <li class="breadcrumb-item"><a th:href="@{'/depot/' + ${depotId} + '/zones'}">Zones</a></li>
+                                <li class="breadcrumb-item"><a
+                                        th:href="@{'/etablissement/' + ${depot.etablissement.id} + '/depots'}">Dépôts</a>
+                                </li>
+                                <li class="breadcrumb-item"><a th:href="@{'/depot/' + ${depotId} + '/zones'}">Zones</a>
+                                </li>
                                 <li class="breadcrumb-item active">Nouveau</li>
                             </ol>
                         </div>
@@ -93,7 +110,8 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Créer une Zone pour <span th:text="${depot.nom}"></span></h3>
                                 </div>
-                                <form th:action="@{'/depots/' + ${depotId} + '/zones/save'}" th:object="${zone}" method="post">
+                                <form th:action="@{'/depots/' + ${depotId} + '/zones/save'}" th:object="${zone}"
+                                    method="post">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="code">Code</label>
@@ -120,7 +138,8 @@
                                     </div>
 
                                     <div class="card-footer text-right">
-                                        <a th:href="@{'/depots/' + ${depotId} + '/zones'}" class="btn btn-default">Annuler</a>
+                                        <a th:href="@{'/depots/' + ${depotId} + '/zones'}"
+                                            class="btn btn-default">Annuler</a>
                                         <button type="submit" class="btn btn-success">Enregistrer</button>
                                     </div>
                                 </form>

@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.util.Map;
 import java.util.List;
@@ -23,12 +24,14 @@ public class UserController {
     private static final String ETAB_SERVICE_URL = "http://gateway-service/api/etablissements";
 
     @GetMapping
+    @PreAuthorize("hasAuthority('USER_VIEW')")
     public String list(Model model) {
         model.addAttribute("users", userService.findAll());
         return "user-list";
     }
 
     @GetMapping("/add")
+    @PreAuthorize("hasAuthority('USER_CREATE')")
     public String addForm(Model model) {
         model.addAttribute("user", new User());
         model.addAttribute("profiles", profileService.findAll());
@@ -40,6 +43,7 @@ public class UserController {
     }
 
     @GetMapping("/edit/{id}")
+    @PreAuthorize("hasAuthority('USER_EDIT')")
     public String editForm(@PathVariable Long id, Model model) {
         model.addAttribute("user", userService.findById(id));
         model.addAttribute("profiles", profileService.findAll());
@@ -47,7 +51,8 @@ public class UserController {
         model.addAttribute("allDepots", fetchAllDepots());
 
         Map<String, Object> assignments = fetchUserAssignments(id);
-        model.addAttribute("assignedEtabIds", assignments.getOrDefault("etablissementIds", new java.util.ArrayList<>()));
+        model.addAttribute("assignedEtabIds",
+                assignments.getOrDefault("etablissementIds", new java.util.ArrayList<>()));
         model.addAttribute("assignedDepotIds", assignments.getOrDefault("depotIds", new java.util.ArrayList<>()));
         model.addAttribute("userEtablissements", assignments.get("etablissements"));
         model.addAttribute("userDepots", assignments.get("depots"));
@@ -56,27 +61,31 @@ public class UserController {
     }
 
     @PostMapping("/save")
+    @PreAuthorize("hasAuthority('USER_CREATE') or hasAuthority('USER_EDIT')")
     public String save(@ModelAttribute User user,
-                       @RequestParam(value = "etablissementIds", required = false) java.util.List<Long> etablissementIds,
-                       @RequestParam(value = "depotIds", required = false) java.util.List<Long> depotIds) {
+            @RequestParam(value = "etablissementIds", required = false) java.util.List<Long> etablissementIds,
+            @RequestParam(value = "depotIds", required = false) java.util.List<Long> depotIds) {
         User savedUser = userService.save(user);
         saveAssignments(savedUser.getId(), etablissementIds, depotIds);
         return "redirect:/users";
     }
 
     @GetMapping("/delete/{id}")
+    @PreAuthorize("hasAuthority('USER_DELETE')")
     public String delete(@PathVariable Long id) {
         userService.deleteById(id);
         return "redirect:/users";
     }
 
     @GetMapping("/toggle-active/{id}")
+    @PreAuthorize("hasAuthority('USER_EDIT')")
     public String toggleActive(@PathVariable Long id) {
         userService.toggleActive(id);
         return "redirect:/users";
     }
 
     @GetMapping("/view/{id}")
+    @PreAuthorize("hasAuthority('USER_VIEW')")
     public String view(@PathVariable Long id, Model model) {
         model.addAttribute("user", userService.findById(id));
         model.addAttribute("allEtablissements", fetchEtablissements());
@@ -90,7 +99,8 @@ public class UserController {
 
     private java.util.List<java.util.Map<String, Object>> fetchEtablissements() {
         try {
-            java.util.List<java.util.Map<String, Object>> result = restTemplate.getForObject(ETAB_SERVICE_URL + "/all", java.util.List.class);
+            java.util.List<java.util.Map<String, Object>> result = restTemplate.getForObject(ETAB_SERVICE_URL + "/all",
+                    java.util.List.class);
             System.out.println("Fetched etablissements: " + (result != null ? result.size() : 0) + " items");
             return result != null ? result : java.util.Collections.emptyList();
         } catch (Exception e) {
@@ -101,7 +111,8 @@ public class UserController {
 
     private java.util.Map<String, Object> fetchUserAssignments(Long userId) {
         try {
-            return restTemplate.getForObject(ETAB_SERVICE_URL + "/user/" + userId + "/assignments", java.util.Map.class);
+            return restTemplate.getForObject(ETAB_SERVICE_URL + "/user/" + userId + "/assignments",
+                    java.util.Map.class);
         } catch (Exception e) {
             java.util.Map<String, Object> empty = new java.util.HashMap<>();
             empty.put("etablissementIds", new java.util.ArrayList<>());

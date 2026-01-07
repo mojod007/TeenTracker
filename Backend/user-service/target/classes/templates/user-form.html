@@ -66,6 +66,11 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -222,7 +227,8 @@
                                                 data-placeholder="Choisir Établissements">
                                                 <option th:each="etab : ${allEtablissements}" th:value="${etab.id}"
                                                     th:text="${etab.nom}"
-                                                    th:selected="${assignedEtabIds != null && #lists.contains(assignedEtabIds, etab.id)}"></option>
+                                                    th:selected="${assignedEtabIds != null && #lists.contains(assignedEtabIds, etab.id)}">
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
@@ -285,11 +291,11 @@
 
                 if (allDepots && allDepots.length > 0) {
                     // Filter depots based on selected establishments
-                    const filteredDepots = allDepots.filter(function(depot) {
+                    const filteredDepots = allDepots.filter(function (depot) {
                         return depot.etablissement && depot.etablissement.id && selectedEtabIds.includes(String(depot.etablissement.id));
                     });
 
-                    filteredDepots.forEach(function(depot) {
+                    filteredDepots.forEach(function (depot) {
                         const etabName = depot.etablissement && depot.etablissement.nom ? ' (' + depot.etablissement.nom + ')' : '';
                         const text = depot.nom + etabName;
                         const option = new Option(text, depot.id, false, false);
@@ -304,7 +310,7 @@
             }
 
             $etabSelect.on('change', updateDepots);
-            
+
             // Initial selection for Establishments
             if (assignedEtabIds && assignedEtabIds.length > 0) {
                 $etabSelect.val(assignedEtabIds.map(String)).trigger('change');

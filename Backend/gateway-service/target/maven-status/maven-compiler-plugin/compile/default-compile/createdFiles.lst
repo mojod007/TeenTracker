@@ -1,4 +1,7 @@
 com\trace\gateway\ErrorPageHandler.class
-com\trace\gateway\WebConfig.class
+com\trace\gateway\GatewayConfig.class
+com\trace\gateway\IntroController.class
 com\trace\gateway\GatewayApplication.class
+com\trace\gateway\WebConfig.class
 com\trace\gateway\FaviconController.class
+com\trace\gateway\filter\GlobalAuthFilter.class
