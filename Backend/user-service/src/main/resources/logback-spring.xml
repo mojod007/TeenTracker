@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    
+    <timestamp key="startupTime" datePattern="HH-mm-ss"/>
+    <timestamp key="today" datePattern="yyyy-MM-dd"/>
+    
+    <property name="LOG_PATH" value="../logs"/>
+    <property name="ARCHIVE_PATH" value="${LOG_PATH}/archive/${today}"/>
+    <property name="SERVICE_NAME" value="user-service"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <!-- Archive log file for this specific session -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${ARCHIVE_PATH}/${SERVICE_NAME}-${startupTime}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+    
+    <!-- Main log file for the CURRENT session (overwritten on startup) -->
+    <appender name="CURRENT_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_PATH}/${SERVICE_NAME}.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CURRENT_FILE"/>
+    </root>
+
+    <logger name="com.trace" level="DEBUG"/>
+</configuration>

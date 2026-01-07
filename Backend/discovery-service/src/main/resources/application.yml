@@ -19,8 +19,3 @@ logging:
   level:
     com.trace: INFO
     org.springframework.web: INFO
-  file:
-    name: ../logs/discovery-service.log
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

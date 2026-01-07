@@ -1,0 +1,113 @@
+2026-01-07 16:47:35 - Starting GatewayApplication using Java 17.0.17 with PID 20156 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\gateway-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\gateway-service)
+2026-01-07 16:47:35 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:47:38 - BeanFactory id=31df461b-c760-379e-a708-e17c79d8c228
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [After]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Before]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Between]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Cookie]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Header]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Host]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Method]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Path]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Query]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [ReadBody]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [RemoteAddr]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [Weight]
+2026-01-07 16:47:42 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-01-07 16:47:43 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:47:45 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:47:45 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:47:45 - Setting initial instance status as: STARTING
+2026-01-07 16:47:45 - Initializing Eureka in region us-east-1
+2026-01-07 16:47:45 - Resolving eureka endpoints via configuration
+2026-01-07 16:47:45 - Disable delta property : false
+2026-01-07 16:47:45 - Single vip registry refresh property : null
+2026-01-07 16:47:45 - Force full registry fetch : false
+2026-01-07 16:47:45 - Application is null : false
+2026-01-07 16:47:45 - Registered Applications size is zero : true
+2026-01-07 16:47:45 - Application version is -1: true
+2026-01-07 16:47:45 - Getting all instance registry info from the eureka server
+2026-01-07 16:47:49 - The response status is 200
+2026-01-07 16:47:49 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:47:49 - InstanceInfoReplicator onDemand update allowed rate per min is 24
+2026-01-07 16:47:49 - Discovery Client initialized at timestamp 1767800869599 with initial instances count: 0
+2026-01-07 16:47:49 - Registering application GATEWAY-SERVICE with eureka with status UP
+2026-01-07 16:47:49 - Saw local status change event StatusChangeEvent [timestamp=1767800869660, current=UP, previous=STARTING]
+2026-01-07 16:47:49 - DiscoveryClient_GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080: registering service...
+2026-01-07 16:47:51 - DiscoveryClient_GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 - registration status: 204
+2026-01-07 16:47:51 - Netty started on port 8080 (http)
+2026-01-07 16:47:51 - Updating port to 8080
+2026-01-07 16:47:53 - Started GatewayApplication in 18.645 seconds (process running for 19.328)
+2026-01-07 16:47:53 - Service de passerelle Gateway démarré avec succès
+2026-01-07 16:47:54 - Disable delta property : false
+2026-01-07 16:47:54 - Single vip registry refresh property : null
+2026-01-07 16:47:54 - Force full registry fetch : false
+2026-01-07 16:47:54 - Application is null : false
+2026-01-07 16:47:54 - Registered Applications size is zero : true
+2026-01-07 16:47:54 - Application version is -1: false
+2026-01-07 16:47:54 - Getting all instance registry info from the eureka server
+2026-01-07 16:47:54 - The response status is 200
+2026-01-07 16:47:59 - Disable delta property : false
+2026-01-07 16:47:59 - Single vip registry refresh property : null
+2026-01-07 16:47:59 - Force full registry fetch : false
+2026-01-07 16:47:59 - Application is null : false
+2026-01-07 16:47:59 - Registered Applications size is zero : true
+2026-01-07 16:47:59 - Application version is -1: false
+2026-01-07 16:47:59 - Getting all instance registry info from the eureka server
+2026-01-07 16:47:59 - The response status is 200
+2026-01-07 16:48:01 - Accès à la page d'introduction
+2026-01-07 16:48:01 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:01 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:01 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:01 - Dashboard Service: DOWN - I/O error on GET request for "http://localhost:8083/actuator/health": Connection refused: connect
+2026-01-07 16:48:01 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:02 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:05 - Disable delta property : false
+2026-01-07 16:48:05 - Single vip registry refresh property : null
+2026-01-07 16:48:05 - Force full registry fetch : false
+2026-01-07 16:48:05 - Application is null : false
+2026-01-07 16:48:05 - Registered Applications size is zero : true
+2026-01-07 16:48:05 - Application version is -1: false
+2026-01-07 16:48:05 - Getting all instance registry info from the eureka server
+2026-01-07 16:48:07 - The response status is 200
+2026-01-07 16:48:15 - Accès à la page d'introduction
+2026-01-07 16:48:15 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:15 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:15 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:15 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:15 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:20 - Accès à la page d'introduction
+2026-01-07 16:48:20 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:20 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:20 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:20 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:20 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:25 - Accès à la page d'introduction
+2026-01-07 16:48:25 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:25 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:25 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:25 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:25 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:30 - Accès à la page d'introduction
+2026-01-07 16:48:30 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:30 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:30 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:30 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:30 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:36 - Accès à la page d'introduction
+2026-01-07 16:48:36 - User Service: DOWN - I/O error on GET request for "http://localhost:8084/actuator/health": Connection refused: connect
+2026-01-07 16:48:36 - Product Service: DOWN - I/O error on GET request for "http://localhost:8082/actuator/health": Connection refused: connect
+2026-01-07 16:48:36 - Etablissement Service: DOWN - I/O error on GET request for "http://localhost:8081/actuator/health": Connection refused: connect
+2026-01-07 16:48:37 - Auth Service: DOWN - I/O error on GET request for "http://localhost:8085/actuator/health": Connection refused: connect
+2026-01-07 16:48:37 - Statut des services vérifié: tous actifs = false
+2026-01-07 16:48:42 - Accès à la page d'introduction
+2026-01-07 16:48:43 - Statut des services vérifié: tous actifs = true
+2026-01-07 16:49:00 - No servers available for service: auth-service
+2026-01-07 16:49:00 - Error occurred - Status: 503, Path: /login, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/login
+2026-01-07 16:49:02 - No servers available for service: auth-service
+2026-01-07 16:49:02 - Error occurred - Status: 503, Path: /login, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/login
+2026-01-07 16:49:02 - No servers available for service: auth-service
+2026-01-07 16:49:02 - Error occurred - Status: 503, Path: /login, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/login
+2026-01-07 16:49:11 - Accès à la page d'introduction
+2026-01-07 16:49:12 - Statut des services vérifié: tous actifs = true

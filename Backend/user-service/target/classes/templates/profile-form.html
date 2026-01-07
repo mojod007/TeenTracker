@@ -138,8 +138,7 @@
                                 <div class="form-group">
                                     <label>Permissions</label>
                                     <div class="row">
-                                        <div th:each="moduleEntry : ${permissions.stream().collect(java.util.stream.Collectors.groupingBy(p -> p.module))}"
-                                            class="col-md-4 mb-3">
+                                        <div th:each="moduleEntry : ${permissionsByModule}" class="col-md-4 mb-3">
                                             <div class="card card-outline card-info">
                                                 <div class="card-header">
                                                     <h3 class="card-title" th:text="${moduleEntry.key}">Module</h3>

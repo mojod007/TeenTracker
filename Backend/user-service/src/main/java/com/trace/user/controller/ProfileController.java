@@ -13,6 +13,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import com.trace.user.entity.Permission;
 
 @Controller
 @RequestMapping("/profiles")
@@ -33,7 +34,9 @@ public class ProfileController {
     @PreAuthorize("hasAuthority('PROFILE_CREATE')")
     public String addForm(Model model) {
         model.addAttribute("profile", new Profile());
-        model.addAttribute("permissions", permissionService.findAll());
+        List<Permission> allPermissions = permissionService.findAll();
+        model.addAttribute("permissionsByModule", allPermissions.stream()
+                .collect(Collectors.groupingBy(p -> p.getModule() != null ? p.getModule() : "AUTRE")));
         return "profile-form";
     }
 
@@ -41,7 +44,9 @@ public class ProfileController {
     @PreAuthorize("hasAuthority('PROFILE_UPDATE')")
     public String editForm(@PathVariable Long id, Model model) {
         model.addAttribute("profile", profileService.findById(id));
-        model.addAttribute("permissions", permissionService.findAll());
+        List<Permission> allPermissions = permissionService.findAll();
+        model.addAttribute("permissionsByModule", allPermissions.stream()
+                .collect(Collectors.groupingBy(p -> p.getModule() != null ? p.getModule() : "AUTRE")));
         return "profile-form";
     }
 

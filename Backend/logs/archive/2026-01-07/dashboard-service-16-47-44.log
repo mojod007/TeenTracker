@@ -1,0 +1,44 @@
+2026-01-07 16:47:44 - Starting DashboardApplication using Java 17.0.17 with PID 19860 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service)
+2026-01-07 16:47:44 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:47:50 - BeanFactory id=fb73ae4d-d621-3380-94a0-87fdb0886fe4
+2026-01-07 16:47:52 - Tomcat initialized with port 8083 (http)
+2026-01-07 16:47:52 - Starting service [Tomcat]
+2026-01-07 16:47:52 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:47:52 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:47:52 - Root WebApplicationContext: initialization completed in 7679 ms
+2026-01-07 16:47:54 - 
+
+Using generated security password: 527039e3-c5fe-44ad-8b39-8a38d52560f0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:47:54 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:47:54 - Adding welcome page template: index
+2026-01-07 16:47:56 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:47:59 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:48:00 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:48:00 - Setting initial instance status as: STARTING
+2026-01-07 16:48:00 - Initializing Eureka in region us-east-1
+2026-01-07 16:48:00 - Resolving eureka endpoints via configuration
+2026-01-07 16:48:00 - Disable delta property : false
+2026-01-07 16:48:00 - Single vip registry refresh property : null
+2026-01-07 16:48:00 - Force full registry fetch : false
+2026-01-07 16:48:00 - Application is null : false
+2026-01-07 16:48:00 - Registered Applications size is zero : true
+2026-01-07 16:48:00 - Application version is -1: true
+2026-01-07 16:48:00 - Getting all instance registry info from the eureka server
+2026-01-07 16:48:03 - The response status is 200
+2026-01-07 16:48:03 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:48:03 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:48:03 - Discovery Client initialized at timestamp 1767800883699 with initial instances count: 1
+2026-01-07 16:48:03 - Registering application DASHBOARD-SERVICE with eureka with status UP
+2026-01-07 16:48:03 - Saw local status change event StatusChangeEvent [timestamp=1767800883714, current=UP, previous=STARTING]
+2026-01-07 16:48:03 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083: registering service...
+2026-01-07 16:48:03 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-07 16:48:03 - Updating port to 8083
+2026-01-07 16:48:06 - DiscoveryClient_DASHBOARD-SERVICE/DESKTOP-I9GMSBV:dashboard-service:8083 - registration status: 204
+2026-01-07 16:48:10 - Started DashboardApplication in 27.463 seconds (process running for 28.862)
+2026-01-07 16:48:10 - Service de tableau de bord démarré avec succès
+2026-01-07 16:48:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:48:15 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:48:15 - Completed initialization in 9 ms

@@ -1,0 +1,62 @@
+2026-01-07 16:48:17 - Starting EtablissementApplication using Java 17.0.17 with PID 1648 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\etablissement-service)
+2026-01-07 16:48:17 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:48:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-07 16:48:20 - Finished Spring Data repository scanning in 446 ms. Found 5 JPA repository interfaces.
+2026-01-07 16:48:21 - BeanFactory id=8254a898-03d0-324f-b608-1dd43fbb9a8f
+2026-01-07 16:48:23 - Tomcat initialized with port 8081 (http)
+2026-01-07 16:48:23 - Starting service [Tomcat]
+2026-01-07 16:48:23 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-01-07 16:48:23 - Initializing Spring embedded WebApplicationContext
+2026-01-07 16:48:23 - Root WebApplicationContext: initialization completed in 5819 ms
+2026-01-07 16:48:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:48:24 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:48:24 - HHH000026: Second-level cache disabled
+2026-01-07 16:48:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:48:25 - HikariPool-1 - Starting...
+2026-01-07 16:48:29 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/etablissement_db user=SA
+2026-01-07 16:48:29 - HikariPool-1 - Start completed.
+2026-01-07 16:48:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:48:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:48:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:48:33 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:48:36 - 
+
+Using generated security password: 9a96bdc2-21ed-482b-b872-929b5adee903
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-07 16:48:36 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-07 16:48:36 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:48:37 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:48:37 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:48:37 - Setting initial instance status as: STARTING
+2026-01-07 16:48:37 - Initializing Eureka in region us-east-1
+2026-01-07 16:48:37 - Resolving eureka endpoints via configuration
+2026-01-07 16:48:38 - Disable delta property : false
+2026-01-07 16:48:38 - Single vip registry refresh property : null
+2026-01-07 16:48:38 - Force full registry fetch : false
+2026-01-07 16:48:38 - Application is null : false
+2026-01-07 16:48:38 - Registered Applications size is zero : true
+2026-01-07 16:48:38 - Application version is -1: true
+2026-01-07 16:48:38 - Getting all instance registry info from the eureka server
+2026-01-07 16:48:39 - The response status is 200
+2026-01-07 16:48:39 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:48:39 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:48:39 - Discovery Client initialized at timestamp 1767800919012 with initial instances count: 2
+2026-01-07 16:48:39 - Registering application ETABLISSEMENT-SERVICE with eureka with status UP
+2026-01-07 16:48:39 - Saw local status change event StatusChangeEvent [timestamp=1767800919028, current=UP, previous=STARTING]
+2026-01-07 16:48:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081: registering service...
+2026-01-07 16:48:39 - Tomcat started on port 8081 (http) with context path '/'
+2026-01-07 16:48:39 - Updating port to 8081
+2026-01-07 16:48:39 - DiscoveryClient_ETABLISSEMENT-SERVICE/DESKTOP-I9GMSBV:etablissement-service:8081 - registration status: 204
+2026-01-07 16:48:39 - Started EtablissementApplication in 23.581 seconds (process running for 25.425)
+2026-01-07 16:48:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:48:43 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:48:43 - Completed initialization in 3 ms

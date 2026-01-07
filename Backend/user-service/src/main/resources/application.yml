@@ -40,8 +40,3 @@ logging:
     com.trace.user: INFO
     org.springframework.web: INFO
     org.hibernate.SQL: DEBUG
-  file:
-    name: ../logs/user-service.log
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
