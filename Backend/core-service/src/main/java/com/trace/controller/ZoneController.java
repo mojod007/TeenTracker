@@ -4,9 +4,11 @@ import com.trace.entity.Depot;
 import com.trace.entity.Zone;
 import com.trace.repository.DepotRepository;
 import com.trace.repository.ZoneRepository;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.security.access.prepost.PreAuthorize;
 
@@ -36,7 +38,13 @@ public class ZoneController {
 
     @PostMapping("/save")
     @PreAuthorize("hasAuthority('ZONE_CREATE')")
-    public String saveZone(@PathVariable Long depotId, @ModelAttribute Zone zone) {
+    public String saveZone(@PathVariable Long depotId, @Valid @ModelAttribute Zone zone, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            Optional<Depot> depot = depotRepository.findById(depotId);
+            model.addAttribute("depotId", depotId);
+            model.addAttribute("depot", depot.orElse(null));
+            return "zone-form";
+        }
         Optional<Depot> depot = depotRepository.findById(depotId);
         if (depot.isPresent()) {
             zone.setDepot(depot.get());

@@ -1,6 +1,6 @@
 package com.trace.security;
 
-import io.jsonwebtoken.Claims;
+import com.trace.config.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,17 +9,13 @@ import jakarta.servlet.http.Cookie;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
 
 @Component
 @RequiredArgsConstructor
@@ -27,6 +23,7 @@ import java.util.List;
 public class JwtRequestFilter extends OncePerRequestFilter {
 
     private final JwtUtils jwtUtils;
+    private final CustomUserDetailsService userDetailsService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
@@ -60,25 +57,10 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
             if (!jwtUtils.isTokenExpired(jwt)) {
 
-                List<?> rolesClaim = jwtUtils.extractClaim(jwt, claims -> claims.get("roles", List.class));
-
-                List<GrantedAuthority> authorities = new ArrayList<>();
-                if (rolesClaim != null) {
-                    for (Object roleObj : rolesClaim) {
-                        if (roleObj instanceof LinkedHashMap) {
-                            LinkedHashMap<?, ?> roleMap = (LinkedHashMap<?, ?>) roleObj;
-                            Object authority = roleMap.get("authority");
-                            if (authority instanceof String) {
-                                authorities.add(new SimpleGrantedAuthority((String) authority));
-                            }
-                        } else if (roleObj instanceof String) {
-                            authorities.add(new SimpleGrantedAuthority((String) roleObj));
-                        }
-                    }
-                }
+                UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
-                        username, null, authorities);
+                        userDetails, null, userDetails.getAuthorities());
                 usernamePasswordAuthenticationToken
                         .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);

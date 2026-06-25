@@ -68,6 +68,11 @@ public class AuthController {
         return ResponseEntity.ok(Map.of("message", "Login successful", "redirect", redirectUrl));
     }
 
+    @GetMapping("/access-denied")
+    public String accessDenied() {
+        return "access-denied";
+    }
+
     @GetMapping("/logout")
     public String logout(HttpServletResponse response) {
         Cookie cookie = new Cookie("jwt", null);
