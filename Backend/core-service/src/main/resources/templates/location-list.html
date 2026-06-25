@@ -52,24 +52,39 @@
                                     <table class="table table-hover text-nowrap">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Code</th>
                                                 <th>Nom</th>
-                                                <th>Type Gestion</th>
-                                                <th>Hauteur (m)</th>
-                                                <th>Largeur (m)</th>
-                                                <th>Profondeur (m)</th>
-                                                <th>Poids Max (kg)</th>
-                                                <th>Description</th>
+                                                <th>Adresse</th>
+                                                <th>Type</th>
+                                                <th>Gestion</th>
+                                                <th>Statut</th>
+                                                <th>Capacité</th>
+                                                <th>Poids (kg)</th>
+                                                <th>Code-barres</th>
                                                 <th>Actif</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr th:each="location : ${locations}">
-                                                <td th:text="${location.id}"></td>
-                                                <td th:text="${location.code}"></td>
+                                                <td th:text="${location.code}"><strong></strong></td>
                                                 <td th:text="${location.nom}"></td>
+                                                <td>
+                                                    <span th:if="${location.allee != null or location.colonne != null or location.niveau != null}"
+                                                        class="badge badge-secondary" style="font-size:0.9rem;">
+                                                        <span th:text="${location.allee != null ? location.allee : '?'}"></span>-
+                                                        <span th:text="${location.colonne != null ? location.colonne : '?'}"></span>-
+                                                        <span th:text="${location.niveau != null ? location.niveau : '?'}"></span>-
+                                                        <span th:text="${location.posteProfondeur != null ? location.posteProfondeur : '?'}"></span>
+                                                    </span>
+                                                    <span th:if="${location.allee == null and location.colonne == null and location.niveau == null}"
+                                                        class="text-muted">—</span>
+                                                </td>
+                                                <td>
+                                                    <span th:if="${location.typeEmplacement}" class="badge badge-primary"
+                                                        th:text="${location.typeEmplacement.description}"></span>
+                                                    <span th:if="${!location.typeEmplacement}" class="text-muted">—</span>
+                                                </td>
                                                 <td>
                                                     <span th:text="${location.typeGestion}" class="badge"
                                                         th:classappend="${location.typeGestion == 'FIFO' ? 'badge-success' : 
@@ -77,23 +92,49 @@
                                                                           (location.typeGestion == 'FEFO' ? 'badge-warning' : 'badge-secondary'))}">
                                                     </span>
                                                 </td>
-                                                <td th:text="${location.height != null ? location.height + ' m' : '-'}">
+                                                <td>
+                                                    <span th:text="${location.statut.description}" class="badge"
+                                                        th:classappend="${location.statut == 'LIBRE' ? 'badge-success' : 
+                                                                          (location.statut == 'PARTIEL' ? 'badge-warning' : 
+                                                                          (location.statut == 'OCCUPE' ? 'badge-danger' : 
+                                                                          (location.statut == 'RESERVE' ? 'badge-info' : 
+                                                                          (location.statut == 'BLOQUE' ? 'badge-dark' : 'badge-secondary'))))}">
+                                                    </span>
+                                                    <span th:if="${location.bloque}" class="badge badge-dark ml-1">
+                                                        <i class="fas fa-lock"></i>
+                                                    </span>
                                                 </td>
-                                                <td th:text="${location.width != null ? location.width + ' m' : '-'}">
+                                                <td>
+                                                    <span th:if="${location.capacitePalettes != null}"
+                                                        th:text="${location.capacitePalettes + ' plt'}"
+                                                        class="text-nowrap"></span>
+                                                    <span th:if="${location.typePaletteAutorise != null}"
+                                                        th:text="' (' + ${location.typePaletteAutorise} + ')'"
+                                                        class="text-muted small"></span>
+                                                    <span th:if="${location.capacitePalettes == null}"
+                                                        class="text-muted">—</span>
                                                 </td>
-                                                <td th:text="${location.depth != null ? location.depth + ' m' : '-'}">
+                                                <td class="text-nowrap">
+                                                    <span th:text="${location.weight != null ? location.weight + ' max' : ''}"></span>
+                                                    <span th:if="${location.poidsActuelKg != null}"
+                                                        th:text="' / ' + ${location.poidsActuelKg} + ' act'"
+                                                        class="text-muted small"></span>
+                                                    <span th:if="${location.weight == null and location.poidsActuelKg == null}"
+                                                        class="text-muted">—</span>
                                                 </td>
-                                                <td
-                                                    th:text="${location.weight != null ? location.weight + ' kg' : '-'}">
+                                                <td>
+                                                    <span th:if="${location.codeBarre}"
+                                                        class="text-monospace small"
+                                                        th:text="${location.codeBarre}"></span>
+                                                    <span th:if="${!location.codeBarre}" class="text-muted">—</span>
                                                 </td>
-                                                <td th:text="${location.description}"></td>
                                                 <td>
                                                     <span th:if="${location.actif}"
                                                         class="badge badge-success">Oui</span>
                                                     <span th:if="${!location.actif}"
                                                         class="badge badge-danger">Non</span>
                                                 </td>
-                                                <td>
+                                                <td class="text-nowrap">
                                                     <a th:href="@{'/zones/' + ${zoneId} + '/locations/' + ${location.id} + '/edit'}"
                                                         class="btn btn-sm btn-info" title="Modifier">
                                                         <i class="fas fa-edit"></i>
@@ -115,8 +156,6 @@
                 </div>
             </section>
         </div>
-
-
 
         <footer th:replace="_fragments::adminFooter"></footer>
     </div>

@@ -40,19 +40,21 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card card-primary">
-                                <div class="card-header">
-                                    <h3 class="card-title">
-                                        <span th:if="${isEdit == null}">Créer une Location pour </span>
-                                        <span th:if="${isEdit != null}">Modifier la Location de </span>
-                                        <span th:text="${zone.nom}"></span>
-                                    </h3>
-                                </div>
-                                <form
-                                    th:action="${isEdit != null ? '/zones/' + zoneId + '/locations/' + location.id + '/update' : '/zones/' + zoneId + '/locations/save'}"
-                                    th:object="${location}" method="post">
+                    <form
+                        th:action="${isEdit != null ? '/zones/' + zoneId + '/locations/' + location.id + '/update' : '/zones/' + zoneId + '/locations/save'}"
+                        th:object="${location}" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Carte Informations générales -->
+                                <div class="card card-primary">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i class="fas fa-info-circle"></i>
+                                            <span th:if="${isEdit == null}">Créer une Location pour </span>
+                                            <span th:if="${isEdit != null}">Modifier la Location de </span>
+                                            <span th:text="${zone.nom}"></span>
+                                        </h3>
+                                    </div>
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="code">Code</label>
@@ -60,35 +62,96 @@
                                                 placeholder="Ex: LOC-001" required>
                                         </div>
                                         <div class="form-group">
+                                            <label for="nom">Nom</label>
+                                            <input type="text" th:field="*{nom}" class="form-control" id="nom"
+                                                placeholder="Ex: Emplacement Principal" required>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="typeGestion">Type de Gestion</label>
-                                            <select th:field="*{typeGestion}" class="form-control" id="typeGestion"
-                                                required>
+                                            <select th:field="*{typeGestion}" class="form-control" id="typeGestion" required>
                                                 <option value="">-- Sélectionner --</option>
                                                 <option value="FIFO">FIFO (First In First Out)</option>
                                                 <option value="LIFO">LIFO (Last In First Out)</option>
                                                 <option value="FEFO">FEFO (First Expired First Out)</option>
                                                 <option value="MANUEL">Manuel</option>
                                             </select>
-                                            <small class="form-text text-muted">Choisissez le type de gestion pour cet
-                                                emplacement</small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="nom">Nom</label>
-                                            <input type="text" th:field="*{nom}" class="form-control" id="nom"
-                                                placeholder="Ex: Emplacement Principal" required>
+                                            <small class="form-text text-muted">Choisissez le type de gestion pour cet emplacement</small>
                                         </div>
                                         <div class="form-group">
                                             <label for="description">Description</label>
                                             <textarea th:field="*{description}" class="form-control" id="description"
                                                 placeholder="Description de l'emplacement"></textarea>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="codeBarre">Code-barres</label>
+                                            <input type="text" th:field="*{codeBarre}" class="form-control" id="codeBarre"
+                                                placeholder="Ex: 5901234567890">
+                                            <small class="form-text text-muted">Code-barres ou QR code pour le scan</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carte Coordonnées logistiques -->
+                                <div class="card card-info">
+                                    <div class="card-header">
+                                        <h3 class="card-title"><i class="fas fa-map-marker-alt"></i> Coordonnées logistiques</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="allee">Allée</label>
+                                                    <input type="text" th:field="*{allee}" class="form-control" id="allee"
+                                                        placeholder="Ex: A">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="colonne">Colonne</label>
+                                                    <input type="text" th:field="*{colonne}" class="form-control" id="colonne"
+                                                        placeholder="Ex: 12">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="niveau">Niveau</label>
+                                                    <input type="text" th:field="*{niveau}" class="form-control" id="niveau"
+                                                        placeholder="Ex: 3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="posteProfondeur">Poste de profondeur</label>
+                                            <input type="number" th:field="*{posteProfondeur}" class="form-control" id="posteProfondeur"
+                                                min="1" max="9" placeholder="Ex: 1">
+                                            <small class="form-text text-muted">Position en profondeur pour racks double-deep (1 = avant, 2 = arrière)</small>
+                                        </div>
+                                        <div class="alert alert-info mb-0">
+                                            <i class="fas fa-info-circle"></i>
+                                            Adresse picking complète : <strong>
+                                                <span th:text="*{allee != null ? allee : '?'}"></span>-
+                                                <span th:text="*{colonne != null ? colonne : '?'}"></span>-
+                                                <span th:text="*{niveau != null ? niveau : '?'}"></span>-
+                                                <span th:text="*{posteProfondeur != null ? posteProfondeur : '?'}"></span>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Carte Dimensions & Capacités -->
+                                <div class="card card-success">
+                                    <div class="card-header">
+                                        <h3 class="card-title"><i class="fas fa-weight"></i> Dimensions & Capacités</h3>
+                                    </div>
+                                    <div class="card-body">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="height">Hauteur (m)</label>
                                                     <input type="number" step="0.01" th:field="*{height}"
                                                         class="form-control" id="height" placeholder="Ex: 2.5">
-                                                    <small class="form-text text-muted">Hauteur en mètres</small>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -96,7 +159,6 @@
                                                     <label for="width">Largeur (m)</label>
                                                     <input type="number" step="0.01" th:field="*{width}"
                                                         class="form-control" id="width" placeholder="Ex: 1.5">
-                                                    <small class="form-text text-muted">Largeur en mètres</small>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -104,18 +166,99 @@
                                                     <label for="depth">Profondeur (m)</label>
                                                     <input type="number" step="0.01" th:field="*{depth}"
                                                         class="form-control" id="depth" placeholder="Ex: 1.2">
-                                                    <small class="form-text text-muted">Profondeur en mètres</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="weight">Poids Maximum (kg)</label>
-                                            <input type="number" step="0.01" th:field="*{weight}" class="form-control"
-                                                id="weight" placeholder="Ex: 500">
-                                            <small class="form-text text-muted">Capacité de poids maximale en
-                                                kilogrammes</small>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="weight">Poids Maximum (kg)</label>
+                                                    <input type="number" step="0.01" th:field="*{weight}" class="form-control"
+                                                        id="weight" placeholder="Ex: 500">
+                                                    <small class="form-text text-muted">Capacité maximale</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="poidsActuelKg">Poids actuel (kg)</label>
+                                                    <input type="number" step="0.01" th:field="*{poidsActuelKg}" class="form-control"
+                                                        id="poidsActuelKg" placeholder="Ex: 0">
+                                                    <small class="form-text text-muted">Poids actuellement chargé</small>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="capacitePalettes">Capacité palettes</label>
+                                                    <input type="number" th:field="*{capacitePalettes}" class="form-control"
+                                                        id="capacitePalettes" min="0" placeholder="Ex: 2">
+                                                    <small class="form-text text-muted">Nombre max de palettes</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="typePaletteAutorise">Type de palette autorisé</label>
+                                                    <select th:field="*{typePaletteAutorise}" class="form-control" id="typePaletteAutorise">
+                                                        <option value="">-- Tous --</option>
+                                                        <option value="P_DRINKS">P_DRINKS</option>
+                                                        <option value="P_BRASSES">P_BRASSES</option>
+                                                        <option value="P_BEURRES">P_BEURRES</option>
+                                                        <option value="P_LAIT">P_LAIT</option>
+                                                    </select>
+                                                    <small class="form-text text-muted">Type de palette compatible</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carte Type & Statut -->
+                                <div class="card card-warning">
+                                    <div class="card-header">
+                                        <h3 class="card-title"><i class="fas fa-tags"></i> Type & Statut</h3>
+                                    </div>
+                                    <div class="card-body">
                                         <div class="form-group">
+                                            <label for="typeEmplacement">Type d'emplacement</label>
+                                            <select th:field="*{typeEmplacement}" class="form-control" id="typeEmplacement">
+                                                <option value="">-- Sélectionner --</option>
+                                                <option value="PICKING">Picking</option>
+                                                <option value="RESERVE">Réserve</option>
+                                                <option value="RECEPTION">Réception</option>
+                                                <option value="EXPEDITION">Expédition</option>
+                                                <option value="QUARANTAINE">Quarantaine</option>
+                                                <option value="CROSS_DOCK">Cross-dock</option>
+                                                <option value="BULK">Vrac</option>
+                                            </select>
+                                            <small class="form-text text-muted">Fonction principale de l'emplacement</small>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="statut">Statut</label>
+                                                    <select th:field="*{statut}" class="form-control" id="statut" required>
+                                                        <option value="LIBRE">Libre</option>
+                                                        <option value="PARTIEL">Partiellement occupé</option>
+                                                        <option value="OCCUPE">Occupé</option>
+                                                        <option value="RESERVE">Réservé</option>
+                                                        <option value="BLOQUE">Bloqué</option>
+                                                        <option value="INACTIF">Inactif</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>&nbsp;</label>
+                                                    <div class="custom-control custom-switch mt-2">
+                                                        <input type="checkbox" class="custom-control-input" id="bloque"
+                                                            th:field="*{bloque}">
+                                                        <label class="custom-control-label" for="bloque">Bloqué</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-0">
                                             <div class="custom-control custom-switch">
                                                 <input type="checkbox" class="custom-control-input" id="actif"
                                                     th:field="*{actif}">
@@ -123,21 +266,23 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="card-footer text-right">
-                                        <a th:href="@{'/zones/' + ${zoneId} + '/locations'}"
-                                            class="btn btn-default">Annuler</a>
-                                        <button type="submit" class="btn btn-success">Enregistrer</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="row">
+                            <div class="col-12 text-right mb-3">
+                                <a th:href="@{'/zones/' + ${zoneId} + '/locations'}"
+                                    class="btn btn-lg btn-default">Annuler</a>
+                                <button type="submit" class="btn btn-lg btn-success">
+                                    <i class="fas fa-save"></i> Enregistrer
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </section>
         </div>
-
-
 
         <footer th:replace="_fragments::adminFooter"></footer>
     </div>

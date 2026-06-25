@@ -12,6 +12,9 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.trace.entity.enums.TypeGestion;
+import com.trace.entity.enums.TypeEmplacement;
+import com.trace.entity.enums.StatutLocation;
+import com.trace.entity.enums.TypePalette;
 import java.time.LocalDateTime;
 
 @Entity
@@ -19,7 +22,11 @@ import java.time.LocalDateTime;
         @Index(name = "idx_location_code", columnList = "code"),
         @Index(name = "idx_location_zone_id", columnList = "zone_id"),
         @Index(name = "idx_location_actif", columnList = "actif"),
-        @Index(name = "idx_location_type_gestion", columnList = "type_gestion")
+        @Index(name = "idx_location_type_gestion", columnList = "type_gestion"),
+        @Index(name = "idx_location_statut", columnList = "statut"),
+        @Index(name = "idx_location_type_emplacement", columnList = "type_emplacement"),
+        @Index(name = "idx_location_code_barre", columnList = "code_barre"),
+        @Index(name = "idx_location_allee", columnList = "allee")
 })
 @EntityListeners(AuditingEntityListener.class)
 @Data
@@ -79,6 +86,64 @@ public class Location {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Zone zone;
+
+    // --- Coordonnées logistiques ---
+
+    @Size(max = 10, message = "L'allee ne peut pas depasser 10 caracteres")
+    @Column(length = 10)
+    private String allee;
+
+    @Size(max = 10, message = "La colonne ne peut pas depasser 10 caracteres")
+    @Column(length = 10)
+    private String colonne;
+
+    @Size(max = 10, message = "Le niveau ne peut pas depasser 10 caracteres")
+    @Column(length = 10)
+    private String niveau;
+
+    @Column(name = "poste_profondeur")
+    @Min(value = 1, message = "Le poste de profondeur minimum est 1")
+    @Max(value = 9, message = "Le poste de profondeur maximum est 9")
+    private Integer posteProfondeur;
+
+    // --- Type d'emplacement ---
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "type_emplacement", length = 20)
+    private TypeEmplacement typeEmplacement;
+
+    // --- Capacités ---
+
+    @Min(value = 0, message = "La capacite palettes ne peut pas etre negative")
+    @Column(name = "capacite_palettes")
+    private Integer capacitePalettes;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "type_palette_autorise", length = 20)
+    private TypePalette typePaletteAutorise;
+
+    @PositiveOrZero(message = "Le poids actuel doit etre positif ou zero")
+    @Column(name = "poids_actuel_kg")
+    private Double poidsActuelKg;
+
+    // --- Statut & disponibilité ---
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 20)
+    @NotNull(message = "Le statut est obligatoire")
+    private StatutLocation statut = StatutLocation.LIBRE;
+
+    @Column(name = "derniere_occupation")
+    private LocalDateTime derniereOccupation;
+
+    @Column(nullable = false)
+    private boolean bloque = false;
+
+    // --- Identification code-barres ---
+
+    @Size(max = 100, message = "Le code-barres ne peut pas depasser 100 caracteres")
+    @Column(name = "code_barre", length = 100, unique = true)
+    private String codeBarre;
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)
