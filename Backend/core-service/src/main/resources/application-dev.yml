@@ -2,11 +2,11 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
   h2:
     console:
       enabled: true
 logging:
   level:
-    root: DEBUG
-    com.trace: DEBUG
+    root: WARN
+    com.trace: INFO

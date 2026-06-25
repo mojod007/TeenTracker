@@ -83,7 +83,7 @@
                                                 <td>
                                                     <span th:if="${location.typeEmplacement}" class="badge badge-primary"
                                                         th:text="${location.typeEmplacement.description}"></span>
-                                                    <span th:if="${!location.typeEmplacement}" class="text-muted">—</span>
+                                                    <span th:if="${location.typeEmplacement == null}" class="text-muted">—</span>
                                                 </td>
                                                 <td>
                                                     <span th:text="${location.typeGestion}" class="badge"
@@ -126,7 +126,7 @@
                                                     <span th:if="${location.codeBarre}"
                                                         class="text-monospace small"
                                                         th:text="${location.codeBarre}"></span>
-                                                    <span th:if="${!location.codeBarre}" class="text-muted">—</span>
+                                                    <span th:if="${#strings.isEmpty(location.codeBarre)}" class="text-muted">—</span>
                                                 </td>
                                                 <td>
                                                     <span th:if="${location.actif}"
