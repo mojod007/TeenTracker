@@ -1,0 +1,76 @@
+package com.trace.service;
+
+import com.trace.entity.Permission;
+import com.trace.entity.Profile;
+import com.trace.repository.PermissionRepository;
+import com.trace.repository.ProfileRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+@Transactional
+public class ProfileService {
+
+    private final ProfileRepository profileRepository;
+    private final PermissionRepository permissionRepository;
+
+    public List<Profile> findAll() {
+        return profileRepository.findAll();
+    }
+
+    public List<Profile> findAllWithUsers() {
+        return profileRepository.findAllWithUsers();
+    }
+
+    public Profile findById(Long id) {
+        return profileRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Profile not found with id: " + id));
+    }
+
+    public Profile findByCode(String code) {
+        return profileRepository.findByCode(code)
+                .orElseThrow(() -> new RuntimeException("Profile not found with code: " + code));
+    }
+
+    public Profile save(Profile profile) {
+        return profileRepository.save(profile);
+    }
+
+    public void deleteById(Long id) {
+        profileRepository.deleteById(id);
+    }
+
+    public Profile addPermission(Long profileId, Long permissionId) {
+        Profile profile = findById(profileId);
+        Permission permission = permissionRepository.findById(permissionId)
+                .orElseThrow(() -> new RuntimeException("Permission not found"));
+        if (!profile.getPermissions().contains(permission)) {
+            profile.getPermissions().add(permission);
+            return profileRepository.save(profile);
+        }
+        return profile;
+    }
+
+    public Profile removePermission(Long profileId, Long permissionId) {
+        Profile profile = findById(profileId);
+        Permission permission = permissionRepository.findById(permissionId)
+                .orElseThrow(() -> new RuntimeException("Permission not found"));
+        profile.getPermissions().remove(permission);
+        return profileRepository.save(profile);
+    }
+
+    public Profile updatePermissions(Long profileId, List<Long> permissionIds) {
+        Profile profile = findById(profileId);
+        List<Permission> permissions = new ArrayList<>();
+        if (permissionIds != null && !permissionIds.isEmpty()) {
+            permissions = permissionRepository.findAllById(permissionIds);
+        }
+        profile.setPermissions(permissions);
+        return profileRepository.save(profile);
+    }
+}

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Dépôt')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Nouveau Dépôt</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/etablissements">Établissements</a></li>
+                                <li class="breadcrumb-item active">Nouveau Dépôt</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Créer un Dépôt</h3>
+                                </div>
+                                <form th:action="@{'/etablissement/' + ${etabId} + '/depots/save'}" method="post">
+                                    <div class="card-body">
+                                        <!-- Error message -->
+                                        <div th:if="${error}" class="alert alert-danger" role="alert">
+                                            <span th:text="${error}"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="code">Code Dépôt</label>
+                                            <input type="text" name="code" class="form-control" id="code"
+                                                placeholder="Ex: DEP-001" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nom">Nom Dépôt</label>
+                                            <input type="text" name="nom" class="form-control" id="nom"
+                                                placeholder="Ex: Dépôt Principal" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="location">Emplacement Dépôt</label>
+                                            <input type="text" name="location" class="form-control" id="location"
+                                                placeholder="Ex: Entrepôt A, Paris" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="actif"
+                                                    name="actif" checked>
+                                                <label class="custom-control-label" for="actif">Actif</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-right">
+                                        <a th:href="@{'/etablissement/' + ${etabId} + '/depots'}"
+                                            class="btn btn-default">Annuler</a>
+                                        <button type="submit" class="btn btn-success">Enregistrer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

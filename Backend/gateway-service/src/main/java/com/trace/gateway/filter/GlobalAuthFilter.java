@@ -18,8 +18,17 @@ public class GlobalAuthFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         String path = request.getURI().getPath();
 
-        // Allow access to login and auth endpoints
-        if (path.startsWith("/login") || path.startsWith("/api/auth/")) {
+        // Allow access to login, auth endpoints, static resources, and actuator
+        if (path.startsWith("/login") ||
+                path.startsWith("/api/auth/") ||
+                path.startsWith("/logout") ||
+                path.startsWith("/css/") ||
+                path.startsWith("/js/") ||
+                path.startsWith("/images/") ||
+                path.startsWith("/plugins/") ||
+                path.startsWith("/dist/") ||
+                path.startsWith("/actuator/") ||
+                path.equals("/favicon.ico")) {
             return chain.filter(exchange);
         }
 

@@ -1,0 +1,49 @@
+server:
+  port: 8081
+  address: 0.0.0.0
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: core-service
+  jwt:
+    secret: ${JWT_SECRET:mysuperlongsecretkeythatissecureandlongenoughforjwttokengeneration1234567890}
+    expiration: ${JWT_EXPIRATION:86400000}
+  datasource:
+    url: jdbc:h2:file:./data/core_db;AUTO_SERVER=TRUE
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:dev-password-change-in-prod}
+  h2:
+    console:
+      enabled: ${H2_CONSOLE_ENABLED:false}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+logging:
+  level:
+    "[com.trace]": INFO
+    "[org.springframework.web]": INFO
+    "[org.hibernate.SQL]": DEBUG
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

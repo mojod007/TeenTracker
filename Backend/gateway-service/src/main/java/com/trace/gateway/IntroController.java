@@ -32,59 +32,26 @@ public class IntroController {
     private Map<String, Boolean> checkServiceStatuses() {
         log.debug("Vérification détaillée du statut de chaque service");
         Map<String, Boolean> statuses = new HashMap<>();
-        // Check Eureka server
         try {
             restTemplate.getForObject("http://localhost:8761/eureka/apps", String.class);
             statuses.put("Eureka Server", true);
-            log.debug("Eureka Server: UP");
         } catch (Exception e) {
             statuses.put("Eureka Server", false);
             log.warn("Eureka Server: DOWN - {}", e.getMessage());
         }
-        // Check user-service
-        try {
-            restTemplate.getForObject("http://localhost:8084/actuator/health", String.class);
-            statuses.put("User Service", true);
-            log.debug("User Service: UP");
-        } catch (Exception e) {
-            statuses.put("User Service", false);
-            log.warn("User Service: DOWN - {}", e.getMessage());
-        }
-        // Check product-service
-        try {
-            restTemplate.getForObject("http://localhost:8082/actuator/health", String.class);
-            statuses.put("Product Service", true);
-            log.debug("Product Service: UP");
-        } catch (Exception e) {
-            statuses.put("Product Service", false);
-            log.warn("Product Service: DOWN - {}", e.getMessage());
-        }
-        // Check etablissement-service
         try {
             restTemplate.getForObject("http://localhost:8081/actuator/health", String.class);
-            statuses.put("Etablissement Service", true);
-            log.debug("Etablissement Service: UP");
+            statuses.put("Core Service", true);
         } catch (Exception e) {
-            statuses.put("Etablissement Service", false);
-            log.warn("Etablissement Service: DOWN - {}", e.getMessage());
+            statuses.put("Core Service", false);
+            log.warn("Core Service: DOWN - {}", e.getMessage());
         }
-        // Check dashboard-service
         try {
             restTemplate.getForObject("http://localhost:8083/actuator/health", String.class);
             statuses.put("Dashboard Service", true);
-            log.debug("Dashboard Service: UP");
         } catch (Exception e) {
             statuses.put("Dashboard Service", false);
             log.warn("Dashboard Service: DOWN - {}", e.getMessage());
-        }
-        // Check auth-service
-        try {
-            restTemplate.getForObject("http://localhost:8085/actuator/health", String.class);
-            statuses.put("Auth Service", true);
-            log.debug("Auth Service: UP");
-        } catch (Exception e) {
-            statuses.put("Auth Service", false);
-            log.warn("Auth Service: DOWN - {}", e.getMessage());
         }
         return statuses;
     }

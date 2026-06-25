@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Permission')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:if="${permission.id == null}">Nouvelle Permission</h1>
+                            <h1 th:if="${permission.id != null}">Modifier la Permission</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/permissions">Permissions</a></li>
+                                <li class="breadcrumb-item active" th:if="${permission.id == null}">Nouveau</li>
+                                <li class="breadcrumb-item active" th:if="${permission.id != null}"
+                                    th:text="${permission.nom}"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Détails de la permission</h3>
+                        </div>
+                        <form th:action="@{/permissions/save}" th:object="${permission}" method="post">
+                            <input type="hidden" th:field="*{id}" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="code">Code</label>
+                                    <input type="text" class="form-control" id="code" placeholder="Entrez le code"
+                                        th:field="*{code}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Entrez le nom"
+                                        th:field="*{nom}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="module">Module</label>
+                                    <input type="text" class="form-control" id="module" placeholder="Entrez le module"
+                                        th:field="*{module}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea class="form-control" id="description" rows="3"
+                                        placeholder="Entrez une description" th:field="*{description}"></textarea>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                <a href="/permissions" class="btn btn-secondary">Annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

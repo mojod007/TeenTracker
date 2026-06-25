@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Utilisateur')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:if="${user.id == null}">Nouvel Utilisateur</h1>
+                            <h1 th:if="${user.id != null}">Modifier l'Utilisateur</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/users">Utilisateurs</a></li>
+                                <li class="breadcrumb-item active" th:if="${user.id == null}">Nouveau</li>
+                                <li class="breadcrumb-item active" th:if="${user.id != null}"
+                                    th:text="${user.username}"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Détails de l'utilisateur</h3>
+                        </div>
+                        <form th:action="@{/users/save}" th:object="${user}" method="post">
+                            <input type="hidden" th:field="*{id}" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Entrez le username" th:field="*{username}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Entrez l'email"
+                                        th:field="*{email}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Mot de passe"
+                                        th:field="*{password}" th:required="${user.id == null}">
+                                    <small class="form-text text-muted">Laissez vide pour ne pas changer.</small>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="firstName">Prénom</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="Prénom"
+                                                th:field="*{firstName}">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Nom</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="Nom"
+                                                th:field="*{lastName}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile">Profil</label>
+                                    <select class="form-control" id="profile" th:field="*{profile}" required>
+                                        <option th:each="p : ${profiles}" th:value="${p.id}" th:text="${p.nom}">
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <hr>
+                                <h5>Affectations Etablissements & Dépôts</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Établissements</label>
+                                            <select name="etablissementIds" id="etab-select"
+                                                class="form-control select2" multiple="multiple"
+                                                data-placeholder="Choisir Établissements">
+                                                <option th:each="etab : ${allEtablissements}" th:value="${etab.id}"
+                                                    th:text="${etab.nom}"
+                                                    th:selected="${assignedEtabIds != null && #lists.contains(assignedEtabIds, etab.id)}">
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Dépôts</label>
+                                            <select name="depotIds" id="depot-select" class="form-control select2"
+                                                multiple="multiple" data-placeholder="Choisir Dépôts">
+                                                <!-- Dynamic content -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                <a href="/users" class="btn btn-secondary">Annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Établissements')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Établissements</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item active">Établissements</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Liste des Établissements</h3>
+                                    <div class="card-tools">
+                                        <a href="/etablissements/new" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-plus"></i> Nouveau
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body table-responsive p-0">
+                                    <table class="table table-hover text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Code</th>
+                                                <th>Nom</th>
+                                                <th>Emplacement</th>
+                                                <th>Actif</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="etablissement : ${etablissements}">
+                                                <td th:text="${etablissement.id}"></td>
+                                                <td th:text="${etablissement.code}"></td>
+                                                <td th:text="${etablissement.nom}"></td>
+                                                <td th:text="${etablissement.location}"></td>
+                                                <td>
+                                                    <span th:if="${etablissement.actif}"
+                                                        class="badge badge-success">Oui</span>
+                                                    <span th:if="${!etablissement.actif}"
+                                                        class="badge badge-danger">Non</span>
+                                                </td>
+                                                <td>
+                                                    <a th:href="@{'/etablissement/' + ${etablissement.id} + '/depots'}"
+                                                        class="btn btn-info btn-sm">
+                                                        <i class="fas fa-warehouse"></i> Dépôts
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

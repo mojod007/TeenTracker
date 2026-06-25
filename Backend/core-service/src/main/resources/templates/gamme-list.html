@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Gammes')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Gestion des Gammes</h1>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a href="/gammes/add" class="btn btn-success">
+                                <i class="fas fa-plus"></i> Ajouter une Gamme
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-primary card-outline">
+                                <div class="card-header">
+                                    <h3 class="card-title">Liste des Gammes</h3>
+                                </div>
+                                <div class="card-body table-responsive p-0">
+                                    <table class="table table-hover text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Code</th>
+                                                <th>Nom</th>
+                                                <th>Description</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="g : ${gammes}">
+                                                <td th:text="${g.id}">1</td>
+                                                <td><span class="badge badge-info" th:text="${g.code}">CODE</span></td>
+                                                <td th:text="${g.nom}">NOM</td>
+                                                <td th:text="${g.description}">DESC</td>
+                                                <td>
+                                                    <div style="display: flex; gap: 8px;">
+                                                        <a th:href="@{'/gammes/edit/' + ${g.id}}"
+                                                            class="btn btn-xs btn-warning">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <a th:href="@{'/gammes/delete/' + ${g.id}}"
+                                                            class="btn btn-xs btn-danger"
+                                                            onclick="return confirm('Supprimer cette gamme ?')">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr th:if="${#lists.isEmpty(gammes)}">
+                                                <td colspan="5" class="text-center">Aucune gamme trouvée.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

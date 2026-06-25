@@ -1,82 +1,37 @@
 @echo off
-echo Stopping all Trace microservices...
-
-:: Ports: 8761 (Discovery), 8080 (Gateway), 8081 (Establishment), 8082 (Product), 8083 (Dashboard), 8084 (User), 8085 (Auth)
-set PORTS=8761 8080 8081 8082 8083 8084 8085
-
-for %%p in (%PORTS%) do (
-    echo Checking port %%p...
-    for /f "tokens=5" %%a in ('netstat -aon ^| findstr :%%p') do (
-        echo Killing process on port %%p (PID: %%a)
-        taskkill /F /PID %%a 2>nul
-    )
-)
-
-echo.
-echo All services stopped.
-
-
-@echo off
 setlocal enabledelayedexpansion
 
-:: Get the directory where this script is located
 set "BASE_DIR=%~dp0Backend"
 
 echo ============================================
 echo Starting Trace Microservices
 echo ============================================
 echo.
-if not exist "%~dp0logs" (
-    echo Creating logs directory...
-    mkdir "%~dp0logs"
-)
 
-echo [1/7] Starting Discovery Service...
+echo [1/4] Starting Discovery Service...
 pushd "%BASE_DIR%\discovery-service"
 start "Trace - Discovery Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 10 /nobreak
 echo.
 
-echo [2/7] Starting Gateway Service...
+echo [2/4] Starting Core Service (Auth + Users + Products + Etablissements)...
+pushd "%BASE_DIR%\core-service"
+start "Trace - Core Service" powershell -NoExit -Command "$env:SPRING_PROFILES_ACTIVE='dev'; mvn spring-boot:run 2>&1"
+popd
+timeout /t 7 /nobreak
+echo.
+
+echo [3/4] Starting Gateway Service...
 pushd "%BASE_DIR%\gateway-service"
 start "Trace - Gateway Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 timeout /t 7 /nobreak
 echo.
 
-echo [3/7] Starting Dashboard Service...
+echo [4/4] Starting Dashboard Service...
 pushd "%BASE_DIR%\dashboard-service"
 start "Trace - Dashboard Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
-popd
-timeout /t 3 /nobreak
-echo.
-
-echo [4/7] Starting User Service...
-pushd "%BASE_DIR%\user-service"
-start "Trace - User Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
-popd
-timeout /t 3 /nobreak
-echo.
-
-echo [5/7] Starting Product Service...
-pushd "%BASE_DIR%\product-service"
-start "Trace - Product Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
-popd
-timeout /t 3 /nobreak
-echo.
-
-echo [6/7] Starting Etablissement Service...
-timeout /t 3 /nobreak
-pushd "%BASE_DIR%\etablissement-service"
-start "Trace - Etablissement Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
-popd
-timeout /t 3 /nobreak
-echo.
-
-echo [7/7] Starting Auth Service...
-pushd "%BASE_DIR%\auth-service"
-start "Trace - Auth Service" powershell -NoExit -Command "mvn spring-boot:run 2>&1"
 popd
 echo.
 
@@ -85,11 +40,18 @@ echo All services are starting!
 echo ============================================
 echo.
 echo Services:
-echo - Discovery Service    : http://localhost:8761
-echo - Gateway              : http://localhost:8080
-echo - Dashboard            : http://localhost:8080/
-echo - User Service         : http://localhost:8080/users
-echo - Product Service      : http://localhost:8080/products
-echo - Etablissement Service: http://localhost:8080/etablissements
-echo - Auth Service         : http://localhost:8080/auth
+echo - Discovery Service : http://localhost:8761
+echo - Gateway           : http://localhost:8080
+echo - Core Service (API): http://localhost:8080/api
+echo - Dashboard         : http://localhost:8080/dashboard
+echo - Users             : http://localhost:8080/users
+echo - Profiles          : http://localhost:8080/profiles
+echo - Permissions       : http://localhost:8080/permissions
+echo - Products          : http://localhost:8080/products
+echo - Gammes            : http://localhost:8080/gammes
+echo - Etablissements    : http://localhost:8080/etablissements
+echo - H2 Console        : http://localhost:8081/h2-console
+echo - Swagger UI        : http://localhost:8080/swagger-ui.html
+echo.
+echo Default users: admin/admin123, manager/manager123, user/user123
 PAUSE

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Utilisateurs')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Gestion des Utilisateurs</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item active">Utilisateurs</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Liste des Utilisateurs</h3>
+                            <div class="card-tools">
+                                <a href="/users/add" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-plus"></i> Nouvel Utilisateur
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Nom Complet</th>
+                                        <th>Profil</th>
+                                        <th>Statut</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="user : ${users}">
+                                        <td th:text="${user.id}">1</td>
+                                        <td th:text="${user.username}">admin</td>
+                                        <td th:text="${user.email}">admin@trace.com</td>
+                                        <td th:text="${user.fullName}">Admin System</td>
+                                        <td>
+                                            <span class="badge badge-info" th:text="${user.profile.nom}">ADMIN</span>
+                                        </td>
+                                        <td>
+                                            <span th:if="${user.active}" class="badge badge-success">Actif</span>
+                                            <span th:unless="${user.active}" class="badge badge-danger">Inactif</span>
+                                        </td>
+                                        <td>
+                                            <a th:href="@{/users/view/{id}(id=${user.id})}" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-sm btn-info">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a th:href="@{/users/toggle-active/{id}(id=${user.id})}"
+                                                class="btn btn-sm btn-warning">
+                                                <i class="fas fa-power-off"></i>
+                                            </a>
+                                            <a th:href="@{/users/delete/{id}(id=${user.id})}"
+                                                class="btn btn-sm btn-danger"
+                                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

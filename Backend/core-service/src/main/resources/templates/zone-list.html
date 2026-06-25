@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Zones')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Zones du Dépôt <span th:text="${depot.nom}"></span></h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/etablissements">Établissements</a></li>
+                                <li class="breadcrumb-item"><a
+                                        th:href="@{'/etablissement/' + ${depot.etablissement.id} + '/depots'}">Dépôts</a>
+                                </li>
+                                <li class="breadcrumb-item active">Zones</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Liste des Zones</h3>
+                                    <div class="card-tools">
+                                        <a th:href="@{'/depots/' + ${depotId} + '/zones/new'}"
+                                            class="btn btn-primary btn-sm">
+                                            <i class="fas fa-plus"></i> Nouveau
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body table-responsive p-0">
+                                    <table class="table table-hover text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Code</th>
+                                                <th>Nom</th>
+                                                <th>Description</th>
+                                                <th>Actif</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="zone : ${zones}">
+                                                <td th:text="${zone.id}"></td>
+                                                <td th:text="${zone.code}"></td>
+                                                <td th:text="${zone.nom}"></td>
+                                                <td th:text="${zone.description}"></td>
+                                                <td>
+                                                    <span th:if="${zone.actif}" class="badge badge-success">Oui</span>
+                                                    <span th:if="${!zone.actif}" class="badge badge-danger">Non</span>
+                                                </td>
+                                                <td>
+                                                    <a th:href="@{'/zones/' + ${zone.id} + '/locations'}"
+                                                        class="btn btn-sm btn-primary" title="Voir les locations">
+                                                        <i class="fas fa-map-pin"></i> Locations
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

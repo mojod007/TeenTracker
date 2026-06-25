@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Détails Utilisateur')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Détails de l'Utilisateur</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/users">Utilisateurs</a></li>
+                                <li class="breadcrumb-item active" th:text="${user.username}"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Informations de l'utilisateur</h3>
+                            <div class="card-tools">
+                                <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-sm btn-info">
+                                    <i class="fas fa-edit"></i> Modifier
+                                </a>
+                                <a href="/users" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="detail-row">
+                                        <span class="detail-label">ID:</span>
+                                        <span class="detail-value" th:text="${user.id}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Username:</span>
+                                        <span class="detail-value" th:text="${user.username}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Email:</span>
+                                        <span class="detail-value" th:text="${user.email}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Prénom:</span>
+                                        <span class="detail-value" th:text="${user.firstName}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Nom:</span>
+                                        <span class="detail-value" th:text="${user.lastName}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Nom Complet:</span>
+                                        <span class="detail-value" th:text="${user.fullName}"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Profil:</span>
+                                        <span class="badge badge-info" th:text="${user.profile.nom}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Statut:</span>
+                                        <span th:if="${user.active}" class="badge badge-success">Actif</span>
+                                        <span th:unless="${user.active}" class="badge badge-danger">Inactif</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Date de création:</span>
+                                        <span class="detail-value" th:text="${user.createdAt}"></span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Dernière modification:</span>
+                                        <span class="detail-value" th:text="${user.updatedAt}"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <h5>Affectations</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Établissements:</span>
+                                        <div class="detail-value">
+                                            <ul th:if="${assignedEtabIds != null and !assignedEtabIds.isEmpty()}"
+                                                class="list-unstyled">
+                                                <li th:each="etabId : ${assignedEtabIds}">
+                                                    <span th:each="etab : ${allEtablissements}"
+                                                        th:if="${etab.id == etabId}" th:text="${etab.nom}"></span>
+                                                </li>
+                                            </ul>
+                                            <span th:if="${assignedEtabIds == null or assignedEtabIds.isEmpty()}"
+                                                class="text-muted">Aucun établissement assigné</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Dépôts:</span>
+                                        <div class="detail-value">
+                                            <ul th:if="${assignedDepotIds != null and !assignedDepotIds.isEmpty()}"
+                                                class="list-unstyled">
+                                                <li th:each="etab : ${allEtablissements}">
+                                                    <span th:each="depot : ${etab['depots']}"
+                                                        th:if="${assignedDepotIds.contains(depot.id)}"
+                                                        th:text="${depot.nom}"></span>
+                                                </li>
+                                            </ul>
+                                            <span th:if="${assignedDepotIds == null or assignedDepotIds.isEmpty()}"
+                                                class="text-muted">Aucun dépôt assigné</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-primary">
+                                <i class="fas fa-edit"></i> Modifier
+                            </a>
+                            <a href="/users" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Retour à la liste
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

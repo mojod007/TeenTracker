@@ -9,3 +9,163 @@
 2026-01-07 16:52:47 - Initializing Spring embedded WebApplicationContext
 2026-01-07 16:52:47 - Root WebApplicationContext: initialization completed in 4494 ms
 2026-01-07 16:52:48 - HikariPool-1 - Starting...
+2026-01-07 16:52:52 - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/userdb user=SA
+2026-01-07 16:52:52 - HikariPool-1 - Start completed.
+2026-01-07 16:52:52 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/userdb'
+2026-01-07 16:52:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-07 16:52:52 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-01-07 16:52:52 - HHH000026: Second-level cache disabled
+2026-01-07 16:52:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-07 16:52:53 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-07 16:52:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-07 16:52:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-07 16:52:54 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-07 16:52:55 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-01-07 16:52:56 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:52:57 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:52:57 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:52:57 - Setting initial instance status as: STARTING
+2026-01-07 16:52:57 - Initializing Eureka in region us-east-1
+2026-01-07 16:52:57 - Resolving eureka endpoints via configuration
+2026-01-07 16:52:57 - Disable delta property : false
+2026-01-07 16:52:57 - Single vip registry refresh property : null
+2026-01-07 16:52:57 - Force full registry fetch : false
+2026-01-07 16:52:57 - Application is null : false
+2026-01-07 16:52:57 - Registered Applications size is zero : true
+2026-01-07 16:52:57 - Application version is -1: true
+2026-01-07 16:52:57 - Getting all instance registry info from the eureka server
+2026-01-07 16:52:58 - The response status is 200
+2026-01-07 16:52:58 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:52:58 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07 16:52:58 - Discovery Client initialized at timestamp 1767801178157 with initial instances count: 1
+2026-01-07 16:52:58 - Registering application USER-SERVICE with eureka with status UP
+2026-01-07 16:52:58 - Saw local status change event StatusChangeEvent [timestamp=1767801178175, current=UP, previous=STARTING]
+2026-01-07 16:52:58 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084: registering service...
+2026-01-07 16:52:58 - Tomcat started on port 8084 (http) with context path '/'
+2026-01-07 16:52:58 - Updating port to 8084
+2026-01-07 16:52:58 - DiscoveryClient_USER-SERVICE/DESKTOP-I9GMSBV:user-service:8084 - registration status: 204
+2026-01-07 16:52:58 - Started UserApplication in 16.873 seconds (process running for 18.515)
+2026-01-07 16:52:58 - Vérification et initialisation des données...
+2026-01-07 16:52:58 - select count(*) from permissions p1_0
+2026-01-07 16:52:58 - Les données existent déjà, skipping initialization
+2026-01-07 16:52:58 - Service utilisateur démarré avec succès
+2026-01-07 16:53:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07 16:53:09 - Initializing Servlet 'dispatcherServlet'
+2026-01-07 16:53:09 - Completed initialization in 2 ms
+2026-01-07 16:53:09 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:09 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:10 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2026-01-07 16:53:19 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:19 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:19 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from profiles p1_0 left join users u1_0 on p1_0.id=u1_0.profile_id
+2026-01-07 16:53:19 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:19 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:19 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:21 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:21 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:21 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:21 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2026-01-07 16:53:25 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:25 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:25 - Récupération de tous les utilisateurs
+2026-01-07 16:53:25 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2026-01-07 16:53:25 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:25 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:25 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:27 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:27 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:27 - Recherche de l'utilisateur avec ID: 3
+2026-01-07 16:53:27 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom,u1_0.updated_at,u1_0.username from users u1_0 join profiles p1_0 on p1_0.id=u1_0.profile_id left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where u1_0.id=?
+2026-01-07 16:53:30 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:30 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:30 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from profiles p1_0 left join users u1_0 on p1_0.id=u1_0.profile_id
+2026-01-07 16:53:30 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:30 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:30 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:31 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:31 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:31 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:31 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2026-01-07 16:53:45 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:45 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:45 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from profiles p1_0 left join users u1_0 on p1_0.id=u1_0.profile_id
+2026-01-07 16:53:45 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:45 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:45 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:46 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:46 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:46 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2026-01-07 16:53:48 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:48 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:48 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from profiles p1_0 left join users u1_0 on p1_0.id=u1_0.profile_id
+2026-01-07 16:53:48 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:48 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:48 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:50 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:50 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0
+2026-01-07 16:53:53 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:53 - delete from profile_permissions where profile_id=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.module,p1_0.nom from permissions p1_0 where p1_0.id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - insert into profile_permissions (profile_id,permission_id) values (?,?)
+2026-01-07 16:53:53 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:53 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,u1_0.profile_id,u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.updated_at,u1_0.username from profiles p1_0 left join users u1_0 on p1_0.id=u1_0.profile_id
+2026-01-07 16:53:53 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:53 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:53 - select p1_0.profile_id,p1_1.id,p1_1.code,p1_1.description,p1_1.module,p1_1.nom from profile_permissions p1_0 join permissions p1_1 on p1_1.id=p1_0.permission_id where p1_0.profile_id=?
+2026-01-07 16:53:55 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:55 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:55 - Récupération de tous les utilisateurs
+2026-01-07 16:53:55 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0
+2026-01-07 16:53:55 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:55 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:55 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?
+2026-01-07 16:53:59 - select u1_0.id,u1_0.active,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.profile_id,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.username=?
+2026-01-07 16:53:59 - select p1_0.id,p1_0.code,p1_0.description,p1_0.nom,p2_0.profile_id,p2_1.id,p2_1.code,p2_1.description,p2_1.module,p2_1.nom from profiles p1_0 left join profile_permissions p2_0 on p1_0.id=p2_0.profile_id left join permissions p2_1 on p2_1.id=p2_0.permission_id where p1_0.id=?

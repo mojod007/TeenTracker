@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Établissement')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Établissement</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/etablissements">Établissements</a></li>
+                                <li class="breadcrumb-item active">Nouveau</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Créer un Établissement</h3>
+                                </div>
+                                <form th:action="@{'/etablissements/save'}" method="post">
+                                    <div class="card-body">
+                                        <!-- Error message -->
+                                        <div th:if="${error}" class="alert alert-danger" role="alert">
+                                            <span th:text="${error}"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="etabCode">Code Établissement</label>
+                                            <input type="text" name="etabCode" class="form-control" id="etabCode"
+                                                placeholder="Ex: ETAB-001" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="etabNom">Nom Établissement</label>
+                                            <input type="text" name="etabNom" class="form-control" id="etabNom"
+                                                placeholder="Ex: Établissement Principal" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="etabLocation">Emplacement Établissement</label>
+                                            <input type="text" name="etabLocation" class="form-control"
+                                                id="etabLocation" placeholder="Ex: Paris, France" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="etabActif"
+                                                    name="etabActif" checked>
+                                                <label class="custom-control-label" for="etabActif">Actif</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h4>Dépôt</h4>
+                                        <div class="form-group">
+                                            <label for="depotCode">Code Dépôt</label>
+                                            <input type="text" name="depotCode" class="form-control" id="depotCode"
+                                                placeholder="Ex: DEP-001" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="depotNom">Nom Dépôt</label>
+                                            <input type="text" name="depotNom" class="form-control" id="depotNom"
+                                                placeholder="Ex: Dépôt Principal" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="depotLocation">Emplacement Dépôt</label>
+                                            <input type="text" name="depotLocation" class="form-control"
+                                                id="depotLocation" placeholder="Ex: Entrepôt A, Paris" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="depotActif"
+                                                    name="depotActif" checked>
+                                                <label class="custom-control-label" for="depotActif">Actif</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-right">
+                                        <a href="/etablissements" class="btn btn-default">Annuler</a>
+                                        <button type="submit" class="btn btn-success">Enregistrer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

@@ -9,36 +9,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: auth-service
-          uri: lb://auth-service
+        - id: root-redirect
+          uri: no://op
           predicates:
-            - Path=/login, /logout, /api/auth/**
+            - Path=/
           filters:
-            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/users, /users/**, /profiles, /profiles/**, /permissions, /permissions/**
-          filters:
-            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
-            - SaveSession
-            - JwtGatewayFilter
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/products/**, /produits/**, /produit/**, /gammes/**
-          filters:
-            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
-            - SaveSession
-            - JwtGatewayFilter
-        - id: etablissement-service
-          uri: lb://etablissement-service
-          predicates:
-            - Path=/etablissements, /etablissements/**, /etablissement, /etablissement/**, /emplacements, /emplacements/**, /regions, /regions/**, /depots, /depots/**, /zones, /zones/**, /api/etablissements/**
-          filters:
-            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
-            - SaveSession
-            - JwtGatewayFilter
+            - RedirectTo=302, /login
         - id: dashboard-service
           uri: lb://dashboard-service
           predicates:
@@ -46,13 +22,29 @@ spring:
           filters:
             - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
             - SaveSession
-            - JwtGatewayFilter
-        - id: root-redirect
-          uri: no://op
+        - id: core-service
+          uri: lb://core-service
           predicates:
-            - Path=/
+            - Path=/login, /logout,
+              /api/auth/**, /api/etablissements/**, /api/gammes/**, /api/users/**,
+              /users/**, /profiles/**, /permissions/**,
+              /products/**, /produits/**, /produit/**,
+              /gammes/**,
+              /etablissements/**, /etablissement/**,
+              /depots/**,
+              /zones/**,
+              /h2-console/**
           filters:
-            - RedirectTo=302, /login
+            - RewriteLocationResponseHeader=AS_IN_REQUEST, Location, ,
+            - SaveSession
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: core-service
+        url: /core-service/v3/api-docs
+      - name: dashboard-service
+        url: /dashboard-service/v3/api-docs
 
 eureka:
   instance:

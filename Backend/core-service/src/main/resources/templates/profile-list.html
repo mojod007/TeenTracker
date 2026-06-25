@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Profils')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Gestion des Profils</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item active">Profils</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Liste des Profils</h3>
+                            <div class="card-tools">
+                                <a href="/profiles/add" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-plus"></i> Nouveau Profil
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Code</th>
+                                        <th>Nom</th>
+                                        <th>Utilisateurs</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="profile : ${profiles}">
+                                        <td th:text="${profile.id}">1</td>
+                                        <td th:text="${profile.code}">ADMIN</td>
+                                        <td th:text="${profile.nom}">Administrateur</td>
+                                        <td th:text="${#lists.size(profile.users)}">5</td>
+                                        <td>
+                                            <a th:href="@{/profiles/edit/{id}(id=${profile.id})}"
+                                                class="btn btn-sm btn-info">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a th:href="@{/profiles/delete/{id}(id=${profile.id})}"
+                                                class="btn btn-sm btn-danger"
+                                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce profil ?')">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

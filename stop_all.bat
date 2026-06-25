@@ -1,10 +1,9 @@
 @echo off
 echo Stopping all Trace microservices...
+echo.
 
-
-
-:: Ports: 8761 (Discovery), 8080 (Gateway), 8081 (Establishment), 8082 (Product), 8083 (Dashboard), 8084 (User)
-set PORTS=8761 8080 8081 8082 8083 8084 8085
+:: Ports: 8761 (Discovery), 8080 (Gateway), 8081 (Core), 8083 (Dashboard)
+set PORTS=8761 8081 8083 8080
 
 for %%p in (%PORTS%) do (
     echo Checking port %%p...

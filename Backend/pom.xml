@@ -7,7 +7,6 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.0</version>
         <relativePath/>
-        <!-- lookup parent from repository -->
     </parent>
     <groupId>com.trace</groupId>
     <artifactId>trace-parent</artifactId>
@@ -22,12 +21,10 @@
     </properties>
 
     <modules>
-        <module>etablissement-service</module>
+        <module>core-service</module>
         <module>discovery-service</module>
         <module>gateway-service</module>
-        <module>product-service</module>
         <module>dashboard-service</module>
-        <module>user-service</module>
     </modules>
 
     <dependencyManagement>

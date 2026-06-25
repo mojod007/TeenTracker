@@ -3,5 +3,6 @@ C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\ja
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\controller\DashboardController.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\controller\HealthCheckController.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\DashboardApplication.java
+C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\exception\GlobalExceptionHandler.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\security\JwtRequestFilter.java
 C:\Users\We10\Documents\GitHub\TeenTracker\Backend\dashboard-service\src\main\java\com\trace\dashboard\security\JwtUtils.java

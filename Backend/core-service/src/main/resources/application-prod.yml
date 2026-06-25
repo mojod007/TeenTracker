@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: false
+logging:
+  level:
+    root: WARN
+    com.trace: INFO

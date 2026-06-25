@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Gamme')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:text="${gamme.id == null ? 'Ajouter une Gamme' : 'Modifier la Gamme'}">
+                                Formulaire</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/gammes">Gammes</a></li>
+                                <li class="breadcrumb-item active">Gamme</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Informations de la Gamme</h3>
+                                </div>
+                                <form th:action="@{/gammes/save}" th:object="${gamme}" method="post">
+                                    <input type="hidden" th:field="*{id}" />
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="code">Code</label>
+                                            <input type="text" th:field="*{code}" class="form-control" id="code"
+                                                placeholder="Ex: GAM-001" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nom">Nom</label>
+                                            <input type="text" th:field="*{nom}" class="form-control" id="nom"
+                                                placeholder="Ex: Gamme Luxe" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea th:field="*{description}" class="form-control" id="description"
+                                                rows="3" placeholder="Description de la gamme..."></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-right">
+                                        <a href="/gammes" class="btn btn-default">Annuler</a>
+                                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

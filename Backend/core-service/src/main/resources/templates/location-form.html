@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Location')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:text="${isEdit != null ? 'Modifier Location' : 'Nouvelle Location'}">Nouvelle
+                                Location</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/etablissements">Établissements</a></li>
+                                <li class="breadcrumb-item"><a
+                                        th:href="@{'/etablissement/' + ${zone.depot.etablissement.id} + '/depots'}">Dépôts</a>
+                                </li>
+                                <li class="breadcrumb-item"><a
+                                        th:href="@{'/depots/' + ${zone.depot.id} + '/zones'}">Zones</a></li>
+                                <li class="breadcrumb-item"><a
+                                        th:href="@{'/zones/' + ${zoneId} + '/locations'}">Locations</a></li>
+                                <li class="breadcrumb-item active" th:text="${isEdit != null ? 'Modifier' : 'Nouveau'}">
+                                    Nouveau</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        <span th:if="${isEdit == null}">Créer une Location pour </span>
+                                        <span th:if="${isEdit != null}">Modifier la Location de </span>
+                                        <span th:text="${zone.nom}"></span>
+                                    </h3>
+                                </div>
+                                <form
+                                    th:action="${isEdit != null ? '/zones/' + zoneId + '/locations/' + location.id + '/update' : '/zones/' + zoneId + '/locations/save'}"
+                                    th:object="${location}" method="post">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="code">Code</label>
+                                            <input type="text" th:field="*{code}" class="form-control" id="code"
+                                                placeholder="Ex: LOC-001" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="typeGestion">Type de Gestion</label>
+                                            <select th:field="*{typeGestion}" class="form-control" id="typeGestion"
+                                                required>
+                                                <option value="">-- Sélectionner --</option>
+                                                <option value="FIFO">FIFO (First In First Out)</option>
+                                                <option value="LIFO">LIFO (Last In First Out)</option>
+                                                <option value="FEFO">FEFO (First Expired First Out)</option>
+                                                <option value="MANUEL">Manuel</option>
+                                            </select>
+                                            <small class="form-text text-muted">Choisissez le type de gestion pour cet
+                                                emplacement</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nom">Nom</label>
+                                            <input type="text" th:field="*{nom}" class="form-control" id="nom"
+                                                placeholder="Ex: Emplacement Principal" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea th:field="*{description}" class="form-control" id="description"
+                                                placeholder="Description de l'emplacement"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="height">Hauteur (m)</label>
+                                                    <input type="number" step="0.01" th:field="*{height}"
+                                                        class="form-control" id="height" placeholder="Ex: 2.5">
+                                                    <small class="form-text text-muted">Hauteur en mètres</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="width">Largeur (m)</label>
+                                                    <input type="number" step="0.01" th:field="*{width}"
+                                                        class="form-control" id="width" placeholder="Ex: 1.5">
+                                                    <small class="form-text text-muted">Largeur en mètres</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="depth">Profondeur (m)</label>
+                                                    <input type="number" step="0.01" th:field="*{depth}"
+                                                        class="form-control" id="depth" placeholder="Ex: 1.2">
+                                                    <small class="form-text text-muted">Profondeur en mètres</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="weight">Poids Maximum (kg)</label>
+                                            <input type="number" step="0.01" th:field="*{weight}" class="form-control"
+                                                id="weight" placeholder="Ex: 500">
+                                            <small class="form-text text-muted">Capacité de poids maximale en
+                                                kilogrammes</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="actif"
+                                                    th:field="*{actif}">
+                                                <label class="custom-control-label" for="actif">Actif</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-right">
+                                        <a th:href="@{'/zones/' + ${zoneId} + '/locations'}"
+                                            class="btn btn-default">Annuler</a>
+                                        <button type="submit" class="btn btn-success">Enregistrer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

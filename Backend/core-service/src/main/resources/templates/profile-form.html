@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragments::adminHead('TRACE | Profil')"></head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav th:replace="_fragments::adminNavbar"></nav>
+
+        <aside th:replace="_fragments::adminSidebar"></aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 th:if="${profile.id == null}">Nouveau Profil</h1>
+                            <h1 th:if="${profile.id != null}">Modifier le Profil</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="/profiles">Profils</a></li>
+                                <li class="breadcrumb-item active" th:if="${profile.id == null}">Nouveau</li>
+                                <li class="breadcrumb-item active" th:if="${profile.id != null}"
+                                    th:text="${profile.nom}"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Détails du profil</h3>
+                        </div>
+                        <form th:action="@{/profiles/save}" th:object="${profile}" method="post">
+                            <input type="hidden" th:field="*{id}" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="code">Code</label>
+                                    <input type="text" class="form-control" id="code" placeholder="Entrez le code"
+                                        th:field="*{code}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Entrez le nom"
+                                        th:field="*{nom}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea class="form-control" id="description" rows="3"
+                                        placeholder="Entrez une description" th:field="*{description}"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Permissions</label>
+                                    <div class="row">
+                                        <div th:each="moduleEntry : ${permissionsByModule}" class="col-md-4 mb-3">
+                                            <div class="card card-outline card-info">
+                                                <div class="card-header">
+                                                    <h3 class="card-title" th:text="${moduleEntry.key}">Module</h3>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div th:each="p : ${moduleEntry.value}"
+                                                        class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" type="checkbox"
+                                                            name="permissionIds" th:id="${'perm_' + p.id}"
+                                                            th:value="${p.id}"
+                                                            th:checked="${profile.permissions != null && profile.permissions.contains(p)}">
+                                                        <label th:for="${'perm_' + p.id}" class="custom-control-label"
+                                                            th:text="${p.nom}">Permission</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                <a href="/profiles" class="btn btn-secondary">Annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer th:replace="_fragments::adminFooter"></footer>
+    </div>
+
+    <div th:replace="_fragments::adminScripts"></div>
+</body>
+
+</html>

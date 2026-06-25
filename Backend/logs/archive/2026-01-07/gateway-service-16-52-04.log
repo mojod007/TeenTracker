@@ -1,2 +1,74 @@
 2026-01-07 16:52:04 - Starting GatewayApplication using Java 17.0.17 with PID 1032 (C:\Users\We10\Documents\GitHub\TeenTracker\Backend\gateway-service\target\classes started by We10 in C:\Users\We10\Documents\GitHub\TeenTracker\Backend\gateway-service)
 2026-01-07 16:52:04 - No active profile set, falling back to 1 default profile: "default"
+2026-01-07 16:52:07 - BeanFactory id=31df461b-c760-379e-a708-e17c79d8c228
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [After]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Before]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Between]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Cookie]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Header]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Host]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Method]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Path]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Query]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [ReadBody]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [RemoteAddr]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [Weight]
+2026-01-07 16:52:10 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-01-07 16:52:12 - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07 16:52:13 - Eureka HTTP Client uses RestTemplate.
+2026-01-07 16:52:13 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07 16:52:14 - Setting initial instance status as: STARTING
+2026-01-07 16:52:14 - Initializing Eureka in region us-east-1
+2026-01-07 16:52:14 - Resolving eureka endpoints via configuration
+2026-01-07 16:52:14 - Disable delta property : false
+2026-01-07 16:52:14 - Single vip registry refresh property : null
+2026-01-07 16:52:14 - Force full registry fetch : false
+2026-01-07 16:52:14 - Application is null : false
+2026-01-07 16:52:14 - Registered Applications size is zero : true
+2026-01-07 16:52:14 - Application version is -1: true
+2026-01-07 16:52:14 - Getting all instance registry info from the eureka server
+2026-01-07 16:52:16 - The response status is 200
+2026-01-07 16:52:16 - Starting heartbeat executor: renew interval is: 30
+2026-01-07 16:52:16 - InstanceInfoReplicator onDemand update allowed rate per min is 24
+2026-01-07 16:52:16 - Discovery Client initialized at timestamp 1767801136803 with initial instances count: 0
+2026-01-07 16:52:16 - Registering application GATEWAY-SERVICE with eureka with status UP
+2026-01-07 16:52:16 - Saw local status change event StatusChangeEvent [timestamp=1767801136842, current=UP, previous=STARTING]
+2026-01-07 16:52:16 - DiscoveryClient_GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080: registering service...
+2026-01-07 16:52:17 - DiscoveryClient_GATEWAY-SERVICE/DESKTOP-I9GMSBV:gateway-service:8080 - registration status: 204
+2026-01-07 16:52:18 - Netty started on port 8080 (http)
+2026-01-07 16:52:18 - Updating port to 8080
+2026-01-07 16:52:19 - Started GatewayApplication in 16.067 seconds (process running for 17.119)
+2026-01-07 16:52:19 - Service de passerelle Gateway démarré avec succès
+2026-01-07 16:52:21 - Disable delta property : false
+2026-01-07 16:52:21 - Single vip registry refresh property : null
+2026-01-07 16:52:21 - Force full registry fetch : false
+2026-01-07 16:52:21 - Application is null : false
+2026-01-07 16:52:21 - Registered Applications size is zero : true
+2026-01-07 16:52:21 - Application version is -1: false
+2026-01-07 16:52:21 - Getting all instance registry info from the eureka server
+2026-01-07 16:52:21 - The response status is 200
+2026-01-07 16:52:26 - Disable delta property : false
+2026-01-07 16:52:26 - Single vip registry refresh property : null
+2026-01-07 16:52:26 - Force full registry fetch : false
+2026-01-07 16:52:26 - Application is null : false
+2026-01-07 16:52:26 - Registered Applications size is zero : true
+2026-01-07 16:52:26 - Application version is -1: false
+2026-01-07 16:52:26 - Getting all instance registry info from the eureka server
+2026-01-07 16:52:26 - The response status is 200
+2026-01-07 16:52:32 - Disable delta property : false
+2026-01-07 16:52:32 - Single vip registry refresh property : null
+2026-01-07 16:52:32 - Force full registry fetch : false
+2026-01-07 16:52:32 - Application is null : false
+2026-01-07 16:52:32 - Registered Applications size is zero : true
+2026-01-07 16:52:32 - Application version is -1: false
+2026-01-07 16:52:32 - Getting all instance registry info from the eureka server
+2026-01-07 16:52:32 - The response status is 200
+2026-01-07 16:52:35 - No servers available for service: user-service
+2026-01-07 16:52:35 - Error occurred - Status: 503, Path: /profiles/edit/7, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/profiles/edit/7
+2026-01-07 16:53:27 - No servers available for service: auth-service
+2026-01-07 16:53:27 - Error occurred - Status: 503, Path: /login, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/login?redirect=http://localhost:8080/api/etablissements/all
+2026-01-07 16:53:27 - No servers available for service: auth-service
+2026-01-07 16:53:27 - Error occurred - Status: 503, Path: /login, Error: Service Unavailable, Message: null, Method: GET, URI: http://localhost:8080/login?redirect=http://localhost:8080/api/etablissements/user/3/assignments
+2026-01-07 16:54:06 - Accès à la page d'introduction
+2026-01-07 16:54:08 - Statut des services vérifié: tous actifs = true

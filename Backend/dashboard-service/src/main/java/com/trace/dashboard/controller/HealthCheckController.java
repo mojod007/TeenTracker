@@ -11,6 +11,8 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.security.access.prepost.PreAuthorize;
+
 @RestController
 public class HealthCheckController {
 
@@ -19,6 +21,7 @@ public class HealthCheckController {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
+    @PreAuthorize("hasAuthority('DASHBOARD_VIEW')")
     @GetMapping("/api/services/status")
     public List<ServiceStatus> getServicesStatus() {
         return discoveryClient.getServices().stream()

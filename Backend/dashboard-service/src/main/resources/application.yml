@@ -6,7 +6,8 @@ spring:
   application:
     name: dashboard-service
   jwt:
-    secret: mysuperlongsecretkeythatissecureandlongenoughforjwttokengeneration1234567890
+    secret: ${JWT_SECRET:mysuperlongsecretkeythatissecureandlongenoughforjwttokengeneration1234567890}
+    expiration: ${JWT_EXPIRATION:86400000}
 
 eureka:
   instance:
