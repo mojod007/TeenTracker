@@ -46,7 +46,7 @@
     </ul>
 </nav>
 
-<aside th:fragment="adminSidebar" class="main-sidebar sidebar-dark-primary elevation-4">
+<aside th:fragment="adminSidebar(activePage)" class="main-sidebar sidebar-dark-primary elevation-4">
     <a href="/" class="brand-link">
         <i class="fas fa-cube brand-image img-circle elevation-3"
             style="opacity: .8; padding-top: 8px; padding-left: 8px;"></i>
@@ -57,52 +57,45 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
                 <li class="nav-item">
-                    <a href="/" class="nav-link"
-                       th:classappend="${#httpServletRequest.requestURI == '/' ? 'active' : ''}">
+                    <a href="/" class="nav-link" th:classappend="${activePage == 'dashboard' ? 'active' : ''}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Tableau de bord</p>
                     </a>
                 </li>
                 <li class="nav-header">GESTION</li>
                 <li class="nav-item">
-                    <a href="/etablissements" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/etablissement') ? 'active' : ''}">
+                    <a href="/etablissements" class="nav-link" th:classappend="${activePage == 'etablissements' ? 'active' : ''}">
                         <i class="nav-icon fas fa-building"></i>
                         <p>Établissements</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/products" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/products') or #strings.startsWith(#httpServletRequest.requestURI, '/produits') or #strings.startsWith(#httpServletRequest.requestURI, '/produit') ? 'active' : ''}">
+                    <a href="/products" class="nav-link" th:classappend="${activePage == 'products' ? 'active' : ''}">
                         <i class="nav-icon fas fa-box"></i>
                         <p>Produits</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/gammes" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/gammes') ? 'active' : ''}">
+                    <a href="/gammes" class="nav-link" th:classappend="${activePage == 'gammes' ? 'active' : ''}">
                         <i class="nav-icon fas fa-tags"></i>
                         <p>Gammes</p>
                     </a>
                 </li>
                 <li class="nav-header">SYSTÈME</li>
                 <li class="nav-item">
-                    <a href="/users" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/users') ? 'active' : ''}">
+                    <a href="/users" class="nav-link" th:classappend="${activePage == 'users' ? 'active' : ''}">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Utilisateurs</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/profiles" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/profiles') ? 'active' : ''}">
+                    <a href="/profiles" class="nav-link" th:classappend="${activePage == 'profiles' ? 'active' : ''}">
                         <i class="nav-icon fas fa-user-tag"></i>
                         <p>Profils</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/permissions" class="nav-link"
-                       th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/permissions') ? 'active' : ''}">
+                    <a href="/permissions" class="nav-link" th:classappend="${activePage == 'permissions' ? 'active' : ''}">
                         <i class="nav-icon fas fa-key"></i>
                         <p>Permissions</p>
                     </a>

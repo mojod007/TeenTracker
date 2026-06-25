@@ -8,10 +8,11 @@
 
         <nav th:replace="_fragments::adminNavbar"></nav>
 
-        <aside th:replace="_fragments::adminSidebar"></aside>
+        <aside th:replace="_fragments::adminSidebar('etablissements')"></aside>
 
         <div class="content-wrapper">
             <section class="content-header">
+                <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1>Dépôts de <span th:text="${etablissement.nom}"></span></h1>
